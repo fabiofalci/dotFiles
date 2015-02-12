@@ -1,0 +1,9 @@
+--type-set=properties=.properties
+--type-set=gradle=.gradle
+--type-set=iws=.iws
+--ignore-dir=bin
+--ignore-dir=target
+--ignore-dir=out
+--ignore-dir=build
+--ignore-case
+--noiws

@@ -1,0 +1,10 @@
+[alias]
+    ci = commit
+    co = checkout
+    st = status
+    br = branch
+[user]
+    name = Fabio Falci
+    email = fabiofalci@gmail.com
+[core]
+    excludesfile = ~/.gitignore_global
