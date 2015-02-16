@@ -1,0 +1,8 @@
+#!/bin/sh
+
+export M2_HOME=/opt/maven
+export M2=$M2_HOME/bin
+export PATH=$M2:$PATH
+
+export PATH=/home/fabio/.gem/ruby/2.2.0/bin:$PATH
+export PATH=~/bin:$PATH
