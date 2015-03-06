@@ -1,6 +1,6 @@
 Setting up
 	
-	$ git clone https://github.com/fabiofalci/env.git ~/tmp/env
+	$ git clone https://github.com/fabiofalci/env.git ~/env
 	$ echo "source ~/env/bash/bashrc" >> .bashrc
 
 	# one one these
@@ -16,3 +16,5 @@ Setting up
 	$ ln -s ~/env/vim/ .vim
 
 	$ ln -s ~/env/bash/inputrc .inputrc
+
+	$ ln -s ~/env/tmux/tmux.conf .tmux.conf
