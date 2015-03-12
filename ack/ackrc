@@ -1,9 +1,15 @@
 --type-set=properties=.properties
 --type-set=gradle=.gradle
+
+# intellij
 --type-set=iws=.iws
+--type-set=iml=.iml 
+
 --ignore-dir=bin
 --ignore-dir=target
 --ignore-dir=out
 --ignore-dir=build
+--ignore-dir=.idea
 --ignore-case
 --noiws
+--noiml
