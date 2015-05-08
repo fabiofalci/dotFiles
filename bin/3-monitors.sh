@@ -11,5 +11,4 @@ xrandr --output VIRTUAL1 --off --output eDP1 --mode 2560x1600 --pos 0x256 --rota
 
 # move xfce panel to second monitor
 xfconf-query -c xfce4-panel -p /panels/panel-1/output-name -s HDMI2
-xfconf-query -c xfce4-panel -p /panels/panel-2/output-name -s HDMI2
 
