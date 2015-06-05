@@ -3,6 +3,7 @@
     co = checkout
     st = status
     br = branch
+    pl = pull --ff-only
 [user]
     name = Fabio Falci
     email = fabiofalci@gmail.com
