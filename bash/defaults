@@ -18,6 +18,7 @@ export PATH=$GRADLE_HOME/bin:$PATH
 export PATH=$PATH:~/env/bin
 
 alias docker_rm_all='docker rm `docker ps --no-trunc -aq`'
+alias docker_ip='docker inspect --format "{{ .NetworkSettings.IPAddress }}" $1'
 alias vi='vim'
 alias h='history | grep $1'
 alias g=git
