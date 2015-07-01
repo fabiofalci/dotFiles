@@ -15,6 +15,9 @@ export PATH=$GROOVY_HOME/bin:$PATH
 export GRADLE_HOME=/opt/gradle
 export PATH=$GRADLE_HOME/bin:$PATH
 
+export GRAILS_HOME=/opt/grails
+export PATH=$GRAILS_HOME/bin:$PATH
+
 export PATH=$PATH:~/env/bin
 
 alias docker_rm_all='docker rm `docker ps --no-trunc -aq`'
