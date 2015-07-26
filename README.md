@@ -18,3 +18,7 @@ Setting up
 	$ ln -s ~/env/bash/inputrc .inputrc
 
 	$ ln -s ~/env/tmux/tmux.conf .tmux.conf
+
+	$ sudo ln -s /home/fabio/env/bash/global_profile.sh /etc/profile.d/global_profile.sh
+
+	$ echo options hid_apple swap_opt_cmd=1 | sudo tee -a /etc/modprobe.d/hid_apple.conf
