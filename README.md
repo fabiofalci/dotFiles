@@ -22,3 +22,4 @@ Setting up
 	$ sudo ln -s /home/fabio/env/bash/global_profile.sh /etc/profile.d/global_profile.sh
 
 	$ echo options hid_apple swap_opt_cmd=1 | sudo tee -a /etc/modprobe.d/hid_apple.conf
+	$ echo options hid_apple fnmode=2 | sudo tee -a /etc/modprobe.d/hid_apple.conf
