@@ -1,2 +1,2 @@
 #/bin/sh
-xrandr --output eDP1 --scale 0.70x0.70
+xrandr --output eDP1 --scale 0.65x0.65
