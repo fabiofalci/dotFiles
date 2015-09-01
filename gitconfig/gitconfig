@@ -9,3 +9,5 @@
     email = fabiofalci@gmail.com
 [core]
     excludesfile = ~/.gitignore_global
+[push]
+	default = simple
