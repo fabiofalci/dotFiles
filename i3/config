@@ -160,3 +160,7 @@ bindsym Control+Mod1+l exec i3lock -c 000000
 bindsym XF86AudioMute exec amixer -q set Master toggle
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 2%- 
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 2%+
+
+bindsym XF86KbdBrightnessDown exec kbdlight down 10%
+bindsym XF86KbdBrightnessUp exec kbdlight up 10%
+
