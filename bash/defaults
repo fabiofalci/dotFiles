@@ -32,3 +32,4 @@ alias f='find | grep $1'
 alias server='cat ~/.ssh/config | grep -A1 $1'
 alias k9='kill -9 $1'
 alias du1='du -h -d 1'
+eval "$(thefuck --alias)"
