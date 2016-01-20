@@ -5,3 +5,4 @@ bin
 libs
 tmp
 .idea/
+.java-version
