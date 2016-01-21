@@ -9,3 +9,5 @@ export PATH=~/bin:$PATH
 export PATH=~/.jenv/bin:$PATH
 
 eval "$(jenv init -)"
+
+__git_complete g _git
