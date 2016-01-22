@@ -25,6 +25,7 @@ alias docker_ip='docker inspect --format "{{ .NetworkSettings.IPAddress }}" $1'
 alias vi='vim'
 alias h='history | grep $1'
 alias g=git
+__git_complete g _git
 alias open=xdg-open
 alias autossh_='autossh -M 0 -o "ServerAliveInterval 45" -o "ServerAliveCountMax 2"'
 alias p='ps -ef | grep $1'
