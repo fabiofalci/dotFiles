@@ -38,17 +38,17 @@ battery 0 {
 
 cpu_temperature P {
          format = "P: %degrees"
-         path = "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp1_input"
+         path = "/sys/devices/platform/coretemp.0/hwmon/hwmonX/temp1_input"
 }
 
 cpu_temperature 0 {
          format = "0: %degrees"
-         path = "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp2_input"
+         path = "/sys/devices/platform/coretemp.0/hwmon/hwmonX/temp2_input"
 }
 
 cpu_temperature 1 {
          format = "1: %degrees"
-         path = "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp3_input"
+         path = "/sys/devices/platform/coretemp.0/hwmon/hwmonX/temp3_input"
 }
 
 tztime local {

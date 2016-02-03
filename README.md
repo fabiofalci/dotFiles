@@ -22,7 +22,8 @@ Setting up
 	$ ln -s ~/env/idea/ideavimrc .ideavimrc
 
 	$ ln -s ~/env/i3/config ~/.i3/config
- 	$ ln -s ~/env/i3/i3status-config ~/.config/i3status/config
+	$ sudo cp ~/env/i3/i3-temp.service /etc/systemd/system
+	$ sudo systemctl enable i3-temp.service
 
 	$ sudo ln -s /home/fabio/env/bash/global_profile.sh /etc/profile.d/global_profile.sh
 

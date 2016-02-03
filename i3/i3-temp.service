@@ -1,0 +1,10 @@
+[Unit]
+Description=It fixes temperature file for i3-status-bar
+ 
+[Service]
+ExecStart=/home/fabio/env/bin/i3-fix-temp.sh
+Type=oneshot
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target 
