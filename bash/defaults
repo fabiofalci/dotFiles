@@ -20,6 +20,9 @@ export PATH=$GRAILS_HOME/bin:$PATH
 
 export PATH=$PATH:~/env/bin
 
+# basic just-in-time compilation of the code only
+export MAVEN_OPTS="-XX:+TieredCompilation -XX:TieredStopAtLevel=1"
+
 alias docker_rm_all='docker rm `docker ps --no-trunc -aq`'
 alias docker_ip='docker inspect --format "{{ .NetworkSettings.IPAddress }}" $1'
 alias vi='vim'
