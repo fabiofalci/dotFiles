@@ -1,0 +1,18 @@
+#!/bin/sh
+
+install_yaourt(){
+	cd /tmp
+	curl https://aur.archlinux.org/cgit/aur.git/snapshot/package-query.tar.gz -0 | tar -zx
+	cd package-query
+	makepkg -s --noconfirm
+	sudo pacman -U package-query-*.pkg.tar.xz --noconfirm
+	cd /tmp
+	rm -rf /tmp/package-query
+	curl https://aur.archlinux.org/cgit/aur.git/snapshot/yaourt.tar.gz -0 | tar -zx
+	cd yaourt
+	makepkg -s --noconfirm
+	sudo pacman -U yaourt-*.pkg.tar.xz --noconfirm
+	cd
+	rm -rf /tmp/yaourt
+}
+

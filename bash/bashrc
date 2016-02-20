@@ -121,4 +121,5 @@ fi
 . ~/env/bash/prompt
 . ~/env/appengine/commands
 . ~/env/private/commands
+. ~/env/bin/commands
 
