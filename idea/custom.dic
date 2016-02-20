@@ -3,4 +3,7 @@ appengine
 asciidoc
 backoffice
 datastore
+playlists
+sconsify
+spotify
 webspotify
