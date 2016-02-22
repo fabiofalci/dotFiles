@@ -1,5 +1,3 @@
-#!/bin/sh
-
 install_yaourt(){
 	cd /tmp
 	curl https://aur.archlinux.org/cgit/aur.git/snapshot/package-query.tar.gz -0 | tar -zx
@@ -14,5 +12,9 @@ install_yaourt(){
 	sudo pacman -U yaourt-*.pkg.tar.xz --noconfirm
 	cd
 	rm -rf /tmp/yaourt
+}
+
+update_mirrorlist(){
+	sudo reflector --verbose -l 5 --sort rate --save /etc/pacman.d/mirrorlist
 }
 
