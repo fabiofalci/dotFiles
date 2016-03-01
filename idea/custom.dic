@@ -2,8 +2,13 @@ apidocs
 appengine
 asciidoc
 backoffice
+completedevent
 datastore
+mostrecent
+orderedevent
+placedevent
 playlists
+progressevent
 sconsify
 spotify
 webspotify
