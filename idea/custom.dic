@@ -3,7 +3,13 @@ appengine
 asciidoc
 backoffice
 completedevent
+curdir
 datastore
+fabiofalci
+github
+ldflags
+ifeq
+mkdir
 mostrecent
 orderedevent
 placedevent
@@ -11,5 +17,7 @@ playlists
 progressevent
 sconsify
 spotify
+uname
+vendorexperiment
 webspotify
 xero
