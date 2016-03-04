@@ -1,5 +1,6 @@
 apidocs
 appengine
+appspot
 asciidoc
 backoffice
 completedevent
@@ -7,14 +8,17 @@ curdir
 datastore
 fabiofalci
 github
+googlecode
 ldflags
 ifeq
 mkdir
 mostrecent
+onlineorder
 orderedevent
 placedevent
 playlists
 progressevent
+restaurantsettings
 sconsify
 spotify
 uname
