@@ -11,12 +11,16 @@ github
 googlecode
 ldflags
 ifeq
+keybindings
 mkdir
 mostrecent
 onlineorder
 orderedevent
+pgdn
+pgup
 placedevent
 playlists
+premade
 progressevent
 restaurantsettings
 sconsify
