@@ -10,6 +10,7 @@ datastore
 fabiofalci
 github
 googlecode
+goroutine
 ldflags
 ifeq
 keybindings
