@@ -4,6 +4,7 @@ appspot
 asciidoc
 backoffice
 completedevent
+coords
 curdir
 datastore
 fabiofalci
@@ -14,6 +15,7 @@ ifeq
 keybindings
 mkdir
 mostrecent
+noui
 onlineorder
 orderedevent
 pgdn
@@ -26,6 +28,7 @@ restaurantsettings
 sconsify
 spotify
 uname
+uuids
 vendorexperiment
 webspotify
 xero
