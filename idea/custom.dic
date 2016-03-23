@@ -1,8 +1,10 @@
 apidocs
 appengine
+apphosting
 appspot
 asciidoc
 backoffice
+centraldish
 completedevent
 coords
 createdevent
@@ -30,9 +32,14 @@ placedevent
 playlists
 premade
 progressevent
+reindexer
+remoteapi
 restaurantsettings
 sconsify
+sitemap
 spotify
+threewks
+thundr
 uname
 updatedevent
 uuids
