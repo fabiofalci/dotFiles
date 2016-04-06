@@ -2,11 +2,14 @@ apidocs
 appengine
 apphosting
 appspot
+apptype
 asciidoc
 backoffice
 centraldish
+clientapp
 completedevent
 coords
+cors
 createdevent
 curdir
 dataset
