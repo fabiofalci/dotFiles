@@ -4,6 +4,7 @@ APPENGINE_VERSION=1.9.34
 APPENGINE_JAVAAGENT_JAR=/home/fabio/.m2/repository/com/google/appengine/appengine-java-sdk/$APPENGINE_VERSION/appengine-java-sdk/appengine-java-sdk-$APPENGINE_VERSION/lib/agent/appengine-agent.jar
 APPENGINE_TOOLS_API=/home/fabio/.m2/repository/com/google/appengine/appengine-java-sdk/$APPENGINE_VERSION/appengine-java-sdk/appengine-java-sdk-$APPENGINE_VERSION/lib/appengine-tools-api.jar
 
+#-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=1044 \
 appengine_devserver(){
 	cd $APPENGINE_TARGET_FOLDER
 
