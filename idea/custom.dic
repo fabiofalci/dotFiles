@@ -1,3 +1,4 @@
+apiaccount
 apidocs
 appengine
 apphosting
@@ -5,6 +6,7 @@ appspot
 apptype
 asciidoc
 backoffice
+bigquery
 centraldish
 clientapp
 completedevent
@@ -26,6 +28,7 @@ hashtag
 ifeq
 keybindings
 memcache
+menuversion
 mkdir
 mostrecent
 msgpack
