@@ -18,3 +18,10 @@ update_mirrorlist(){
 	sudo reflector --verbose -l 5 --sort rate --save /etc/pacman.d/mirrorlist
 }
 
+git_sync(){
+	g fetch --all -p --quiet
+	g co --quiet --detach
+	g fetch --quiet origin $1:$1
+	g co --quiet -
+}
+
