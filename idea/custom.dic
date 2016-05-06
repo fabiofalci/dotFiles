@@ -8,6 +8,7 @@ apptype
 asciidoc
 backoffice
 bigquery
+braintree
 centraldish
 clientapp
 completedevent
@@ -39,6 +40,7 @@ onlineorders
 orderedevent
 pgdn
 pgup
+paypal
 placedevent
 playlists
 premade
@@ -47,11 +49,13 @@ reindexer
 remoteapi
 restaurantsettings
 restservice
+sectlinks
 sconsify
 sitemap
 spotify
 threewks
 thundr
+toclevels
 uname
 updatedevent
 uuids
