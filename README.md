@@ -21,6 +21,9 @@ Setting up
 
 	$ ln -s ~/env/idea/ideavimrc .ideavimrc
 
+	$ cat env/x/compose-key.sh > /etc/X11/xinit/xinitrc.d/60-compose-key.sh
+	$ chmod 755 /etc/X11/xinit/xinitrc.d/60-compose-key.sh
+
 	$ ln -s ~/env/i3/config ~/.i3/config
 	$ sudo cp ~/env/i3/i3-temp.service /etc/systemd/system
 	$ sudo systemctl enable i3-temp.service
