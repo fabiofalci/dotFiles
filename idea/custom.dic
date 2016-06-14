@@ -48,6 +48,7 @@ playlists
 premade
 prerender
 progressevent
+pubsub
 reindexer
 remoteapi
 restaurantsettings
@@ -56,6 +57,8 @@ sectlinks
 sconsify
 sitemap
 spotify
+springsupport
+subdir
 threewks
 thundr
 toclevels
