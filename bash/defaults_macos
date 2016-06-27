@@ -1,6 +1,5 @@
 #!/bin/sh
 
-export PATH=~/bin:$PATH
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export M3_HOME=/usr/local/Cellar/maven/3.3.9/
 

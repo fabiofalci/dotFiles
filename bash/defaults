@@ -20,6 +20,10 @@ export PATH=$GRAILS_HOME/bin:$PATH
 
 export PATH=$PATH:~/env/bin
 
+export PATH=~/bin:$PATH
+export PATH=~/.jenv/bin:$PATH
+eval "$(jenv init -)"
+
 # basic just-in-time compilation of the code only
 export MAVEN_OPTS="-XX:+TieredCompilation -XX:TieredStopAtLevel=1"
 export FAST_MAVEN="--threads 1.5C"
