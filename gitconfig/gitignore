@@ -6,3 +6,9 @@ libs
 tmp
 .idea/
 .java-version
+target/
+.settings/
+.classpath
+.project
+*.iml
+*.log
