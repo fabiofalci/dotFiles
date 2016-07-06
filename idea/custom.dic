@@ -8,6 +8,7 @@ apptype
 asciidoc
 backoffice
 bigquery
+bishopsgate
 braintree
 centraldish
 clientapp
@@ -18,12 +19,16 @@ createdevent
 curdir
 dataset
 datastore
+datatypes
 deletedevent
 deliverysettings
 dtos
 eatat
+emailer
 fabiofalci
+fbos
 firebase
+foodit
 geocoder
 github
 glassfish
@@ -45,6 +50,7 @@ noui
 onlineorder
 onlineorders
 orderedevent
+ordersvc
 pgdn
 pgup
 paypal
@@ -60,6 +66,7 @@ restaurantsettings
 restservice
 sectlinks
 sconsify
+signin
 sitemap
 spotify
 springsupport
@@ -77,5 +84,6 @@ urlrewrite
 uuids
 vendorexperiment
 webspotify
+whitelisted
 worldpay
 xero
