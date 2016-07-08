@@ -12,3 +12,4 @@ target/
 .project
 *.iml
 *.log
+.DS_Store
