@@ -3,6 +3,8 @@
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export M3_HOME=/usr/local/Cellar/maven/3.3.9/
 
+alias docker_machine_env='eval "$(docker-machine env)"'
+
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
