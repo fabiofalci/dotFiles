@@ -24,6 +24,7 @@ datastore
 datatypes
 deletedevent
 deliverysettings
+dockerfile
 dtos
 eatat
 emailer
@@ -34,7 +35,9 @@ fbos
 feedbacks
 firebase
 foodit
+gcloud
 geocoder
+geojson
 geospatial
 github
 gitignore
@@ -44,6 +47,7 @@ googlecode
 goroutine
 greengerong
 gson
+kubectl
 ldflags
 localdev
 hashtag
