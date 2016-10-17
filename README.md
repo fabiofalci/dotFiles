@@ -25,6 +25,7 @@ Setting up
 	$ chmod 755 /etc/X11/xinit/xinitrc.d/60-compose-key.sh
 
 	$ ln -s ~/env/i3/config ~/.i3/config
+	$ cp ~/env/i3/i3status-config.template ~/.config/i3status/config
 	$ sudo cp ~/env/i3/i3-temp.service /etc/systemd/system
 	$ sudo systemctl enable i3-temp.service
 
@@ -41,3 +42,6 @@ Setting up
 
 	# clone jenv
 	$ git clone https://github.com/gcuisinier/jenv.git ~/.jenv
+
+	# trackpad
+	$ sudo ln -s ~/env/x/10-mtrack.conf /etc/X11/xorg.conf.d/
