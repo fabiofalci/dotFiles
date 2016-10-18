@@ -9,20 +9,9 @@ export sconsify=~/go/src/github.com/fabiofalci/sconsify/
 export GOPATH=~/go
 export PATH=$PATH:~/go/bin
 
-export GROOVY_HOME=/opt/groovy
-export PATH=$GROOVY_HOME/bin:$PATH
-
-export GRADLE_HOME=/opt/gradle
-export PATH=$GRADLE_HOME/bin:$PATH
-
-export GRAILS_HOME=/opt/grails
-export PATH=$GRAILS_HOME/bin:$PATH
-
 export PATH=$PATH:~/env/bin
 
 export PATH=~/bin:$PATH
-export PATH=~/.jenv/bin:$PATH
-eval "$(jenv init -)"
 
 # basic just-in-time compilation of the code only
 export MAVEN_OPTS="-XX:+TieredCompilation -XX:TieredStopAtLevel=1"

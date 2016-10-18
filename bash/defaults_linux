@@ -6,3 +6,7 @@ export PATH=$M2:$PATH
 
 export PATH=/home/fabio/.gem/ruby/2.2.0/bin:$PATH
 alias open=xdg-open
+
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+

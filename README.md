@@ -42,6 +42,9 @@ Setting up
 
 	# clone jenv
 	$ git clone https://github.com/gcuisinier/jenv.git ~/.jenv
+	$ jenv enable-plugin export
+ 	$ jenv enable-plugin maven
+
 
 	# trackpad
 	$ sudo ln -s ~/env/x/10-mtrack.conf /etc/X11/xorg.conf.d/
