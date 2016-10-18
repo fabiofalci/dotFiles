@@ -170,9 +170,9 @@ bindsym $mod+F1 exec google-chrome-stable
 bindsym $mod+F2 exec idea
 bindsym $mod+F3 exec _sconsify
 
-bindsym XF86AudioPrev exec /home/fabio/go/src/github.com/fabiofalci/sconsify/bundles/sconsify -command replay
-bindsym XF86AudioPlay exec /home/fabio/go/src/github.com/fabiofalci/sconsify/bundles/sconsify -command play_pause
-bindsym XF86AudioNext exec /home/fabio/go/src/github.com/fabiofalci/sconsify/bundles/sconsify -command next
+bindsym XF86AudioPrev exec /home/fabio/bin/sconsify -command replay
+bindsym XF86AudioPlay exec /home/fabio/bin/sconsify -command play_pause
+bindsym XF86AudioNext exec /home/fabio/bin/sconsify -command next
 
 bindsym $mod+F11 exec xfce4-taskmanager
 bindsym $mod+F12 exec xfce4-screenshooter
