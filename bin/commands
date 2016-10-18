@@ -25,3 +25,41 @@ git_sync(){
 	g co --quiet -
 }
 
+#
+# monitor stuff
+#
+
+1_monitor(){
+	# disable all other monitors, just laptop now
+	xrandr --output VIRTUAL1 --off \
+		--output eDP1 --mode 2560x1600 --pos 0x0 --rotate normal \
+		--output DP1 --off \
+		--output HDMI2 --off \ 
+		--output HDMI1 --off \
+		--output DP2 --off
+}
+
+2_monitor(){
+	# when going to 2 monitors remove the scale so xranr can work
+	unscale_monitor
+
+	# enable all 2 monitors
+	xrandr --output VIRTUAL1 --off \
+		--output eDP1 --mode 2560x1600 --pos 0x1080 --rotate normal \
+		--output DP1 --mode 2560x1080 --pos 0x0 --rotate normal \
+		--output HDMI2 --off \
+		--output HDMI1 --off \
+		--output DP2 --off
+
+	# scale laptop monitor back 65% because macbook monitor resolution is tiny
+	scale_monitor
+}
+
+scale_monitor(){
+	xrandr --output eDP1 --scale 0.65x0.65
+}
+
+unscale_monitor(){
+	xrandr --output eDP1 --scale 1x1
+}
+
