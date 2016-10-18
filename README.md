@@ -45,6 +45,5 @@ Setting up
 	$ jenv enable-plugin export
  	$ jenv enable-plugin maven
 
-
 	# trackpad
-	$ sudo ln -s ~/env/x/10-mtrack.conf /etc/X11/xorg.conf.d/
+	$ sudo ln -s ~/env/x/90-libinput.conf /etc/X11/xorg.conf.d/
