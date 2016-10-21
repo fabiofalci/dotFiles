@@ -30,6 +30,7 @@ Setting up
 	$ sudo systemctl enable i3-temp.service
 
 	$ sudo ln -s /home/fabio/env/bash/global_profile.sh /etc/profile.d/global_profile.sh
+	$ sudo ln -s /home/fabio/env/idea/98-idea.conf /etc/sysctl.d/98-idea.conf
 
 	# swap alt & cmd
 	$ echo options hid_apple swap_opt_cmd=1 | sudo tee -a /etc/modprobe.d/hid_apple.conf
