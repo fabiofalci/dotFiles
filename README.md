@@ -48,3 +48,8 @@ Setting up
 
 	# trackpad
 	$ sudo ln -s ~/env/x/90-libinput.conf /etc/X11/xorg.conf.d/
+
+	# subl
+	$ ln -s ~/env/subl/Preferences.sublime-settings ~/.config/sublime-text-2/Packages/User/
+	$ ln -s ~/env/subl/Default\ \(Linux\).sublime-keymap ~/.config/sublime-text-2/Packages/User/
+
