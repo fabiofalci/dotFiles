@@ -2,3 +2,14 @@ set number
 set relativenumber
 
 filetype indent plugin on
+
+" next/prev tab
+map <A-}> gt
+map <A-{> gT
+
+" moves screen up/down one line using CTRL + j/k
+map <C-j> <C-e>
+map <C-k> <C-y>
+
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
