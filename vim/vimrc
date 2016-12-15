@@ -47,3 +47,9 @@ call plug#begin()
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 call plug#end()
 
+if has('gui_running')
+	syntax enable
+	set background=dark
+	colorscheme solarized
+endif
+
