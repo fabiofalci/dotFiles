@@ -169,7 +169,7 @@ bindsym $mod+b workspace back_and_forth
 bindsym $mod+F1 exec google-chrome-stable
 bindsym $mod+F2 exec idea
 bindsym $mod+F3 exec _sconsify
-bindsym $mod+F4 exec gvim
+bindsym $mod+F4 exec gvim --servername 0
 
 bindsym XF86AudioPrev exec /home/fabio/bin/sconsify -command replay
 bindsym XF86AudioPlay exec /home/fabio/bin/sconsify -command play_pause
