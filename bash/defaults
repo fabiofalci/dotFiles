@@ -32,3 +32,4 @@ alias du1='du -h -d 1'
 eval "$(thefuck --alias)"
 alias prettyjson='python -m json.tool'
 alias copy='xclip -selection clipboard'
+alias k8=kubectl
