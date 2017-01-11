@@ -1,6 +1,7 @@
 set number
 set relativenumber
 set ignorecase
+set guioptions-=T
 
 filetype indent plugin on
 
