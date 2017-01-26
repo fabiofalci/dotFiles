@@ -42,10 +42,8 @@ call plug#begin('~/.vim/plugged')
 " Unmanaged plugin (manually installed and updated)
  Plug '~/my-prototype-plugin'
 
-call plug#end()
+Plug 'fatih/vim-go'
 
-call plug#begin()
-Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 call plug#end()
 
 if has('gui_running')
