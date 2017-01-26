@@ -59,6 +59,7 @@ hashtag
 ifeq
 keybindings
 memcache
+menusvc
 menuversion
 metadatas
 mins
