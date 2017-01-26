@@ -53,3 +53,6 @@ Setting up
 	$ ln -s ~/env/subl/Preferences.sublime-settings ~/.config/sublime-text-2/Packages/User/
 	$ ln -s ~/env/subl/Default\ \(Linux\).sublime-keymap ~/.config/sublime-text-2/Packages/User/
 
+	# ssh
+	$ ln -s ~/env/ssh/config ~/.ssh/config
+
