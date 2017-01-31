@@ -63,3 +63,18 @@ unscale_monitor(){
 	xrandr --output eDP1 --scale 1x1
 }
 
+gb_keyboard(){
+	setxkbmap -layout gb
+	localectl set-keymap --no-convert gb
+}
+
+br_keyboard(){
+	setxkbmap -layout br
+	localectl set-keymap --no-convert br
+}
+
+us_keyboard(){
+	setxkbmap -layout us
+	localectl set-keymap --no-convert us
+}
+
