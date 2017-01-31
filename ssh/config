@@ -2,6 +2,10 @@ Host alarmpi
     HostName 192.168.0.50
     User fabio
 
+Host alarmpi_eth
+    HostName 192.168.0.23
+    User fabio
+
 Host alarmpi2
     HostName 192.168.0.19
     User fabio
@@ -12,5 +16,9 @@ Host recalbox
 
 Host raspberrypi
     HostName 192.168.0.33
+    User pi
+
+Host raspberrypi_eth
+    HostName 192.168.0.22
     User pi
 
