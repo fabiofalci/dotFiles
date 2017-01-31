@@ -9,7 +9,7 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod4
+set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -30,7 +30,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym Control+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -161,6 +161,9 @@ bindsym XF86AudioMute exec amixer -q set Master toggle
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 2%- 
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 2%+
 
+bindsym Control+$mod+9 exec --no-startup-id amixer set Master 2%- 
+bindsym Control+$mod+0 exec --no-startup-id amixer set Master 2%+
+
 bindsym XF86KbdBrightnessDown exec kbdlight down 10%
 bindsym XF86KbdBrightnessUp exec kbdlight up 10%
 
@@ -174,6 +177,10 @@ bindsym $mod+F4 exec gvim --servername 0
 bindsym XF86AudioPrev exec /home/fabio/bin/sconsify -command replay
 bindsym XF86AudioPlay exec /home/fabio/bin/sconsify -command play_pause
 bindsym XF86AudioNext exec /home/fabio/bin/sconsify -command next
+
+bindsym Control+$mod+6 exec /home/fabio/bin/sconsify -command replay
+bindsym Control+$mod+7 exec /home/fabio/bin/sconsify -command play_pause
+bindsym Control+$mod+8 exec /home/fabio/bin/sconsify -command next
 
 bindsym $mod+F10 exec thunar
 bindsym $mod+F11 exec xfce4-taskmanager
