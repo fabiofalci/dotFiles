@@ -6,6 +6,7 @@
     pl = pull --ff-only
     log1 = log --pretty=oneline
     sync = !git fetch --all -p && git pull
+    justamend = commit --amend --no-edit
 [user]
     name = Fabio Falci
     email = fabiofalci@gmail.com
