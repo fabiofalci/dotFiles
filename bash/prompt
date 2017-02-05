@@ -61,7 +61,7 @@ function _git_prompt() {
 
 PS1() {
     PS1="$(_git_prompt)";
-    PS1="$PS1\[$bldpur\]\u\[$txtrst\]@\[$bldylw\]\h \[$bldgrn\]\w\[$txtrst\] ";
+    PS1="$PS1\[$bldpur\]\u\[$txtrst\]@\[$bldylw\]\h\[$txtrst\]:\[$bldgrn\]\w\[$txtrst\] ";
     PS1="$PS1\[$txtrst\]\n\\$ ";
     export PS1
 }
