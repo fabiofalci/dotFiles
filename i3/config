@@ -155,7 +155,7 @@ bar {
         status_command i3status
 }
 
-bindsym Control+Mod1+l exec i3lock -c 000000
+bindsym Control+Mod1+l exec "i3lock -c 000000 && /home/fabio/bin/sconsify -command pause"
 
 bindsym XF86AudioMute exec amixer -q set Master toggle
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 2%- 
