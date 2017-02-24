@@ -51,5 +51,7 @@ if has('gui_running')
 	set background=dark
 	colorscheme solarized
 	set guifont=Monospace\ 13
+	" save on focus lost
+	:au FocusLost * silent! wa
 endif
 
