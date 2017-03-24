@@ -29,6 +29,8 @@ Setting up
 	$ sudo cp ~/env/i3/i3-temp.service /etc/systemd/system
 	$ sudo systemctl enable i3-temp.service
 
+	$ ln -s ~/env/i3/libinput-gestures.conf ~/.config/
+
 	$ sudo ln -s /home/fabio/env/bash/global_profile.sh /etc/profile.d/global_profile.sh
 	$ sudo ln -s /home/fabio/env/idea/98-idea.conf /etc/sysctl.d/98-idea.conf
 

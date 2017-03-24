@@ -178,3 +178,5 @@ bindsym XF86AudioNext exec /home/fabio/bin/sconsify -command next
 bindsym $mod+F10 exec thunar
 bindsym $mod+F11 exec xfce4-taskmanager
 bindsym $mod+F12 exec xfce4-screenshooter
+
+exec --no-startup-id libinput-gestures
