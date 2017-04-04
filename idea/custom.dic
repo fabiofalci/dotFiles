@@ -16,14 +16,17 @@ braintree
 britishisles
 bruschetta
 centraldish
+classfile
 clientapp
 cloudinary
+codec
 completedevent
 coords
 cordova
 cors
 createdevent
 curdir
+dagent
 dataset
 datastore
 datatypes
@@ -53,6 +56,8 @@ googlecode
 goroutine
 greengerong
 gson
+javaagent
+javassist
 kubectl
 ldflags
 libspotify
@@ -69,6 +74,7 @@ mins
 mkdir
 mostrecent
 msgpack
+multimap
 nodejs
 notfound
 noui

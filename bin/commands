@@ -18,6 +18,10 @@ update_mirrorlist(){
 	sudo reflector --verbose -l 5 --sort rate --save /etc/pacman.d/mirrorlist
 }
 
+pacman_remove_orphan(){
+	sudo pacman -Rns $(pacman -Qtdq)
+}
+
 git_sync(){
 	g fetch --all -p --quiet
 	g co --quiet --detach
