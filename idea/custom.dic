@@ -66,6 +66,7 @@ hashtag
 ifeq
 iframe
 keybindings
+mapstruct
 memcache
 menusvc
 menuversion
