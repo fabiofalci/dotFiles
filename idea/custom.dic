@@ -60,6 +60,7 @@ gson
 javaagent
 javassist
 kubectl
+kubernetes
 ldflags
 libspotify
 localdev

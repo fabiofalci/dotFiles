@@ -58,3 +58,5 @@ Setting up
 	# ssh
 	$ ln -s ~/env/ssh/config ~/.ssh/config
 
+	# pet
+	$ ln -s ~/env/private/config.toml ~/.config/pet/config.toml
