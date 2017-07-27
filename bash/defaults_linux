@@ -15,3 +15,4 @@ eval "$(jenv init -)"
 source /opt/google-cloud-sdk/completion.bash.inc
 source /opt/google-cloud-sdk/path.bash.inc
 
+#source /usr/share/nvm/init-nvm.sh
