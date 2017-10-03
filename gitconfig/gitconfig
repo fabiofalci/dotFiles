@@ -4,7 +4,7 @@
     st = status
     br = branch
     pl = pull --ff-only
-    log1 = log --pretty=oneline
+    log1 = log --pretty=oneline -n 10
     sync = !git fetch --all -p && git pull
     justamend = commit --amend --no-edit
 [user]
