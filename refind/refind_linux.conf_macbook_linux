@@ -1,0 +1,9 @@
+"Boot to X"                     "rw root=UUID=033ceddd-e941-4963-ae7d-50463e3a623c splash=silent showopts initrd=/boot/intel-ucode.img initrd=/boot/initramfs-linux.img systemd.unit=graphical.target "
+"Boot to X 2"                   "rw root=UUID=033ceddd-e941-4963-ae7d-50463e3a623c splash=silent showopts initrd=/boot/intel-ucode.img initrd=/boot/initramfs-linux.img intel_iommu=off systemd.unit=graphical.target "
+"Boot to X acpi"                "rw root=UUID=033ceddd-e941-4963-ae7d-50463e3a623c splash=silent showopts initrd=/boot/intel-ucode.img initrd=/boot/initramfs-linux.img 'acpi_osi=' systemd.unit=graphical.target "
+"Boot to console"               "rw root=UUID=033ceddd-e941-4963-ae7d-50463e3a623c splash=silent showopts systemd.unit=multi-user.target "
+"Boot with standard options"    "rw root=UUID=033ceddd-e941-4963-ae7d-50463e3a623c splash=silent showopts "
+"Boot to single-user mode"      "rw root=UUID=033ceddd-e941-4963-ae7d-50463e3a623c splash=silent showopts single "
+"Boot with minimal options"     "rw root=UUID=033ceddd-e941-4963-ae7d-50463e3a623c "
+"Boot using fallback initramfs" "rw root=UUID=033ceddd-e941-4963-ae7d-50463e3a623c initrd=/boot/initramfs-linux-fallback.img "
+
