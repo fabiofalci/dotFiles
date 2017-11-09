@@ -60,3 +60,8 @@ Setting up
 
 	# pet
 	$ ln -s ~/env/private/config.toml ~/.config/pet/config.toml
+
+	# remind
+	$ cp ~/env/remind/remind.service ~/.config/systemd/user/
+	$ systemctl --user enable remind
+	$ ln -s ~/env/private/reminders.rem ~/.config/remind/
