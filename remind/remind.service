@@ -2,5 +2,5 @@
 ExecStart=/usr/bin/remind -z -k'notify-send "Reminder" %%s &' /home/fabio/.config/remind/reminders.rem
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
 
