@@ -60,6 +60,7 @@ greengerong
 gson
 javaagent
 javassist
+jjfood
 kubectl
 kubernetes
 ldflags
@@ -99,6 +100,7 @@ prerender
 progressevent
 pubsub
 ramones
+realex
 reindexer
 reloader
 remoteapi
