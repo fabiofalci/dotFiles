@@ -3,6 +3,7 @@ amazonaws
 apiaccount
 apidocs
 appengine
+appengined
 apphosting
 appspot
 apptype
@@ -61,6 +62,7 @@ gson
 javaagent
 javassist
 jjfood
+jjfs
 kubectl
 kubernetes
 ldflags
