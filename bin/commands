@@ -100,3 +100,12 @@ pet-select() {
 }
 bind -x '"\C-y": pet-select'
 
+milli_to_date(){
+
+	for var in "$@"
+	do
+    		echo "$var"
+		printf '\t' ; TZ=UTC date -d @$(  echo "($var + 500) / 1000" | bc)
+		printf '\t' ; TZ=Europe/London date -d @$(  echo "($var + 500) / 1000" | bc)
+	done
+}
