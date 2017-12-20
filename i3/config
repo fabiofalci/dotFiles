@@ -180,3 +180,6 @@ bindsym $mod+F11 exec xfce4-taskmanager
 bindsym $mod+F12 exec xfce4-screenshooter
 
 exec --no-startup-id libinput-gestures
+
+hide_edge_borders smart
+new_window 1pixel
