@@ -52,12 +52,12 @@ git_sync(){
 
 	# enable all 2 monitors
 	xrandr \
-		--output DP2-8 --mode 3440x1440 --pos 0x0 --rotate normal \
-		--output eDP1 --primary --mode 2560x1600 --pos 808x1440 --rotate normal \
+		--output eDP1 --primary --mode 2560x1600 --pos 0x0 --rotate normal \
+		--output HDMI2 --mode 1920x1080 --pos 1664x0 --rotate normal \
+		--output DP2-8 --off  \
 		--output VIRTUAL1 --off \
 		--output DP1 --off \
 		--output DP2-1 --off \
-		--output HDMI2 --off \
 		--output HDMI1 --off \
 		--output DP2 --off
 
