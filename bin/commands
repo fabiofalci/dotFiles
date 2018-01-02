@@ -109,3 +109,8 @@ milli_to_date(){
 		printf '\t' ; TZ=Europe/London date -d @$(  echo "($var + 500) / 1000" | bc)
 	done
 }
+
+snapshot_version(){
+	printf "0.%s-SNAPSHOT" $(git rev-parse --short HEAD)
+}
+
