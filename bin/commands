@@ -114,3 +114,7 @@ snapshot_version(){
 	printf "0.%s-SNAPSHOT" $(git rev-parse --short HEAD)
 }
 
+snapshot_image(){
+	printf "0.%s" $(git rev-parse HEAD)
+}
+
