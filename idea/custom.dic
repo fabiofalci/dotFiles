@@ -67,6 +67,7 @@ kubectl
 kubernetes
 ldflags
 libspotify
+lightbox
 localdev
 hashtag
 ifeq
