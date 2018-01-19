@@ -10,6 +10,7 @@ apptype
 apns
 arns
 asciidoc
+authcode
 backoffice
 bigquery
 bishopsgate
@@ -93,6 +94,7 @@ ordersvc
 osgeo
 pgdn
 pgup
+pasref
 paypal
 phonecall
 pictext
@@ -110,6 +112,7 @@ remoteapi
 restaurantsettings
 restservice
 sectlinks
+servicebus
 sconsify
 signin
 sitemap
