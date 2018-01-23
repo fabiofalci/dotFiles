@@ -183,3 +183,5 @@ exec --no-startup-id libinput-gestures
 
 hide_edge_borders smart
 new_window 1pixel
+
+exec copyq

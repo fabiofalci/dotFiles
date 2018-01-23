@@ -36,6 +36,7 @@ datatypes
 deletedevent
 deliverysettings
 dockerfile
+dropin
 dtos
 eatat
 emailer
