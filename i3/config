@@ -170,6 +170,8 @@ bindsym $mod+F1 exec google-chrome-stable
 bindsym $mod+F2 exec intellij-idea-ultimate-edition
 bindsym $mod+F3 exec thunar
 bindsym $mod+F4 exec xfce4-screenshooter
+bindsym $mod+F5 exec /home/fabio/env/bin/laptop_monitor.sh
+bindsym $mod+F6 exec /home/fabio/env/bin/portable_monitor.sh
 
 bindsym XF86AudioPrev exec /home/fabio/bin/sconsify -command replay
 bindsym XF86AudioPlay exec /home/fabio/bin/sconsify -command play_pause
