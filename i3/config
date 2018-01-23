@@ -9,7 +9,7 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod4
+set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -93,16 +93,16 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym Mod1+1 workspace 1
-bindsym Mod1+2 workspace 2
-bindsym Mod1+3 workspace 3
-bindsym Mod1+4 workspace 4
-bindsym Mod1+5 workspace 5
-bindsym Mod1+6 workspace 6
-bindsym Mod1+7 workspace 7
-bindsym Mod1+8 workspace 8
-bindsym Mod1+9 workspace 9
-bindsym Mod1+0 workspace 10
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -168,16 +168,20 @@ bindsym $mod+b workspace back_and_forth
 
 bindsym $mod+F1 exec google-chrome-stable
 bindsym $mod+F2 exec intellij-idea-ultimate-edition
-bindsym $mod+F3 exec _sconsify
-bindsym $mod+F4 exec gvim --servername 0
+bindsym $mod+F3 exec thunar
+bindsym $mod+F4 exec xfce4-screenshooter
 
 bindsym XF86AudioPrev exec /home/fabio/bin/sconsify -command replay
 bindsym XF86AudioPlay exec /home/fabio/bin/sconsify -command play_pause
 bindsym XF86AudioNext exec /home/fabio/bin/sconsify -command next
 
-bindsym $mod+F10 exec thunar
-bindsym $mod+F11 exec xfce4-taskmanager
-bindsym $mod+F12 exec xfce4-screenshooter
+bindsym $mod+F7 exec /home/fabio/bin/sconsify -command replay
+bindsym $mod+F8 exec /home/fabio/bin/sconsify -command play_pause
+bindsym $mod+F9 exec /home/fabio/bin/sconsify -command next
+
+bindsym $mod+F10 exec amixer -q set Master toggle
+bindsym $mod+F11 exec --no-startup-id amixer set Master 2%- 
+bindsym $mod+F12 exec --no-startup-id amixer set Master 2%+
 
 exec --no-startup-id libinput-gestures
 
