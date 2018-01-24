@@ -1,5 +1,5 @@
-keycode   9 = grave NoSymbol grave
-keycode  49 = Escape NoSymbol Escape
+keycode   9 = grave notsign grave
+keycode  49 = Escape Escape Escape
 
 remove control = Control_R
 add Mod4 = Control_R
