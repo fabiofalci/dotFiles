@@ -65,3 +65,6 @@ Setting up
 	$ cp ~/env/remind/remind.service ~/.config/systemd/user/
 	$ systemctl --user enable remind
 	$ ln -s ~/env/private/reminders.rem ~/.config/remind/
+
+	# ibm model m keys swap
+	$ ln -s ~/env/keyboard/Xmodmap ~/.Xmodmap
