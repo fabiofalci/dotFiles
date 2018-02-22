@@ -11,6 +11,7 @@ apns
 arns
 asciidoc
 authcode
+azurecr
 backoffice
 bigquery
 bishopsgate
@@ -118,6 +119,7 @@ sconsify
 signin
 sitemap
 soundname
+sourcemaps
 spotify
 springsupport
 subdir

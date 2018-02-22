@@ -35,6 +35,7 @@ alias pex='pet exec'
 alias lah='ls -lah'
 
 alias k='kubectl'
+alias ks='kubectl --namespace=snapshots'
 alias kg='kubectl get'
 alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
 
