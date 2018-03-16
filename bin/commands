@@ -124,3 +124,16 @@ snapshot_image(){
 	printf "0.%s" $(git rev-parse HEAD)
 }
 
+ci_and_push(){
+	printf 'Message: '
+	read message
+	printf "Enter to confirm message (ctrl-c to cancel): '$message' "
+	read confirm
+
+	git commit -m "$message"
+	if [ $? -eq 0 ];then
+		git push origin
+	else
+		printf "Commit failed"
+	fi
+}
