@@ -1,3 +1,5 @@
+#!/bin/bash
+
 install_yaourt(){
 	cd /tmp
 	curl https://aur.archlinux.org/cgit/aur.git/snapshot/package-query.tar.gz -0 | tar -zx
@@ -125,8 +127,7 @@ snapshot_image(){
 }
 
 ci_and_push(){
-	printf 'Message: '
-	read message
+	message=("$*")
 	printf "Enter to confirm message (ctrl-c to cancel): '$message' "
 	read confirm
 
@@ -134,6 +135,6 @@ ci_and_push(){
 	if [ $? -eq 0 ];then
 		git push origin
 	else
-		printf "Commit failed"
+		printf "Commit failed\n"
 	fi
 }
