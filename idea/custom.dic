@@ -2,6 +2,7 @@ adoc
 amazonaws
 apiaccount
 apidocs
+apikey
 appengine
 appengined
 apphosting
@@ -134,6 +135,7 @@ uname
 unsubscribe
 unsubscriber
 updatedevent
+upsell
 upsert
 upserting
 urlrewrite
