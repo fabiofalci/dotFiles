@@ -60,6 +60,7 @@ gitignore
 glassfish
 globalorders
 gmail
+googleapis
 googlecode
 goroutine
 greengerong
@@ -149,5 +150,7 @@ whitelisted
 worldpay
 xero
 yaml
+yyyy
 zendesk
 zendticket
+zipcode
