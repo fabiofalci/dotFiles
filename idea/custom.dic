@@ -21,6 +21,7 @@ bogo
 braintree
 britishisles
 bruschetta
+cacheable
 centraldish
 classfile
 clientapp
@@ -68,9 +69,11 @@ gson
 javaagent
 javassist
 jjfood
+jjfoodservice
 jjfs
 kubectl
 kubernetes
+langton
 ldflags
 libspotify
 lightbox
