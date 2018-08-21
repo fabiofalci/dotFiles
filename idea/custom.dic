@@ -1,3 +1,4 @@
+acknowledgeable
 adoc
 amazonaws
 apiaccount
@@ -40,6 +41,7 @@ datatypes
 deletedevent
 deliverysettings
 dockerfile
+dnsimple
 dropin
 dtos
 eatat
@@ -53,6 +55,7 @@ feedbacks
 firebase
 foodit
 gcloud
+gdpr
 geocoder
 geojson
 geospatial
@@ -73,6 +76,7 @@ jjfoodservice
 jjfs
 kubectl
 kubernetes
+landline
 langton
 ldflags
 libspotify
@@ -137,12 +141,14 @@ tuckey
 twilio
 uname
 unsubscribe
+unsubscribed
 unsubscriber
 updatedevent
 upsell
 upsert
 upserting
 urlrewrite
+usertype
 uuids
 vendorexperiment
 webapp

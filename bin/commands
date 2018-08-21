@@ -107,6 +107,7 @@ pet-select() {
   READLINE_POINT=${#BUFFER}
 }
 bind -x '"\C-y": pet-select'
+#bind -x '"\C-r": __fzf_history__'
 
 milli_to_date(){
 

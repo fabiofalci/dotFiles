@@ -38,6 +38,7 @@ alias k='kubectl'
 alias ks='kubectl --namespace=snapshots'
 alias kg='kubectl get'
 alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
+alias helms='helm --namespace snapshots'
 
 if hash kubectl 2>/dev/null; then
     source <(kubectl completion bash | sed 's/kubectl/k/g')
