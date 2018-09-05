@@ -36,6 +36,7 @@ alias lah='ls -lah'
 
 alias k='kubectl'
 alias ks='kubectl --namespace=snapshots'
+alias kks='kubectl --namespace=kube-system'
 alias kg='kubectl get'
 alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias helms='helm --namespace snapshots'

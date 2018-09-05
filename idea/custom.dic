@@ -86,6 +86,7 @@ hashtag
 ifeq
 iframe
 keybindings
+logstash
 mapstruct
 memcache
 menusvc
@@ -126,6 +127,7 @@ restservice
 sectlinks
 servicebus
 sconsify
+slurper
 signin
 sitemap
 soundname
