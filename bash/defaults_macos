@@ -1,17 +1,18 @@
 #!/bin/sh
 
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
-export M3_HOME=/usr/local/Cellar/maven/3.3.9/
+#export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+#export M3_HOME=/usr/local/Cellar/maven/3.3.9/
 
-alias docker_machine_env='eval "$(docker-machine env)"'
+#alias docker_machine_env='eval "$(docker-machine env)"'
 
 source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc
 source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc
 
-export PATH="$HOME/.jenv/bin:$PATH"
+#export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
+alias g=git

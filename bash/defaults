@@ -1,7 +1,5 @@
 #!/bin/sh
 
-export TERM=xterm-termite
-
 export EDITOR=`which vim`
 
 export sconsify=~/go/src/github.com/fabiofalci/sconsify/
@@ -21,8 +19,6 @@ alias docker_rm_all='docker rm `docker ps --no-trunc -aq`'
 alias docker_ip='docker inspect --format "{{ .NetworkSettings.IPAddress }}" $1'
 alias vi='vim'
 alias h='history | grep $1'
-alias g=git
-__git_complete g _git
 alias autossh_='autossh -M 0 -o "ServerAliveInterval 45" -o "ServerAliveCountMax 2"'
 alias p='ps -ef | grep $1'
 alias f='find | grep $1'

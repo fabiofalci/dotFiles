@@ -59,7 +59,8 @@ Setting up
 	$ ln -s ~/env/ssh/config ~/.ssh/config
 
 	# pet
-	$ ln -s ~/env/private/config.toml ~/.config/pet/config.toml
+	$ ln -s ~/env/private/config_linux.toml ~/.config/pet/config.toml
+	$ ln -s ~/env/private/config_macos.toml ~/.config/pet/config.toml
 
 	# remind
 	$ cp ~/env/remind/remind.service ~/.config/systemd/user/
