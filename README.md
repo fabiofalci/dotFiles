@@ -69,3 +69,6 @@ Setting up
 
 	# ibm model m keys swap
 	$ ln -s ~/env/keyboard/Xmodmap ~/.Xmodmap
+
+	# termite
+	$ ln -s ~/env/termite/config ~/.config/termite/config
