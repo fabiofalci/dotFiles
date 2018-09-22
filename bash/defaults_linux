@@ -15,8 +15,8 @@ eval "$(jenv init -)"
 [ -f /usr/share/fzf/key-bindings.bash ] && source /usr/share/fzf/key-bindings.bash
 [ -f /usr/share/fzf/completion.bash ] && source /usr/share/fzf/completion.bash
 
-source /opt/google-cloud-sdk/completion.bash.inc
-source /opt/google-cloud-sdk/path.bash.inc
+[ -f /opt/google-cloud-sdk/completion.bash.inc ] && source /opt/google-cloud-sdk/completion.bash.inc
+[ -f /opt/google-cloud-sdk/path.bash.inc ] && source /opt/google-cloud-sdk/path.bash.inc
 
 #source /usr/share/nvm/init-nvm.sh
 
