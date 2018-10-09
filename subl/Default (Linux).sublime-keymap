@@ -1,4 +1,0 @@
-[
-	{ "keys": ["alt+}"], "command": "next_view" },
-	{ "keys": ["alt+{"], "command": "prev_view" }
-]
