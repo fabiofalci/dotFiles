@@ -34,14 +34,8 @@ Setting up
 	$ sudo ln -s /home/fabio/env/bash/global_profile.sh /etc/profile.d/global_profile.sh
 	$ sudo ln -s /home/fabio/env/idea/98-idea.conf /etc/sysctl.d/98-idea.conf
 
-	# swap alt & cmd
-	$ echo options hid_apple swap_opt_cmd=1 | sudo tee -a /etc/modprobe.d/hid_apple.conf
-
-	# f<n> by default and not multimedia keys
-	$ echo options hid_apple fnmode=2 | sudo tee -a /etc/modprobe.d/hid_apple.conf
-
-	# fix ` & ~ key
-	$ echo options hid_apple iso_layout=0 | sudo tee -a /etc/modprobe.d/hid_apple.conf
+	# apple keyboard
+	$ sudo cp ~/env/keyboard/hid_apple.conf /etc/modprobe.d/hid_apple.conf
 
 	# clone jenv
 	$ git clone https://github.com/gcuisinier/jenv.git ~/.jenv
