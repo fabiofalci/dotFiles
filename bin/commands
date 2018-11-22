@@ -139,3 +139,7 @@ ci_and_push(){
 		printf "Commit failed\n"
 	fi
 }
+
+keyboard_bluetooth(){
+	echo -e "connect 70:F0:87:29:75:8F\n" | bluetoothctl
+}
