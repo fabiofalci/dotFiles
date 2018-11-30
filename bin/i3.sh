@@ -12,6 +12,8 @@ i3-msg workspace 9
 i3-msg exec "google-chrome-stable --profile-directory=Default"
 sleep 2
 
+i3-msg workspace 1
+
 i3-msg workspace 8
 i3-msg exec "google-chrome-stable --profile-directory='Profile 1'"
 sleep 1
