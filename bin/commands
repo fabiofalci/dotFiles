@@ -143,3 +143,7 @@ ci_and_push(){
 keyboard_bluetooth(){
 	echo -e "connect 70:F0:87:29:75:8F\n" | bluetoothctl
 }
+
+headphone_bluetooth(){
+	echo -e "connect 40:EF:4C:D2:83:7A\n" | bluetoothctl
+}
