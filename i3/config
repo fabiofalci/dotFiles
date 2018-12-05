@@ -209,7 +209,12 @@ bindsym $mod+F12 exec --no-startup-id amixer set Master 2%+
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
+# move focused workspace between monitors
+bindsym $mod+Ctrl+greater move workspace to output right
+bindsym $mod+Ctrl+less move workspace to output left
+
 exec --no-startup-id libinput-gestures
+exec --no-startup-id xedgewarp
 
 hide_edge_borders smart
 new_window 1pixel
