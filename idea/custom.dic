@@ -42,10 +42,12 @@ deletedevent
 deliverysettings
 dockerfile
 dnsimple
+dnsmasq
 dropin
 dtos
 eatat
 emailer
+envsubst
 epos
 epsg
 fabiofalci
@@ -97,6 +99,7 @@ mkdir
 mostrecent
 msgpack
 multimap
+nginx
 nodejs
 notfound
 noui
