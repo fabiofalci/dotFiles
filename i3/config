@@ -166,6 +166,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 # finds out, if available)
 bar {
         status_command i3status
+        tray_output primary
 	colors {
 		background $bg-color
 	    	separator #757575
@@ -191,7 +192,7 @@ bindsym $mod+F1 exec google-chrome-stable
 bindsym $mod+F2 exec intellij-idea-ultimate-edition
 bindsym $mod+F3 exec thunar
 bindsym $mod+F4 exec /home/fabio/env/bin/laptop_monitor.sh
-bindsym $mod+F5 exec /home/fabio/env/bin/2_mon.sh
+bindsym $mod+F5 exec /home/fabio/env/bin/1_mon.sh
 bindsym $mod+F6 exec /home/fabio/env/bin/i3.sh
 
 bindsym XF86AudioPrev exec /home/fabio/bin/sconsify -command replay
