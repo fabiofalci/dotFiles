@@ -40,6 +40,7 @@ datastore
 datatypes
 deletedevent
 deliverysettings
+devops
 dockerfile
 dnsimple
 dnsmasq
@@ -47,6 +48,7 @@ dropin
 dtos
 eatat
 emailer
+enfield
 envsubst
 epos
 epsg

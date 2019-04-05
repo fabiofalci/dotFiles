@@ -195,9 +195,13 @@ bindsym $mod+F4 exec /home/fabio/env/bin/laptop_monitor.sh
 bindsym $mod+F5 exec /home/fabio/env/bin/1_mon.sh
 bindsym $mod+F6 exec /home/fabio/env/bin/i3.sh
 
-bindsym XF86AudioPrev exec /home/fabio/bin/sconsify -command replay
-bindsym XF86AudioPlay exec /home/fabio/bin/sconsify -command play_pause
-bindsym XF86AudioNext exec /home/fabio/bin/sconsify -command next
+#bindsym XF86AudioPrev exec /home/fabio/bin/sconsify -command replay
+#bindsym XF86AudioPlay exec /home/fabio/bin/sconsify -command play_pause
+#bindsym XF86AudioNext exec /home/fabio/bin/sconsify -command next
+
+bindsym XF86AudioPrev exec echo "seek 0 1" > /home/fabio/.mplayer/pipe
+bindsym XF86AudioPlay exec echo "pause" > /home/fabio/.mplayer/pipe
+bindsym XF86AudioNext exec echo "pt_step 1" > /home/fabio/.mplayer/pipe
 
 #bindsym $mod+F7 exec /home/fabio/bin/sconsify -command replay
 #bindsym $mod+F8 exec /home/fabio/bin/sconsify -command play_pause
@@ -206,7 +210,7 @@ bindsym XF86AudioNext exec /home/fabio/bin/sconsify -command next
 #bindsym $mod+F10 exec amixer -q set Master toggle
 #bindsym $mod+F11 exec --no-startup-id amixer set Master 2%- 
 #bindsym $mod+F12 exec --no-startup-id amixer set Master 2%+
-#
+
 bindsym $mod+F11 exec /home/fabio/env/bin/laptop-sound.sh
 bindsym $mod+F12 exec /home/fabio/env/bin/soundbar.sh
 
