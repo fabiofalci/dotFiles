@@ -177,7 +177,7 @@ bar {
 	}
 }
 
-bindsym Control+Mod1+l exec "i3lock -c 000000 && /home/fabio/bin/sconsify -command pause"
+bindsym Control+Mod1+l exec "i3lock -c 000000 && sconsify -command pause"
 
 bindsym XF86AudioMute exec amixer -q set Master toggle
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 2%- 
@@ -191,24 +191,24 @@ bindsym $mod+b workspace back_and_forth
 bindsym $mod+F1 exec google-chrome-stable
 bindsym $mod+F2 exec intellij-idea-ultimate-edition
 bindsym $mod+F3 exec thunar
-bindsym $mod+F4 exec /home/fabio/env/bin/laptop_monitor.sh
-bindsym $mod+F5 exec /home/fabio/env/bin/2_mon.sh
-bindsym $mod+F6 exec /home/fabio/env/bin/i3.sh
+bindsym $mod+F4 exec ~/env/bin/laptop_monitor.sh
+bindsym $mod+F5 exec ~/env/bin/2_mon.sh
+bindsym $mod+F6 exec ~/env/bin/i3.sh
 
 bindsym XF86AudioPrev exec ~/env/i3/media_buttons.sh XF86AudioPrev
 bindsym XF86AudioPlay exec ~/env/i3/media_buttons.sh XF86AudioPlay
 bindsym XF86AudioNext exec ~/env/i3/media_buttons.sh XF86AudioNext
 
-#bindsym $mod+F7 exec /home/fabio/bin/sconsify -command replay
-#bindsym $mod+F8 exec /home/fabio/bin/sconsify -command play_pause
-#bindsym $mod+F9 exec /home/fabio/bin/sconsify -command next
+#bindsym $mod+F7 exec sconsify -command replay
+#bindsym $mod+F8 exec sconsify -command play_pause
+#bindsym $mod+F9 exec sconsify -command next
 
 #bindsym $mod+F10 exec amixer -q set Master toggle
 #bindsym $mod+F11 exec --no-startup-id amixer set Master 2%- 
 #bindsym $mod+F12 exec --no-startup-id amixer set Master 2%+
 
-bindsym $mod+F11 exec /home/fabio/env/bin/laptop-sound.sh
-bindsym $mod+F12 exec /home/fabio/env/bin/soundbar.sh
+bindsym $mod+F11 exec ~/env/bin/laptop-sound.sh
+bindsym $mod+F12 exec ~/env/bin/soundbar.sh
 
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
