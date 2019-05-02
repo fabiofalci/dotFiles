@@ -195,9 +195,9 @@ bindsym $mod+F4 exec /home/fabio/env/bin/laptop_monitor.sh
 bindsym $mod+F5 exec /home/fabio/env/bin/2_mon.sh
 bindsym $mod+F6 exec /home/fabio/env/bin/i3.sh
 
-bindsym XF86AudioPrev exec /home/fabio/env/i3/media_buttons.sh XF86AudioPrev
-bindsym XF86AudioPlay exec /home/fabio/env/i3/media_buttons.sh XF86AudioPlay
-bindsym XF86AudioNext exec /home/fabio/env/i3/media_buttons.sh XF86AudioNext
+bindsym XF86AudioPrev exec ~/env/i3/media_buttons.sh XF86AudioPrev
+bindsym XF86AudioPlay exec ~/env/i3/media_buttons.sh XF86AudioPlay
+bindsym XF86AudioNext exec ~/env/i3/media_buttons.sh XF86AudioNext
 
 #bindsym $mod+F7 exec /home/fabio/bin/sconsify -command replay
 #bindsym $mod+F8 exec /home/fabio/bin/sconsify -command play_pause
