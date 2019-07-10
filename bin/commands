@@ -140,6 +140,19 @@ ci_and_push(){
 	fi
 }
 
+ci_and_push_and_deploy(){
+	message=("$*")
+	printf "Enter to confirm message (ctrl-c to cancel): '$message' "
+	read confirm
+
+	git commit -m "$message" -m "to #deploytodev"
+	if [ $? -eq 0 ];then
+		git push origin
+	else
+		printf "Commit failed\n"
+	fi
+}
+
 keyboard_bluetooth(){
 	echo -e "connect 70:F0:87:29:75:8F\n" | bluetoothctl
 }
