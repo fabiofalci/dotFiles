@@ -197,20 +197,20 @@ bindsym $mod+F4 exec ~/env/bin/laptop_monitor.sh
 bindsym $mod+F5 exec ~/env/bin/2_mon.sh
 bindsym $mod+F6 exec ~/env/bin/i3.sh
 
-bindsym XF86AudioPrev exec ~/env/i3/media_buttons.sh XF86AudioPrev
-bindsym XF86AudioPlay exec ~/env/i3/media_buttons.sh XF86AudioPlay
-bindsym XF86AudioNext exec ~/env/i3/media_buttons.sh XF86AudioNext
+#bindsym XF86AudioPrev exec ~/env/i3/media_buttons.sh XF86AudioPrev
+#bindsym XF86AudioPlay exec ~/env/i3/media_buttons.sh XF86AudioPlay
+#bindsym XF86AudioNext exec ~/env/i3/media_buttons.sh XF86AudioNext
 
-#bindsym $mod+F7 exec sconsify -command replay
-#bindsym $mod+F8 exec sconsify -command play_pause
-#bindsym $mod+F9 exec sconsify -command next
+bindsym $mod+F7 exec sconsify -command replay
+bindsym $mod+F8 exec sconsify -command play_pause
+bindsym $mod+F9 exec sconsify -command next
 
-#bindsym $mod+F10 exec amixer -q set Master toggle
-#bindsym $mod+F11 exec --no-startup-id amixer set Master 2%- 
-#bindsym $mod+F12 exec --no-startup-id amixer set Master 2%+
+bindsym $mod+F10 exec amixer -q set Master toggle
+bindsym $mod+F11 exec --no-startup-id amixer set Master 2%- 
+bindsym $mod+F12 exec --no-startup-id amixer set Master 2%+
 
-bindsym $mod+F11 exec ~/env/bin/laptop-sound.sh
-bindsym $mod+F12 exec ~/env/bin/soundbar.sh
+#bindsym $mod+F11 exec ~/env/bin/laptop-sound.sh
+#bindsym $mod+F12 exec ~/env/bin/soundbar.sh
 
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
