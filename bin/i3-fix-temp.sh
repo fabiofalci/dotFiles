@@ -14,6 +14,8 @@ elif [ -d "/sys/devices/platform/coretemp.0/hwmon/hwmon3" ]; then
 	HWMON=3
 elif [ -d "/sys/devices/platform/coretemp.0/hwmon/hwmon4" ]; then
 	HWMON=4
+elif [ -d "/sys/devices/platform/coretemp.0/hwmon/hwmon5" ]; then
+	HWMON=5
 fi
 
 replace
