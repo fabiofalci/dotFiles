@@ -1,0 +1,5 @@
+---
+- aur:
+    name:
+      - pet-bin
+      - bat

@@ -1,0 +1,16 @@
+---
+- name: Install basket packages
+  become: yes
+  pacman:
+    name: 
+      - base-devel
+      - git
+      - openssh
+      - rsync
+      - vim
+      - go
+      - jdk11-openjdk
+      - jdk8-openjdk
+      - maven
+      - ack
+    state: present

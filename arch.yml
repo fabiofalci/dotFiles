@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  tasks:
+   - include: arch-packages.yml
+   - include: yay.yml
+   - include: manual-packages.yml
+   - include: environment-files.yml

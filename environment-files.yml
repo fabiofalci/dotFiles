@@ -1,0 +1,61 @@
+---
+- name: bashrc
+  lineinfile:
+    path: ~/.bashrc
+    regexp: '^source ~/env/bash/bashrc$'
+    line: source ~/env/bash/bashrc
+
+- name: bashrc
+  lineinfile:
+    path: ~/.bashrc
+    regexp: '^source ~/env/bash/defaults_linux$'
+    line: source ~/env/bash/defaults_linux
+
+- name: ackrc
+  file:
+    src: ~/env/ack/ackrc
+    dest: ~/.ackrc
+    state: link
+
+- name: gitconfig
+  file:
+    src: ~/env/gitconfig/gitconfig
+    dest: ~/.gitconfig
+    state: link
+
+- name: gitignore
+  file:
+    src: ~/env/gitconfig/gitignore
+    dest: ~/.gitignore_global
+    state: link
+
+- name: vimrc
+  file:
+    src: ~/env/vim/vimrc
+    dest: ~/.vimrc
+    state: link
+
+- name: vim
+  file:
+    src: ~/env/vim/
+    dest: ~/.vim
+    state: link
+
+- name: inputrc
+  file:
+    src: ~/env/bash/inputrc
+    dest: ~/.inputrc
+    state: link
+
+- name: tmux
+  file:
+    src: ~/env/tmux/tmux.conf
+    dest: ~/.tmux.conf
+    state: link
+
+- name: ideavimrc
+  file:
+    src: ~/env/idea/ideavimrc
+    dest: ~/.ideavimrc
+    state: link
+
