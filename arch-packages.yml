@@ -13,4 +13,8 @@
       - jdk8-openjdk
       - maven
       - ack
+      - tig
+      #- i3-wm
+      #- dmenu
+      #- termite
     state: present
