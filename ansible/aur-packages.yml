@@ -1,0 +1,11 @@
+---
+- aur:
+    skip_installed: true
+    name:
+      - pet-bin
+      - bat
+      - kubectl-bin
+      - kubernetes-helm
+      - kubespy
+      - kubetail
+      - jo

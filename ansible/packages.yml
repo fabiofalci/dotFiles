@@ -1,5 +1,5 @@
 ---
-- name: Install basket packages
+- name: Install base packages
   become: yes
   pacman:
     name: 
@@ -14,7 +14,10 @@
       - maven
       - ack
       - tig
-      #- i3-wm
-      #- dmenu
-      #- termite
+      - yq
+      - jq
+      - wget
+      - unrar
+      - unzip
+      - bash-completion
     state: present

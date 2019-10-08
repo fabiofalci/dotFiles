@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  tasks:
+   - include: packages.yml
+   - include: packages-laptop.yml
+   - include: yay.yml
+   - include: aur-packages.yml
+   - include: aur-packages-laptop.yml
+   - include: environment-files.yml
+   - include: environment-files-laptop.yml

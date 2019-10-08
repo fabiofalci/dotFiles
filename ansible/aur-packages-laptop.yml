@@ -1,0 +1,7 @@
+---
+- aur:
+    name:
+      - intellij-idea-ultimate-edition
+      - google-chrome
+      - dropbox
+      - skypeforlinux-stable-bin

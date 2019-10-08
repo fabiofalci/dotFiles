@@ -1,0 +1,15 @@
+---
+- name: Install base packages
+  become: yes
+  pacman:
+    name: 
+      - i3-wm
+      - dmenu
+      - termite
+      - firefox
+      - slack-desktop
+      - pavucontrol
+      - openjdk11-src
+      - keepass
+      - copyq
+    state: present
