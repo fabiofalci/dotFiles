@@ -34,6 +34,21 @@
 
 - name: i3status
   copy:
-    src: ~/env/i3/i3status-config.template
+    src: ~/env/i3/i3status-config-xps.template
     dest: ~/.config/i3status/config
 
+- name: Ensures systemd user dir exists
+  file: path=~/.config/systemd/user/ state=directory 
+
+- name: copy fix temp service
+  copy:
+    src: ~/env/i3/i3-temp.service
+    dest: ~/.config/systemd/user/i3-temp.service
+    force: no
+
+- name: enable fix temp service
+  systemd:
+    name: i3-temp
+    enabled: yes
+    masked: no
+    scope: user
