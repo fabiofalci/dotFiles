@@ -1,0 +1,11 @@
+---
+- name: clone jenv
+  git:
+    repo: 'https://github.com/gcuisinier/jenv.git'
+    dest: ~/.jenv
+
+- name: jenv enable export plugin
+  command: jenv init - && jenv enable-plugin export
+
+- name: jenv enable maven plugin
+  command: jenv init - && jenv enable-plugin maven

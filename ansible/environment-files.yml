@@ -52,4 +52,3 @@
     src: ~/env/tmux/tmux.conf
     dest: ~/.tmux.conf
     state: link
-

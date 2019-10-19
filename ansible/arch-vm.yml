@@ -2,6 +2,6 @@
 - hosts: localhost
   tasks:
    - include: packages.yml
-   - include: yay.yml
+   - include: tools/yay.yml
    - include: aur-packages.yml
    - include: environment-files.yml
