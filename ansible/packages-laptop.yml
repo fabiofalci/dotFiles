@@ -13,4 +13,5 @@
       - copyq
       - xdotool 
       - wmctrl
+      - syncthing
     state: present

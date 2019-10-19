@@ -1,0 +1,10 @@
+---
+- name: Adding user fabio
+  become: yes
+  user:
+    name: fabio
+    group: fabio
+    shell: /bin/bash
+    groups: input,docker
+    append: yes
+

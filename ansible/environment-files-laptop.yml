@@ -52,3 +52,39 @@
     enabled: yes
     masked: no
     scope: user
+
+- name: link libinput gestures
+  file:
+    src: ~/env/i3/libinput-gestures.conf
+    dest: ~/.config/libinput-gestures.conf
+    state: link
+
+- name: copy intellij file inode
+  become: true
+  copy:
+    src: /home/fabio/env/idea/98-idea.conf
+    dest: /etc/sysctl.d/98-idea.conf
+    force: no
+    owner: root
+    group: root
+    mode: '0755'
+
+- name: apple magic keyboard
+  become: true
+  copy:
+    src: ~/env/keyboard/hid_apple.conf 
+    dest: /etc/modprobe.d/hid_apple.conf
+    force: no
+    owner: root
+    group: root
+    mode: '0755'
+
+- name: libinput trackpad
+  become: true
+  copy:
+    src:  ~/env/x/90-libinput.conf
+    dest:  /etc/X11/xorg.conf.d/
+    force: no
+    owner: root
+    group: root
+    mode: '0755'
