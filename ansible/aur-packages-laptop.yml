@@ -5,3 +5,6 @@
       - google-chrome
       - dropbox
       - skypeforlinux-stable-bin
+      - slack-desktop
+      - libinput-gestures
+      - gotop

@@ -1,0 +1,19 @@
+---
+- name: Ensure group exists
+  group:
+    name: docker
+    state: present
+
+- name: Ensure group exists
+  group:
+    name: input
+    state: present
+
+- name: Adding user fabio
+  user: 
+    name: fabio 
+    group: fabio
+    shell: /bin/bash
+    groups: input docker
+    append: yes
+

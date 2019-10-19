@@ -8,3 +8,4 @@
    - include: aur-packages-laptop.yml
    - include: environment-files.yml
    - include: environment-files-laptop.yml
+   - include: misc.yml

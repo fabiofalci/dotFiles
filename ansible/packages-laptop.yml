@@ -7,9 +7,10 @@
       - dmenu
       - termite
       - firefox
-      - slack-desktop
       - pavucontrol
       - openjdk11-src
       - keepass
       - copyq
+      - xdotool 
+      - wmctrl
     state: present
