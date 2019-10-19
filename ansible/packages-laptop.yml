@@ -15,4 +15,8 @@
       - wmctrl
       - syncthing
       - ttf-dejavu
+      - lxappearance
+      - arc-gtk-theme
+      - thunar
+      - moka-icon-theme
     state: present

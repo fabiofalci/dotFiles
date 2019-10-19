@@ -98,3 +98,15 @@
     dest: ~/.config/termite/config
     state: link
 
+#- name: gtk 2 font
+#  lineinfile:
+#    path: ~/.gtkrc-2.0
+#    regexp: '^gtk-font-name='
+#    line: gtk-font-name="System San Francisco Display 12"
+    
+#- name: gtk 3 font
+#  lineinfile:
+#    path: ~/.config/gtk-3.0/settings.ini
+#    regexp: '^gtk-font-name='
+#    line: gtk-font-name=System San Francisco Display 12
+

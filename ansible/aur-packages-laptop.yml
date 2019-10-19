@@ -1,5 +1,6 @@
 ---
 - aur:
+    skip_installed: true
     name:
       - intellij-idea-ultimate-edition
       - google-chrome
@@ -8,3 +9,5 @@
       - slack-desktop
       - libinput-gestures
       - gotop
+      - system-san-francisco-font-git
+      - ttf-symbola 
