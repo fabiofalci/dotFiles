@@ -1,10 +1,31 @@
 ---
-- name: Adding user fabio
+- name: Adding user synct
   become: yes
   user:
-    name: fabio
-    group: fabio
+    name: synct
+    group: synct
     shell: /bin/bash
-    groups: input,docker
     append: yes
+
+- name: Change synct home folder to 770
+  become: yes
+  file:
+    path: /home/synct
+    state: directory
+    recurse: yes
+    mode: '0770'
+
+- name: enable/start syncthing
+  become: yes
+  systemd:
+    name: syncthing@synct.service
+    enabled: yes
+    masked: no
+    state: started
+
+- name: link env private
+  file:
+    src: /home/synct/env-private/
+    dest: ~/env/private
+    state: link
 
