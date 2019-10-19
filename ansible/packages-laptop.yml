@@ -19,4 +19,6 @@
       - arc-gtk-theme
       - thunar
       - moka-icon-theme
+      - mplayer
+      - keepass
     state: present
