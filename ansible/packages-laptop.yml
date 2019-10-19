@@ -14,4 +14,5 @@
       - xdotool 
       - wmctrl
       - syncthing
+      - ttf-dejavu
     state: present
