@@ -3,6 +3,6 @@
   tasks:
    - include: environment-files.yml
    - include: environment-files-laptop.yml
+   - include: tools/syncthing.yml
    - include: misc.yml
    - include: tools/jenv.yml
-   - include: tools/syncthing.yml

@@ -22,7 +22,7 @@
   become: yes
   user: 
     name: fabio 
-    group: fabio
+    group: users
     shell: /bin/bash
     groups: input,docker,synct
     append: yes
