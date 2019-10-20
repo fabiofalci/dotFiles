@@ -24,6 +24,6 @@
     name: "{{ user }}"
     group: users
     shell: /bin/bash
-    groups: input,docker,synct
+    groups: wheels,input,docker,synct
     append: yes
 
