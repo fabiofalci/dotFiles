@@ -62,7 +62,7 @@
 - name: copy intellij file inode
   become: true
   copy:
-    src: /home/fabio/env/idea/98-idea.conf
+    src: ~/env/idea/98-idea.conf
     dest: /etc/sysctl.d/98-idea.conf
     force: no
     owner: root

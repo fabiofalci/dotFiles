@@ -18,10 +18,10 @@
     state: present
 
 
-- name: Adding user fabio
+- name: Adding user
   become: yes
   user: 
-    name: fabio 
+    name: "{{ user }}"
     group: users
     shell: /bin/bash
     groups: input,docker,synct
