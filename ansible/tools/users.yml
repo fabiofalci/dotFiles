@@ -27,12 +27,3 @@
     groups: input,docker,synct
     append: yes
 
-- name: Ensures pet folder config
-  file: path=~/.config/pet/ state=directory 
-
-- name: pet config
-  copy:
-    src: ~/env/private/pet/config_linux.toml 
-    dest: ~/.config/pet/config.toml
-    force: no
-
