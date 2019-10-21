@@ -21,4 +21,7 @@
       - moka-icon-theme
       - mplayer
       - keepass
+      - pulseaudio
+      - arandr
+      - autorandr
     state: present
