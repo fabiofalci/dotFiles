@@ -24,4 +24,7 @@
       - pulseaudio
       - arandr
       - autorandr
+      - vlc
+      - alsa-utils
+      - pulseaudio-alsa
     state: present
