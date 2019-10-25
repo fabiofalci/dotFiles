@@ -27,4 +27,7 @@
       - vlc
       - alsa-utils
       - pulseaudio-alsa
+      - calcurse
+      - gnome-keyring
+      - xclip
     state: present
