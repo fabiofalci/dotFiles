@@ -30,4 +30,8 @@
       - calcurse
       - gnome-keyring
       - xclip
+      - libsmbios
+      - ffmpeg
+      - termite-terminfo
+      - bc
     state: present
