@@ -94,6 +94,7 @@ bindsym $mod+a focus parent
 
 # switch to workspace
 bindsym Mod1+less workspace 0
+bindsym Mod1+grave workspace 0
 bindsym Mod1+1 workspace 1
 bindsym Mod1+2 workspace 2
 bindsym Mod1+3 workspace 3
@@ -110,6 +111,7 @@ bindsym Mod1+bracketright workspace 📅
 
 # move focused container to workspace
 bindsym $mod+Shift+less move container to workspace 0
+bindsym $mod+Shift+grave move container to workspace 0
 bindsym $mod+Shift+1 move container to workspace 1
 bindsym $mod+Shift+2 move container to workspace 2
 bindsym $mod+Shift+3 move container to workspace 3
