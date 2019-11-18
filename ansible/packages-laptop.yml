@@ -3,7 +3,7 @@
   become: yes
   pacman:
     name: 
-      - i3-wm
+      - i3-gaps
       - dmenu
       - termite
       - firefox
