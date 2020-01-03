@@ -108,6 +108,7 @@ bindsym Mod1+0 workspace 10
 bindsym Mod1+minus workspace ☺
 bindsym Mod1+equal workspace ♪
 bindsym Mod1+bracketright workspace 📅
+bindsym Mod1+bracketleft workspace 🌎
 
 # move focused container to workspace
 bindsym $mod+Shift+less move container to workspace 0
@@ -125,6 +126,7 @@ bindsym $mod+Shift+0 move container to workspace 10
 bindsym $mod+Shift+minus move container to workspace ☺
 bindsym $mod+Shift+equal move container to workspace ♪
 bindsym $mod+Shift+bracketright move container to workspace 📅
+bindsym $mod+Shift+bracketleft move container to workspace 🌎
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -204,9 +206,9 @@ bindsym $mod+F3 exec firefox --private-window
 bindsym $mod+F4 exec autorandr -c default
 bindsym $mod+F5 exec autorandr -c dell_portable
 
-#bindsym XF86AudioPrev exec ~/env/i3/media_buttons.sh XF86AudioPrev
-#bindsym XF86AudioPlay exec ~/env/i3/media_buttons.sh XF86AudioPlay
-#bindsym XF86AudioNext exec ~/env/i3/media_buttons.sh XF86AudioNext
+bindsym XF86AudioPrev exec ~/env/i3/media_buttons.sh XF86AudioPrev
+bindsym XF86AudioPlay exec ~/env/i3/media_buttons.sh XF86AudioPlay
+bindsym XF86AudioNext exec ~/env/i3/media_buttons.sh XF86AudioNext
 
 bindsym $mod+F7 exec sconsify -command replay
 bindsym $mod+F8 exec sconsify -command play_pause
