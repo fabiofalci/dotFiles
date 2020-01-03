@@ -6,7 +6,6 @@
       - bat
       - kubectl-bin
       - kubernetes-helm
-      - kubespy
       - kubetail
       - jo
       - pet-bin

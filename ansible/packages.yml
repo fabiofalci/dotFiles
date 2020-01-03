@@ -24,4 +24,5 @@
       - htop
       - ranger
       - mlocate
+      - mitmproxy
     state: present

@@ -9,3 +9,4 @@ git clone https://github.com/fabiofalci/env.git ~/env
 #cd env/ansible
 #ansible-playbook --ask-become-pass arch-vm.yml
 #ansible-playbook --ask-become-pass arch-laptop.yml
+#ansible-playbook --ask-become-pass arch-laptop-packages.yml --extra-vars "user=fabio"
