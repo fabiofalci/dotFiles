@@ -2,8 +2,8 @@
 - hosts: localhost
   tasks:
    - include: tools/users.yml
-   - include: environment-files.yml
-   - include: environment-files-laptop.yml
+   - include: base/environment-files.yml
+   - include: base/environment-files-laptop.yml
    - include: tools/syncthing.yml
    - include: tools/pet.yml
    - include: tools/jenv.yml
