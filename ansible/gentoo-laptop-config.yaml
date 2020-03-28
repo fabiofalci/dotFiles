@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  tasks:
+   - include: tools/users.yml
+   - include: base/environment-files.yml
+   - include: base/environment-files-laptop.yml
+   - include: tools/pet.yml
+   - include: tools/jenv.yml
