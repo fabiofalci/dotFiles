@@ -17,13 +17,19 @@
 
 - name: enable/start syncthing
   become: yes
+  when: ansible_facts['os_family'] == "Arch"
   systemd:
     name: syncthing@synct.service
     enabled: yes
     masked: no
     state: started
 
+- name: check private exist
+  local_action: stat path=/home/synct/env-private/
+  register: file
+
 - name: link env private
+  when: file.stat.exists
   file:
     src: /home/synct/env-private/
     dest: ~/env/private

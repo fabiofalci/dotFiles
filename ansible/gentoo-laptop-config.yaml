@@ -6,3 +6,4 @@
    - include: base/environment-files-laptop.yml
    - include: tools/pet.yml
    - include: tools/jenv.yml
+   - include: tools/syncthing.yml
