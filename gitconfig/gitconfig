@@ -5,6 +5,7 @@
     br = branch
     pl = pull --ff-only
     log1 = log --pretty=oneline -n 10
+    logr = log --pretty=oneline -n 5 --reverse
     sync = !git fetch --all -p && git pull
     justamend = commit --amend --no-edit
 [user]
@@ -17,3 +18,8 @@
 
 [pull]
 	rebase = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
