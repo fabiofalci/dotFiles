@@ -210,7 +210,7 @@ bindsym XF86KbdBrightnessUp exec kbdlight up 10%
 
 bindsym $mod+b workspace back_and_forth
 
-bindsym $mod+F1 exec google-chrome-stable
+bindsym $mod+F1 exec google-chrome-stable --profile-directory=Default
 bindsym $mod+F2 exec intellij-idea-ultimate-edition
 bindsym $mod+F3 exec firefox --private-window
 bindsym $mod+F4 exec autorandr -c default
