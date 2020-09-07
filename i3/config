@@ -237,6 +237,8 @@ bindsym $mod+Shift+Tab workspace prev
 # move focused workspace between monitors
 bindsym $mod+Ctrl+greater move workspace to output right
 bindsym $mod+Ctrl+less move workspace to output left
+bindsym $mod+Ctrl+n move workspace to output up
+bindsym $mod+Ctrl+m move workspace to output down
 
 # simulate mouse clicks
 bindsym $mod+1 exec xdotool click 1 
