@@ -258,7 +258,9 @@ mode "$mode_system" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+XF86Eject mode "$mode_system"
+bindsym $mod+Menu mode "$mode_system"
+bindsym Print exec xfce4-screenshooter
+bindsym XF86Calculator exec termite --exec=bc
 
 exec --no-startup-id libinput-gestures
 exec --no-startup-id xedgewarp
