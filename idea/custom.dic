@@ -8,6 +8,7 @@ apns
 appengine
 appengined
 apphosting
+appid
 appspot
 apptype
 arns
@@ -24,6 +25,7 @@ britishisles
 bruschetta
 cacheable
 centraldish
+cgroup
 classfile
 clientapp
 cloudinary
@@ -48,6 +50,7 @@ dnsimple
 dnsmasq
 dockerfile
 dropin
+dspring
 dtos
 eatat
 emailer
