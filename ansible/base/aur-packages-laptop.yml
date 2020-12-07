@@ -1,6 +1,6 @@
 ---
 - aur:
-    skip_installed: true
+    state: present
     name:
       - intellij-idea-ultimate-edition
       - google-chrome
