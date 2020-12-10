@@ -25,4 +25,5 @@
       - ranger
       - mlocate
       - mitmproxy
+      - tmux
     state: present
