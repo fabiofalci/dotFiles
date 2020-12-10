@@ -32,6 +32,4 @@
       - xclip
       - libsmbios
       - ffmpeg
-      - termite-terminfo
-      - bc
     state: present

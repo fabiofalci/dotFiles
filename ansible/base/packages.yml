@@ -26,4 +26,6 @@
       - mlocate
       - mitmproxy
       - tmux
+      - termite-terminfo
+      - bc
     state: present
