@@ -59,4 +59,4 @@
     state: present
 
 - name: set as default locale
-  command: localectl set-locale LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8
+  command: localectl set-locale LANG=en_US.UTF-8 
