@@ -145,7 +145,8 @@ ci_and_push_and_deploy(){
 	printf "Enter to confirm message (ctrl-c to cancel): '$message' "
 	read confirm
 
-	git commit -m "$message" -m "to #deploytodev"
+	#git commit -m "$message" -m "to #deploytodev"
+	git commit -m "$message #deploytodev"
 	if [ $? -eq 0 ];then
 		git push origin
 	else
