@@ -1,0 +1,17 @@
+---
+- name: Adding user gdrive
+  become: yes
+  user:
+    name: gdrive
+    group: gdrive
+    shell: /bin/bash
+    append: yes
+
+- name: Change gdrive home folder to 770
+  become: yes
+  file:
+    path: /home/gdrive
+    state: directory
+    recurse: yes
+    mode: '0770'
+

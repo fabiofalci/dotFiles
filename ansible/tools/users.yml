@@ -17,6 +17,12 @@
     name: synct
     state: present
 
+- name: Ensure group exists
+  become: yes
+  group:
+    name: gdrive
+    state: present
+
 
 - name: Adding user
   become: yes
@@ -24,6 +30,6 @@
     name: "{{ user }}"
     group: users
     shell: /bin/bash
-    groups: wheel,input,docker,synct
+    groups: wheel,input,docker,synct,gdrive
     append: yes
 
