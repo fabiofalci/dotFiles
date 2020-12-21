@@ -241,11 +241,6 @@ bindsym $mod+Ctrl+less move workspace to output left
 bindsym $mod+Ctrl+n move workspace to output up
 bindsym $mod+Ctrl+m move workspace to output down
 
-# simulate mouse clicks
-bindsym $mod+1 exec xdotool click 1 
-bindsym $mod+2 exec xdotool click 2 
-bindsym $mod+3 exec xdotool click 3 
-
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (p) shutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id i3lock, mode "default"
@@ -259,9 +254,9 @@ mode "$mode_system" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+Menu mode "$mode_system"
-bindsym Print exec xfce4-screenshooter
-bindsym XF86Calculator exec termite --exec=bc
+bindsym $mod+XF86Launch9 mode "$mode_system"
+bindsym XF86Launch7 exec xfce4-screenshooter
+bindsym XF86Launch8 exec termite --exec=bc
 
 exec --no-startup-id libinput-gestures
 exec --no-startup-id xedgewarp
