@@ -5,11 +5,7 @@ export EDITOR=`which vim`
 export sconsify=~/go/src/github.com/fabiofalci/sconsify/
 
 export GOPATH=~/go
-export PATH=$PATH:~/go/bin
-
-export PATH=$PATH:~/env/bin
-
-export PATH=~/bin:$PATH
+export PATH=~/bin:$PATH:~/go/bin:~/env/bin:~/env/private/bin
 
 # basic just-in-time compilation of the code only
 export MAVEN_OPTS="-XX:+TieredCompilation -XX:TieredStopAtLevel=1"
