@@ -6,16 +6,9 @@ replace(){
 
 HWMON=0
 
-if [ -d "/sys/devices/platform/coretemp.0/hwmon/hwmon1" ]; then
-	HWMON=1
-elif [ -d "/sys/devices/platform/coretemp.0/hwmon/hwmon2" ]; then
-	HWMON=2
-elif [ -d "/sys/devices/platform/coretemp.0/hwmon/hwmon3" ]; then
-	HWMON=3
-elif [ -d "/sys/devices/platform/coretemp.0/hwmon/hwmon4" ]; then
-	HWMON=4
-elif [ -d "/sys/devices/platform/coretemp.0/hwmon/hwmon5" ]; then
-	HWMON=5
-fi
+for file in /sys/devices/platform/coretemp.0/hwmon/*; do
+	name=$(basename "$file")
+	HWMON=${name:5}
+done
 
 replace
