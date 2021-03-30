@@ -25,4 +25,4 @@ eval "$(jenv init -)"
 #source /usr/share/nvm/init-nvm.sh
 
 alias g=git
-__git_complete g _git
+__git_complete g __git_main

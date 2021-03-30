@@ -206,8 +206,11 @@ bindsym XF86AudioMute exec amixer -q set Master toggle
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 2%- 
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 2%+
 
-bindsym XF86KbdBrightnessDown exec kbdlight down 10%
-bindsym XF86KbdBrightnessUp exec kbdlight up 10%
+#bindsym XF86KbdBrightnessDown exec kbdlight down 10%
+#bindsym XF86KbdBrightnessUp exec kbdlight up 10%
+
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 
 bindsym $mod+b workspace back_and_forth
 
@@ -260,6 +263,7 @@ bindsym XF86Launch8 exec termite --exec=bc
 
 exec --no-startup-id libinput-gestures
 exec --no-startup-id xedgewarp
+exec --no-startup-id picom
 
 hide_edge_borders smart
 new_window 1pixel
