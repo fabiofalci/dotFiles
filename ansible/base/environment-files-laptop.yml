@@ -5,6 +5,7 @@
     dest: ~/.ideavimrc
     state: link
 
+# TODO move to .profile
 - name: compose key
   become: true
   copy:
