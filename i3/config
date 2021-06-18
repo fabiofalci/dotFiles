@@ -218,7 +218,7 @@ bindsym $mod+F1 exec google-chrome-stable --profile-directory=Default
 bindsym $mod+F2 exec intellij-idea-ultimate-edition
 bindsym $mod+F3 exec firefox --private-window
 bindsym $mod+F4 exec autorandr -c default
-bindsym $mod+F5 exec autorandr -c dell
+bindsym $mod+F5 exec autorandr -c lg
 
 bindsym XF86AudioPrev exec ~/env/i3/media_buttons.sh XF86AudioPrev
 bindsym XF86AudioPlay exec ~/env/i3/media_buttons.sh XF86AudioPlay
