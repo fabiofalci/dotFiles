@@ -26,6 +26,7 @@ alias copy='xclip -selection clipboard'
 alias pex='pet exec'
 alias lah='ls -lah'
 alias fm='. ranger'
+alias ad='git add .'
 
 alias k='kubectl'
 alias ks='kubectl --namespace=snapshots'
