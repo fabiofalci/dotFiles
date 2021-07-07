@@ -260,6 +260,7 @@ mode "$mode_system" {
 bindsym $mod+XF86Launch9 mode "$mode_system"
 bindsym XF86Launch7 exec xfce4-screenshooter
 bindsym XF86Launch8 exec termite --exec=bc
+bindsym XF86Launch9 exec /home/fabio/env/i3/dell_speaker.sh
 
 exec --no-startup-id libinput-gestures
 exec --no-startup-id xedgewarp
