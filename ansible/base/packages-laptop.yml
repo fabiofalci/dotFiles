@@ -32,4 +32,5 @@
       - xclip
       - libsmbios
       - ffmpeg
+      - dunst
     state: present
