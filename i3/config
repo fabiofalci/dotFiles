@@ -218,7 +218,7 @@ bindsym $mod+F1 exec google-chrome-stable --profile-directory=Default
 bindsym $mod+F2 exec intellij-idea-ultimate-edition
 bindsym $mod+F3 exec firefox --private-window
 bindsym $mod+F4 exec autorandr -c default
-bindsym $mod+F5 exec autorandr -c lg
+bindsym $mod+F5 exec autorandr -c lg_usbc
 
 bindsym XF86AudioPrev exec ~/env/i3/media_buttons.sh XF86AudioPrev
 bindsym XF86AudioPlay exec ~/env/i3/media_buttons.sh XF86AudioPlay
@@ -263,6 +263,7 @@ bindsym XF86Launch8 exec termite --exec=bc
 bindsym XF86Launch9 exec /home/fabio/env/i3/dell_speaker.sh
 bindsym $mod+Shift+d exec --no-startup-id cat $HOME/env/i3/scripts.conf | dmenu -l 30 | sed 's/.*    \+//' | sh
 bindsym $mod+Shift+f exec --no-startup-id cat $HOME/env/i3/power.conf | dmenu -l 30 | sed 's/.*    \+//' | sh
+bindsym Mod3+Tab exec rofi -show window
 
 exec --no-startup-id libinput-gestures
 exec --no-startup-id xedgewarp
