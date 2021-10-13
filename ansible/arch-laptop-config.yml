@@ -8,3 +8,4 @@
    - include: tools/gdrive.yml
    - include: tools/pet.yml
    - include: tools/jenv.yml
+   - include: tools/basic-services.yml

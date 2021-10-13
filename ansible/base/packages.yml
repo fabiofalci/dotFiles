@@ -26,6 +26,7 @@
       - mlocate
       - mitmproxy
       - tmux
-      - termite-terminfo
       - bc
+      - yq
+      - ntp
     state: present

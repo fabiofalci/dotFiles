@@ -4,8 +4,8 @@
   pacman:
     name: 
       - i3-gaps
+      - i3status
       - dmenu
-      - termite
       - firefox
       - pavucontrol
       - openjdk11-src
@@ -18,7 +18,6 @@
       - lxappearance
       - arc-gtk-theme
       - thunar
-      - moka-icon-theme
       - mplayer
       - keepass
       - pulseaudio
@@ -33,4 +32,7 @@
       - libsmbios
       - ffmpeg
       - dunst
+      - lightdm
+      - alacritty
+      - picom
     state: present

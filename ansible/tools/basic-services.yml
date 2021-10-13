@@ -1,0 +1,16 @@
+---
+- name: enable/start lightdm
+  become: yes
+  ansible.builtin.systemd:
+    name: lightdm
+    enabled: yes
+    masked: no
+    state: started
+
+- name: Enable service httpd and ensure it is not masked
+  become: yes
+  ansible.builtin.systemd:
+    name: ntpd
+    enabled: yes
+    masked: no
+    state: started

@@ -9,7 +9,10 @@
       - slack-desktop
       - libinput-gestures
       - gotop
-      - system-san-francisco-font-git
-      - ttf-symbola 
-      - yq-bin
       - drive-bin
+      - teams
+      - ttf-font-awesome 
+      - ttf-nerd-fonts-symbols 
+      - ttf-symbola 
+      - connman-gtk
+      - alacritty-themes

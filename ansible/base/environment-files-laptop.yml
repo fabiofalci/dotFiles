@@ -33,10 +33,10 @@
     state: directory
     mode: '0755'
 
-- name: i3status
-  copy:
-    src: ~/env/i3/i3status-config-xps.template
-    dest: ~/.config/i3status/config
+#- name: i3status
+#  copy:
+#    src: ~/env/i3/i3status-config-xps.template
+#    dest: ~/.config/i3status/config
 
 - name: Ensures systemd user dir exists
   file: path=~/.config/systemd/user/ state=directory 

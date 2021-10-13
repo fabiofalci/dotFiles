@@ -17,8 +17,7 @@
 
 - name: enable/start syncthing
   become: yes
-  when: ansible_facts['os_family'] == "Arch"
-  systemd:
+  ansible.builtin.systemd:
     name: syncthing@synct.service
     enabled: yes
     masked: no
