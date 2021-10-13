@@ -200,7 +200,8 @@ bar {
 	}
 }
 
-bindsym Control+Mod1+l exec "i3lock -c 000000 && sconsify -command pause && playerctl pause"
+bindsym Control+Mod1+l exec "sconsify -command pause ; playerctl pause ; i3lock -c 000000"
+bindsym Control+Mod1+k exec "sconsify -command pause ; playerctl pause ; pkill -15 teams; i3lock -c 000000 -n; cat $HOME/env/i3/after-unlock.conf | dmenu -l 30 | sed 's/.*    \+//' | sh"
 
 bindsym XF86AudioMute exec amixer -q set Master toggle
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 2%- 

@@ -3,7 +3,15 @@
 sudo pacman -Syu --noconfirm
 sudo pacman -S ansible git --noconfirm
 
-git clone https://github.com/kewlfft/ansible-aur.git ~/.ansible/plugins/modules/aur
+# didnt work last time
+#git clone https://github.com/kewlfft/ansible-aur.git ~/.ansible/plugins/modules/aur
+
+# this one worked
+mkdir ~/.ansible/plugins/modules
+curl -o ~/.ansible/plugins/modules/aur.py https://raw.githubusercontent.com/kewlfft/ansible-aur/master/plugins/modules/aur.py
+
+
+
 git clone https://github.com/fabiofalci/env.git ~/env
 
 #cd env/ansible
