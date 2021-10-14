@@ -93,15 +93,6 @@
     group: root
     mode: '0755'
 
-- name: Ensures termite dir exists
-  file: path=~/.config/termite/ state=directory 
-
-- name: termite config
-  file:
-    src: ~/env/termite/config
-    dest: ~/.config/termite/config
-    state: link
-
 #- name: gtk 2 font
 #  lineinfile:
 #    path: ~/.gtkrc-2.0
