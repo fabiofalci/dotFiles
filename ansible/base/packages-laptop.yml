@@ -35,4 +35,5 @@
       - lightdm
       - alacritty
       - picom
+      - portaudio
     state: present
