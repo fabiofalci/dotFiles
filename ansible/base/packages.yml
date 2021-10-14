@@ -29,4 +29,5 @@
       - bc
       - yq
       - ntp
+      - lazygit
     state: present
