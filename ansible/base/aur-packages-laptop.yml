@@ -17,3 +17,6 @@
       - connman-gtk
       - alacritty-themes
       - libspotify
+      - jdk-jetbrains
+      - moka-icon-theme
+      - apple-fonts

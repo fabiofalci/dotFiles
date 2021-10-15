@@ -36,4 +36,5 @@
       - alacritty
       - picom
       - portaudio
+      - i3lock
     state: present
