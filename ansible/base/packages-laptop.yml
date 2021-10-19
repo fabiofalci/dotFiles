@@ -37,4 +37,7 @@
       - picom
       - portaudio
       - i3lock
+      - docker
+      - bluez
+      - bluez-utils
     state: present
