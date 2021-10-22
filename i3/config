@@ -260,8 +260,8 @@ mode "$mode_system" {
 }
 bindsym $mod+XF86Launch9 mode "$mode_system"
 bindsym XF86Launch7 exec xfce4-screenshooter
-bindsym XF86Launch8 exec alacritty --exec=bc
-bindsym XF86Launch9 exec /home/fabio/env/i3/dell_speaker.sh
+bindsym XF86Launch8 exec alacritty --command=bc
+bindsym XF86Launch9 exec pavucontrol
 bindsym $mod+Shift+d exec --no-startup-id cat $HOME/env/i3/scripts.conf | dmenu -l 30 | sed 's/.*    \+//' | sh
 bindsym $mod+Shift+f exec --no-startup-id cat $HOME/env/i3/power.conf | dmenu -l 30 | sed 's/.*    \+//' | sh
 bindsym Mod3+Tab exec rofi -show window

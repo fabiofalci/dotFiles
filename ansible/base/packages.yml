@@ -30,4 +30,6 @@
       - yq
       - ntp
       - lazygit
+      - youtube-dl
+      - pacman-contrib
     state: present
