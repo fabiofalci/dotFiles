@@ -40,4 +40,5 @@
       - docker
       - bluez
       - bluez-utils
+      - github-cli
     state: present
