@@ -17,14 +17,14 @@
 
 - name: i3 folder
   file:
-    path: ~/.i3
+    path: ~/.config/i3
     state: directory
     mode: '0755'
 
 - name: i3 config
   file:
     src: ~/env/i3/config
-    dest: ~/.i3/config
+    dest: ~/.config/i3/config
     state: link
 
 - name: i3status folder
