@@ -67,3 +67,14 @@ PS1() {
 }
 
 PROMPT_COMMAND='PS1'
+
+# After each command finishes, we set the terminal window title to the
+# current working directory. If, for example, Vim sets the window title
+# to the file's name and we exit Vim, the window title becomes the
+# current directory again.
+# There has to be a space between $(pwd) and \007 so the sequence is ended properly,
+# otherwise the window title would only be changed sometimes.
+# These escape sequences are documented in man 4 console_codes.
+# \033 is octal for ESC in ASCII, \007 is BEL
+PROMPT_COMMAND="$PROMPT_COMMAND;echo -ne \"\033]0;\$(pwd) \007\""
+#PROMPT_COMMAND="$PROMPT_COMMAND;echo -ne \"\033]0;\$(basename "`pwd`") \007\""
