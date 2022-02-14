@@ -32,4 +32,5 @@
       - lazygit
       - youtube-dl
       - pacman-contrib
+      - helm
     state: present
