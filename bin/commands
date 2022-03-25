@@ -1,84 +1,11 @@
 #!/bin/bash
 
-install_yaourt(){
-	cd /tmp
-	curl https://aur.archlinux.org/cgit/aur.git/snapshot/package-query.tar.gz -0 | tar -zx
-	cd package-query
-	makepkg -s --noconfirm
-	sudo pacman -U package-query-*.pkg.tar.xz --noconfirm
-	cd /tmp
-	rm -rf /tmp/package-query
-	curl https://aur.archlinux.org/cgit/aur.git/snapshot/yaourt.tar.gz -0 | tar -zx
-	cd yaourt
-	makepkg -s --noconfirm
-	sudo pacman -U yaourt-*.pkg.tar.xz --noconfirm
-	cd
-	rm -rf /tmp/yaourt
-}
-
 update_mirrorlist(){
 	sudo reflector --verbose -l 5 --sort rate --save /etc/pacman.d/mirrorlist
 }
 
 pacman_remove_orphan(){
 	sudo pacman -Rns $(pacman -Qtdq)
-}
-
-git_sync(){
-	g fetch --all -p --quiet
-	g co --quiet --detach
-	g fetch --quiet origin $1:$1
-	g co --quiet -
-}
-
-#
-# monitor stuff
-#
-
-1_monitor(){
-	# disable all other monitors, just laptop now
-	xrandr \
-		--output eDP1 --mode 2560x1600 --pos 0x0 --rotate normal \
-		--output HDMI2 --off \
-		--output VIRTUAL1 --off \
-		--output DP1 --off \
-		--output HDMI1 --off \
-		--output DP2 --off
-}
-
-portable_monitor(){
-	xrandr \
- 		--output HDMI2 --primary --mode 1920x1080 --pos 0x0 --rotate normal \
-		--output eDP1 --off \
-		--output VIRTUAL1 --off \
-		--output DP1 --off \
-		--output HDMI1 --off \
-		--output DP2 --off
-}
-
-2_monitor(){
-	# when going to 2 monitors remove the scale so xranr can work
-	unscale_monitor
-
-	# enable all 2 monitors
-	xrandr \
-		--output HDMI2 --mode 1920x1080 --pos 0x0 --rotate normal \
-		--output eDP1 --primary --mode 2560x1600 --pos 112x1080 --rotate normal \
-		--output HDMI1 --off \
-		--output DP1 --off \
-		--output DP2 --off
-
-
-	# scale laptop monitor back 65% because macbook monitor resolution is tiny
-	scale_monitor
-}
-
-scale_monitor(){
-	xrandr --output eDP1 --scale 0.65x0.65
-}
-
-unscale_monitor(){
-	xrandr --output eDP1 --scale 1x1
 }
 
 gb_keyboard(){
