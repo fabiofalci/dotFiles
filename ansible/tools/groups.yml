@@ -1,0 +1,24 @@
+---
+- name: Ensure group exists
+  become: yes
+  group:
+    name: docker
+    state: present
+
+- name: Ensure group exists
+  become: yes
+  group:
+    name: input
+    state: present
+
+- name: Ensure group exists
+  become: yes
+  group:
+    name: synct
+    state: present
+
+- name: Ensure group exists
+  become: yes
+  group:
+    name: gdrive
+    state: present

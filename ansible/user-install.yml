@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  tasks:
+   - include: base/user-packages.yml
+   - include: base/user-packages-aur.yml
+   - include: tools/users.yml
+   - include: base/user-config.yml
+   - include: tools/pet.yml
+   - include: tools/jenv.yml

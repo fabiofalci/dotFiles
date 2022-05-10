@@ -7,7 +7,7 @@
     masked: no
     state: started
 
-- name: Enable service httpd and ensure it is not masked
+- name: Enable service ntpd and ensure it is not masked
   become: yes
   ansible.builtin.systemd:
     name: ntpd

@@ -3,6 +3,9 @@
   tasks:
    - include: base/sys-packages.yml
    - include: tools/yay.yml
-   - include: tools/jenv.yml
    - include: base/sys-packages-aur.yml
    - include: base/sys-config.yml
+   - include: tools/groups.yml
+   - include: tools/basic-services.yml
+   - include: tools/gdrive.yml
+   - include: tools/syncthing.yml

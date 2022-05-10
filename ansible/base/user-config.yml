@@ -1,0 +1,116 @@
+---
+- name: ideavimrc
+  file:
+    src: ~/env/idea/ideavimrc
+    dest: ~/.ideavimrc
+    state: link
+
+- name: i3 folder
+  file:
+    path: ~/.config/i3
+    state: directory
+    mode: '0755'
+
+- name: i3 config
+  file:
+    src: ~/env/i3/config
+    dest: ~/.config/i3/config
+    state: link
+
+- name: i3status folder
+  file:
+    path: ~/.config/i3status
+    state: directory
+    mode: '0755'
+
+# - name: Ensures systemd user dir exists
+#   file: path=~/.config/systemd/user/ state=directory 
+#   when: ansible_facts['os_family'] == "Arch"
+
+# - name: copy fix temp service
+#   when: ansible_facts['os_family'] == "Arch"
+#   copy:
+#     src: ~/env/i3/i3-temp.service
+#     dest: ~/.config/systemd/user/i3-temp.service
+#     force: no
+
+# - name: enable fix temp service
+#   when: ansible_facts['os_family'] == "Arch"
+#   systemd:
+#     name: i3-temp
+#     enabled: yes
+#     masked: no
+#     scope: user
+
+- name: link libinput gestures
+  file:
+    src: ~/env/i3/libinput-gestures.conf
+    dest: ~/.config/libinput-gestures.conf
+    state: link
+
+#- name: gtk 2 font
+#  lineinfile:
+#    path: ~/.gtkrc-2.0
+#    regexp: '^gtk-font-name='
+#    line: gtk-font-name="System San Francisco Display 12"
+    
+#- name: gtk 3 font
+#  lineinfile:
+#    path: ~/.config/gtk-3.0/settings.ini
+#    regexp: '^gtk-font-name='
+#    line: gtk-font-name=System San Francisco Display 12
+
+
+- name: bashrc
+  lineinfile:
+    path: ~/.bashrc
+    regexp: '^source ~/env/bash/bashrc$'
+    line: source ~/env/bash/bashrc
+
+- name: bashrc
+  lineinfile:
+    path: ~/.bashrc
+    regexp: '^source ~/env/bash/defaults_linux$'
+    line: source ~/env/bash/defaults_linux
+
+- name: ackrc
+  file:
+    src: ~/env/ack/ackrc
+    dest: ~/.ackrc
+    state: link
+
+- name: gitconfig
+  file:
+    src: ~/env/gitconfig/gitconfig
+    dest: ~/.gitconfig
+    state: link
+
+- name: gitignore
+  file:
+    src: ~/env/gitconfig/gitignore
+    dest: ~/.gitignore_global
+    state: link
+
+- name: vimrc
+  file:
+    src: ~/env/vim/vimrc
+    dest: ~/.vimrc
+    state: link
+
+- name: vim
+  file:
+    src: ~/env/vim/
+    dest: ~/.vim
+    state: link
+
+- name: inputrc
+  file:
+    src: ~/env/bash/inputrc
+    dest: ~/.inputrc
+    state: link
+
+- name: tmux
+  file:
+    src: ~/env/tmux/tmux.conf
+    dest: ~/.tmux.conf
+    state: link

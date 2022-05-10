@@ -1,8 +1,0 @@
----
-- hosts: localhost
-  tasks:
-   - include: base/packages.yml
-   - include: base/packages-laptop.yml
-   - include: tools/yay.yml
-   - include: base/aur-packages.yml
-   - include: base/aur-packages-laptop.yml
