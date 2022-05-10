@@ -2,8 +2,12 @@
 - hosts: localhost
   tasks:
    - include: base/sys-packages.yml
+     when: pacman == "Y"
    - include: tools/yay.yml
+     when: pacman == "Y"
    - include: base/sys-packages-aur.yml
+     when: pacman == "Y"
+
    - include: base/sys-config.yml
    - include: tools/groups.yml
    - include: tools/basic-services.yml

@@ -2,7 +2,10 @@
 - hosts: localhost
   tasks:
    - include: base/user-packages.yml
+     when: pacman == "Y"
    - include: base/user-packages-aur.yml
+     when: pacman == "Y"
+
    - include: tools/users.yml
    - include: base/user-config.yml
    - include: tools/pet.yml
