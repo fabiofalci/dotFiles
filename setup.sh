@@ -10,11 +10,9 @@ sudo pacman -S ansible git --noconfirm
 mkdir ~/.ansible/plugins/modules
 curl -o ~/.ansible/plugins/modules/aur.py https://raw.githubusercontent.com/kewlfft/ansible-aur/master/plugins/modules/aur.py
 
-
-
 git clone https://github.com/fabiofalci/env.git ~/env
 
 #cd env/ansible
 #ansible-playbook --ask-become-pass arch-vm.yml
-#ansible-playbook --ask-become-pass sys-install.yml --extra-vars "pacman=Y"
-#ansible-playbook --ask-become-pass user-install.yml --extra-vars "user=fabio pacman=Y"
+#ansible-playbook --ask-become-pass sys-install.yml --extra-vars "run_pacman=Y run_aur=Y user=fabio"
+#ansible-playbook --ask-become-pass user-install.yml --extra-vars "run_pacman=Y run_aur=Y"
