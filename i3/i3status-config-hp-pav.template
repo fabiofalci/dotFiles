@@ -48,37 +48,37 @@ cpu_usage {
 
 cpu_temperature 1 {
          format = "1: %degrees"
-         path = "/sys/devices/platform/coretemp.0/hwmon/hwmon3/temp1_input"
+         path = "/sys/devices/platform/coretemp.0/hwmon/hwmonX/temp1_input"
 }
 
 cpu_temperature 2 {
          format = "2: %degrees"
-         path = "/sys/devices/platform/coretemp.0/hwmon/hwmon3/temp2_input"
+         path = "/sys/devices/platform/coretemp.0/hwmon/hwmonX/temp2_input"
 }
 
 cpu_temperature 3 {
          format = "3: %degrees"
-         path = "/sys/devices/platform/coretemp.0/hwmon/hwmon3/temp3_input"
+         path = "/sys/devices/platform/coretemp.0/hwmon/hwmonX/temp3_input"
 }
 
 cpu_temperature 4 {
          format = "4: %degrees"
-         path = "/sys/devices/platform/coretemp.0/hwmon/hwmon3/temp4_input"
+         path = "/sys/devices/platform/coretemp.0/hwmon/hwmonX/temp4_input"
 }
 
 cpu_temperature 5 {
          format = "5: %degrees"
-         path = "/sys/devices/platform/coretemp.0/hwmon/hwmon3/temp5_input"
+         path = "/sys/devices/platform/coretemp.0/hwmon/hwmonX/temp5_input"
 }
 
 cpu_temperature 6 {
          format = "6: %degrees"
-         path = "/sys/devices/platform/coretemp.0/hwmon/hwmon3/temp6_input"
+         path = "/sys/devices/platform/coretemp.0/hwmon/hwmonX/temp6_input"
 }
 
 cpu_temperature 7 {
          format = "7: %degrees"
-         path = "/sys/devices/platform/coretemp.0/hwmon/hwmon3/temp7_input"
+         path = "/sys/devices/platform/coretemp.0/hwmon/hwmonX/temp7_input"
 }
 
 tztime local {
