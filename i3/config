@@ -204,6 +204,7 @@ bindsym $mod+F1 exec google-chrome-stable --profile-directory=Default
 bindsym $mod+F2 exec intellij-idea-ultimate-edition
 bindsym $mod+F3 exec firefox --private-window
 bindsym $mod+F4 exec autorandr -c default
+#bindsym $mod+F4 exec mpv /dev/video2
 bindsym $mod+F5 exec autorandr -c lg_usbc
 
 bindsym XF86AudioPrev exec ~/env/i3/media_buttons.sh XF86AudioPrev
@@ -263,3 +264,9 @@ client.focused #81a2be #81a2be #343d46 #4f5b66
 client.focused_inactive #65737e #65737e #a7adba #4f5b66
 client.unfocused #4f5b66 #4f5b66 #a7adba #4f5b66
 client.urgent #65737e #cc6666 #ffffff #cc6666
+
+for_window [title="video3 - mpv"] floating enable
+for_window [title="video3 - mpv"] sticky enable
+
+for_window [title="video2 - mpv"] floating enable
+for_window [title="video2 - mpv"] sticky enable
