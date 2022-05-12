@@ -1,0 +1,39 @@
+---
+
+- name: Create .ssh folder
+  file:
+    path: /home/{{ user }}/.ssh
+    state: directory
+    owner: {{ user }}
+    group: users
+    mode: 0700
+
+- name: Copy ssh key
+  become: true
+  copy:
+    src: ~/.ssh/id_rsa
+    dest: /home/{{ user }}/.ssh/id_rsa
+    force: no
+    owner: {{ user }}
+    group: users
+    mode: '0600'
+
+- name: Copy ssh public keys
+  become: true
+  copy:
+    src: ~/.ssh/id_rsa.pub
+    dest: /home/{{ user }}/.ssh/id_rsa.pub
+    force: no
+    owner: {{ user }}
+    group: users
+    mode: '0644'
+
+- name: Copy ssh config
+  become: true
+  copy:
+    src: ~/env/private/ssh-config
+    dest: /home/{{ user }}/.ssh/config
+    force: no
+    owner: {{ user }}
+    group: users
+    mode: '0644'

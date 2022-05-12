@@ -11,6 +11,12 @@
    - include: tools/users.yml
      when: user is defined
 
+   - include: tools/ssh.yml
+     when: ssh is defined
+
+   - include: tools/dotFiles.yml
+     when: dotFiles is defined
+
    - include: base/sys-config.yml
    - include: tools/groups.yml
    - include: tools/basic-services.yml

@@ -1,0 +1,22 @@
+---
+
+- name: Create aur modules folder
+  file:
+    path: /home/{{ user }}/.ansible/plugins/modules
+    state: directory
+    owner: {{ user }}
+    group: users
+    mode: 0700
+
+- name: Download aur module
+  get_url:
+    url: https://raw.githubusercontent.com/kewlfft/ansible-aur/master/plugins/modules/aur.py
+    dest: /home/{{ user }}/.ansible/plugins/modules/aur.py
+    mode: '0700'
+
+- name: Clone dotFiles
+    git:
+      repo: https://github.com/fabiofalci/env.git
+      dest: /home/{{ user }}/env/
+      clone: yes
+      update: no
