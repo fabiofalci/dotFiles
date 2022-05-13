@@ -2,7 +2,7 @@
 Description=It fixes temperature file for i3-status-bar
  
 [Service]
-ExecStart=/home/fabio/env/bin/i3-fix-status-temp.sh
+ExecStart=/home/{{ user }}/env/bin/i3-fix-status-temp.sh {{ profile }}
 Type=oneshot
 RemainAfterExit=yes
 

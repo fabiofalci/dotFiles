@@ -12,4 +12,6 @@ for file in /sys/devices/platform/coretemp.0/hwmon/*; do
 	HWMON=${name:5}
 done
 
+echo "test"
+
 replace
