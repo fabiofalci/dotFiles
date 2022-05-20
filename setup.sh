@@ -14,6 +14,6 @@ git clone https://github.com/fabiofalci/env.git ~/env
 
 #cd env/ansible
 #ansible-playbook --ask-become-pass arch-vm.yml
-#ansible-playbook --ask-become-pass sys-install.yml --extra-vars "run_pacman=Y run_aur=Y user=fabio"
-#ansible-playbook --ask-become-pass user-install.yml --extra-vars "run_pacman=Y run_aur=Y user=fabio"
-#ansible-playbook --ask-become-pass user-install.yml --extra-vars "user=fabio profile=$HOSTNAME-ff"
+#ansible-playbook --ask-become-pass sys-install.yml --extra-vars "run_pacman=Y run_aur=Y user=fabio dotFilesPath=~/.config/env"
+#ansible-playbook --ask-become-pass user-install.yml --extra-vars "run_pacman=Y run_aur=Y user=fabio dotFilesPath=~/.config/env"
+#ansible-playbook --ask-become-pass user-install.yml --extra-vars "user=fabio profile=$HOSTNAME-ff dotFilesPath=~/.config/env"

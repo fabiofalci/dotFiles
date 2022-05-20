@@ -9,7 +9,7 @@
 - name: pet config
   when: file.stat.exists
   copy:
-    src: {{ dotFilesPath }}/private/pet/config_linux.toml 
+    src: "{{ dotFilesPath }}/private/pet/config_linux.toml"
     dest: ~/.config/pet/config.toml
     force: no
 
