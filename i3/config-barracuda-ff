@@ -186,7 +186,7 @@ bar {
 }
 
 bindsym Control+Mod1+l exec "sconsify -command pause ; playerctl pause ; i3lock -c 000000"
-bindsym Control+Mod1+k exec "sconsify -command pause ; playerctl pause ; pkill -15 teams; i3lock -c 000000 -n; cat $HOME/env/i3/after-unlock.conf | dmenu -l 30 | sed 's/.*    \+//' | sh"
+bindsym Control+Mod1+k exec "sconsify -command pause ; playerctl pause ; pkill -15 teams; i3lock -c 000000 -n; cat $HOME/.config/dotFiles/i3/after-unlock.conf | dmenu -l 30 | sed 's/.*    \+//' | sh"
 
 bindsym XF86AudioMute exec amixer -q set Master toggle
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 2%- 
@@ -206,9 +206,9 @@ bindsym $mod+F3 exec firefox --private-window
 bindsym $mod+F4 exec autorandr -c default
 bindsym $mod+F5 exec autorandr -c lg_usbc
 
-bindsym XF86AudioPrev exec ~/env/i3/media_buttons.sh XF86AudioPrev
-bindsym XF86AudioPlay exec ~/env/i3/media_buttons.sh XF86AudioPlay
-bindsym XF86AudioNext exec ~/env/i3/media_buttons.sh XF86AudioNext
+bindsym XF86AudioPrev exec ~/.config/dotFiles/i3/media_buttons.sh XF86AudioPrev
+bindsym XF86AudioPlay exec ~/.config/dotFiles/i3/media_buttons.sh XF86AudioPlay
+bindsym XF86AudioNext exec ~/.config/dotFiles/i3/media_buttons.sh XF86AudioNext
 
 bindsym $mod+F7 exec sconsify -command replay
 bindsym $mod+F8 exec sconsify -command play_pause
@@ -218,8 +218,8 @@ bindsym $mod+F10 exec amixer -q set Master toggle
 bindsym $mod+F11 exec --no-startup-id amixer set Master 2%- 
 bindsym $mod+F12 exec --no-startup-id amixer set Master 2%+
 
-#bindsym $mod+F11 exec ~/env/bin/laptop-sound.sh
-#bindsym $mod+F12 exec ~/env/bin/soundbar.sh
+#bindsym $mod+F11 exec ~/.config/dotFiles/bin/laptop-sound.sh
+#bindsym $mod+F12 exec ~/.config/dotFiles/bin/soundbar.sh
 
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
@@ -247,8 +247,8 @@ bindsym $mod+XF86Launch9 mode "$mode_system"
 bindsym XF86Launch7 exec xfce4-screenshooter
 bindsym XF86Launch8 exec alacritty --command=bc
 bindsym XF86Launch9 exec pavucontrol
-bindsym $mod+Shift+d exec --no-startup-id cat $HOME/env/i3/scripts.conf | dmenu -l 30 | sed 's/.*    \+//' | sh
-bindsym $mod+Shift+f exec --no-startup-id cat $HOME/env/i3/power.conf | dmenu -l 30 | sed 's/.*    \+//' | sh
+bindsym $mod+Shift+d exec --no-startup-id cat $HOME/.config/dotFiles/i3/scripts.conf | dmenu -l 30 | sed 's/.*    \+//' | sh
+bindsym $mod+Shift+f exec --no-startup-id cat $HOME/.config/dotFiles/i3/power.conf | dmenu -l 30 | sed 's/.*    \+//' | sh
 bindsym Mod3+Tab exec rofi -show window
 
 exec --no-startup-id libinput-gestures

@@ -19,11 +19,11 @@
 - name: Clone dotFiles
   become: true
   git:
-    repo: https://github.com/fabiofalci/env.git
-    dest: /home/{{ user }}/env/
+    repo: https://github.com/fabiofalci/dotFiles.git
+    dest: /home/{{ user }}/.config/dotFiles/
     clone: yes
     update: no
 
 - name: Ensure dotFiles permissions
   become: true
-  file: dest=/home/{{ user }}/env/ owner={{ user }} group=users mode=u=rwX,g=rX,o=rX recurse=yes
+  file: dest=/home/{{ user }}/.config/dotFiles/ owner={{ user }} group=users mode=u=rwX,g=rX,o=rX recurse=yes
