@@ -11,7 +11,7 @@
 - name: compose key
   become: true
   copy:
-    src: ~/env/x/compose-key.sh
+    src: "{{ dotFilesPath }}/x/compose-key.sh"
     dest: /etc/X11/xinit/xinitrc.d/60-compose-key.sh
     owner: root
     group: root
@@ -20,9 +20,8 @@
 - name: copy intellij file inode
   become: true
   copy:
-    src: ~/env/idea/98-idea.conf
+    src: "{{ dotFilesPath }}/idea/98-idea.conf"
     dest: /etc/sysctl.d/98-idea.conf
-    force: no
     owner: root
     group: root
     mode: '0755'
@@ -30,9 +29,8 @@
 - name: apple magic keyboard
   become: true
   copy:
-    src: ~/env/keyboard/hid_apple.conf 
+    src: "{{ dotFilesPath }}/keyboard/hid_apple.conf"
     dest: /etc/modprobe.d/hid_apple.conf
-    force: no
     owner: root
     group: root
     mode: '0755'
@@ -40,9 +38,8 @@
 - name: libinput trackpad
   become: true
   copy:
-    src:  ~/env/x/90-libinput.conf
+    src: "{{ dotFilesPath }}/x/90-libinput.conf"
     dest:  /etc/X11/xorg.conf.d/
-    force: no
     owner: root
     group: root
     mode: '0755'

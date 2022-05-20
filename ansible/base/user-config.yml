@@ -1,7 +1,7 @@
 ---
 - name: ideavimrc
   file:
-    src: ~/env/idea/ideavimrc
+    src: {{ dotFilesPath }}/idea/ideavimrc
     dest: ~/.ideavimrc
     state: link
 
@@ -14,7 +14,7 @@
 - name: i3 config
   when: profile is defined
   file:
-    src: ~/env/i3/config-{{ profile }}
+    src: {{ dotFilesPath }}/i3/config-{{ profile }}
     dest: ~/.config/i3/config
     state: link
 
@@ -27,7 +27,7 @@
 - name: i3status
   when: profile is defined
   copy:
-    src: ~/env/i3/i3status-config-{{ profile }}.template
+    src: {{ dotFilesPath }}/i3/i3status-config-{{ profile }}.template
     dest: ~/.config/i3status/config
 
 - name: Ensures systemd user dir exists
@@ -37,7 +37,7 @@
 - name: copy fix temp service
 #  when: ansible_facts['os_family'] == "Arch"
   template:
-    src: ~/env/i3/i3-temp.service.j2
+    src: {{ dotFilesPath }}/i3/i3-temp.service.j2
     dest: ~/.config/systemd/user/i3-temp.service
 
 - name: enable fix temp service
@@ -50,7 +50,7 @@
 
 - name: link libinput gestures
   file:
-    src: ~/env/i3/libinput-gestures.conf
+    src: {{ dotFilesPath }}/i3/libinput-gestures.conf
     dest: ~/.config/libinput-gestures.conf
     state: link
 
@@ -70,53 +70,53 @@
 - name: bashrc
   lineinfile:
     path: ~/.bashrc
-    regexp: '^source ~/env/bash/bashrc$'
-    line: source ~/env/bash/bashrc
+    regexp: '^source {{ dotFilesPath }}/bash/bashrc$'
+    line: source {{ dotFilesPath }}/bash/bashrc
 
 - name: bashrc
   lineinfile:
     path: ~/.bashrc
-    regexp: '^source ~/env/bash/defaults_linux$'
-    line: source ~/env/bash/defaults_linux
+    regexp: '^source {{ dotFilesPath }}/bash/defaults_linux$'
+    line: source {{ dotFilesPath }}/bash/defaults_linux
 
 - name: ackrc
   file:
-    src: ~/env/ack/ackrc
+    src: {{ dotFilesPath }}/ack/ackrc
     dest: ~/.ackrc
     state: link
 
 - name: gitconfig
   file:
-    src: ~/env/gitconfig/gitconfig
+    src: {{ dotFilesPath }}/gitconfig/gitconfig
     dest: ~/.gitconfig
     state: link
 
 - name: gitignore
   file:
-    src: ~/env/gitconfig/gitignore
+    src: {{ dotFilesPath }}/gitconfig/gitignore
     dest: ~/.gitignore_global
     state: link
 
 - name: vimrc
   file:
-    src: ~/env/vim/vimrc
+    src: {{ dotFilesPath }}/vim/vimrc
     dest: ~/.vimrc
     state: link
 
 - name: vim
   file:
-    src: ~/env/vim/
+    src: {{ dotFilesPath }}/vim/
     dest: ~/.vim
     state: link
 
 - name: inputrc
   file:
-    src: ~/env/bash/inputrc
+    src: {{ dotFilesPath }}/bash/inputrc
     dest: ~/.inputrc
     state: link
 
 - name: tmux
   file:
-    src: ~/env/tmux/tmux.conf
+    src: {{ dotFilesPath }}/tmux/tmux.conf
     dest: ~/.tmux.conf
     state: link

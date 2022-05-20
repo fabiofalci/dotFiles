@@ -31,6 +31,6 @@
   when: file.stat.exists
   file:
     src: /home/synct/env-private/
-    dest: ~/env/private
+    dest: "{{ dotFilesPath }}/private"
     state: link
 

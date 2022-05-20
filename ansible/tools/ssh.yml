@@ -32,7 +32,7 @@
 - name: Copy ssh config
   become: true
   copy:
-    src: ~/env/private/ssh-config
+    src: "{{ dotFilesPath }}/private/ssh-config"
     dest: /home/{{ user }}/.ssh/config
     force: no
     owner: "{{ user }}"
