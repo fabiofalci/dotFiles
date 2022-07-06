@@ -6,6 +6,6 @@
     name: "{{ user }}"
     group: users
     shell: /bin/bash
-    groups: wheel,input,docker,synct,gdrive
+    groups: wheel,input,docker,synct,gdrive,audio
     append: yes
 
