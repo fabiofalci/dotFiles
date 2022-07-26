@@ -112,11 +112,11 @@ bindsym Mod1+7 workspace 7
 bindsym Mod1+8 workspace 8
 bindsym Mod1+9 workspace 9
 bindsym Mod1+0 workspace 10
-bindsym Mod1+minus workspace 11: ☺
+#bindsym Mod1+minus workspace 11: ☺
 bindsym Mod1+equal workspace 12: ♪
 bindsym Mod1+bracketright workspace 13: 📅
 bindsym Mod1+bracketleft workspace 14: 🌎
-bindsym Mod1+p workspace 15: 🥤
+#bindsym Mod1+p workspace 15: 🥤
 
 # move focused container to workspace
 bindsym $mod+Shift+less move container to workspace 0
@@ -131,11 +131,11 @@ bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
-bindsym $mod+Shift+minus move container to workspace 11: ☺
+#bindsym $mod+Shift+minus move container to workspace 11: ☺
 bindsym $mod+Shift+equal move container to workspace 12: ♪
 bindsym $mod+Shift+bracketright move container to workspace 13: 📅
 bindsym $mod+Shift+bracketleft move container to workspace 14: 🌎
-bindsym $mod+Shift+p move container to workspace 15: 🥤
+#bindsym $mod+Shift+p move container to workspace 15: 🥤
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -264,6 +264,15 @@ client.focused #81a2be #81a2be #343d46 #4f5b66
 client.focused_inactive #65737e #65737e #a7adba #4f5b66
 client.unfocused #4f5b66 #4f5b66 #a7adba #4f5b66
 client.urgent #65737e #cc6666 #ffffff #cc6666
+
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
+for_window [class="YouTube Music"] move to scratchpad
+for_window [class="notion-app"] move to scratchpad
+bindsym $mod+m [class="YouTube Music"] scratchpad show
+bindsym $mod+n [class="notion-app"] scratchpad show
+bindsym $mod+p [class="Alacritty"] scratchpad show
+
 
 for_window [title="video3 - mpv"] floating enable
 for_window [title="video3 - mpv"] sticky enable
