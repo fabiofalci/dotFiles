@@ -41,4 +41,5 @@
       - bluez
       - bluez-utils
       - github-cli
+      - wireguard-tools
     state: present
