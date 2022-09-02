@@ -8,6 +8,7 @@
    - include: base/sys-packages-aur.yml
      when: run_aur is defined
 
+   - include: tools/groups.yml
    - include: tools/users.yml
      when: user is defined
 
@@ -18,7 +19,13 @@
      when: dotFiles is defined
 
    - include: base/sys-config.yml
-   - include: tools/groups.yml
+
    - include: tools/basic-services.yml
+   - include: tools/basic-services-ui.yml
+     when: ui is defined
+
    - include: tools/gdrive.yml
    - include: tools/syncthing.yml
+
+   - include: tools/syncthing-service.yml
+     when: syncthingservice is defined

@@ -15,14 +15,6 @@
     recurse: yes
     mode: '0770'
 
-- name: enable/start syncthing
-  become: yes
-  ansible.builtin.systemd:
-    name: syncthing@synct.service
-    enabled: yes
-    masked: no
-    state: started
-
 - name: check private exist
   local_action: stat path=/home/synct/env-private/
   register: file

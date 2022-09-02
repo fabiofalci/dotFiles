@@ -1,8 +1,8 @@
 ---
-- name: Enable service ntpd and ensure it is not masked
+- name: enable/start syncthing
   become: yes
   ansible.builtin.systemd:
-    name: ntpd
+    name: syncthing@synct.service
     enabled: yes
     masked: no
     state: started
