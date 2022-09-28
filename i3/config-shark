@@ -257,7 +257,11 @@ exec --no-startup-id xedgewarp
 exec --no-startup-id picom
 
 hide_edge_borders smart
-new_window 1pixel
+#Hide window title bar
+default_border pixel 1
+default_floating_border pixel 1
+for_window [class="^.*"] border pixel 1
+
 
 exec copyq
 client.focused #81a2be #81a2be #343d46 #4f5b66

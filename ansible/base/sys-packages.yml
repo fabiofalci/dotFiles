@@ -33,4 +33,5 @@
       - youtube-dl
       - pacman-contrib
       - helm
+      - ncdu
     state: present
