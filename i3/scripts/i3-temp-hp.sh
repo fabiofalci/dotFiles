@@ -1,2 +1,2 @@
 #!/bin/bash
-i3-fix-status-temp.sh hp-pav
+systemctl --user start i3-temp.service
