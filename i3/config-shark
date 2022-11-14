@@ -114,8 +114,8 @@ bindsym Mod1+9 workspace 9
 bindsym Mod1+0 workspace 10
 #bindsym Mod1+minus workspace 11: ☺
 bindsym Mod1+equal workspace 12: ♪
-bindsym Mod1+bracketright workspace 13: 📅
-bindsym Mod1+bracketleft workspace 14: 🌎
+bindsym Mod1+bracketleft workspace 13: 🌎
+bindsym Mod1+bracketright workspace 14: 📅
 #bindsym Mod1+p workspace 15: 🥤
 
 # move focused container to workspace
@@ -133,8 +133,8 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 #bindsym $mod+Shift+minus move container to workspace 11: ☺
 bindsym $mod+Shift+equal move container to workspace 12: ♪
-bindsym $mod+Shift+bracketright move container to workspace 13: 📅
-bindsym $mod+Shift+bracketleft move container to workspace 14: 🌎
+bindsym $mod+Shift+bracketleft move container to workspace 13: 🌎
+bindsym $mod+Shift+bracketright move container to workspace 14: 📅
 #bindsym $mod+Shift+p move container to workspace 15: 🥤
 
 # reload the configuration file
