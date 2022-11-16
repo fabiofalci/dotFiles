@@ -274,8 +274,9 @@ bindsym $mod+minus scratchpad show
 for_window [class="YouTube Music"] move to scratchpad
 for_window [class="notion-app"] move to scratchpad
 bindsym $mod+m [class="YouTube Music"] scratchpad show
-bindsym $mod+n [class="notion-app"] scratchpad show
+#bindsym $mod+n [class="notion-app"] scratchpad show
 bindsym $mod+p [class="Alacritty"] scratchpad show
+bindsym $mod+n [class="Google-chrome"] scratchpad show, resize set 70 ppt 90 ppt, move position center;
 
 
 for_window [title="video3 - mpv"] floating enable
