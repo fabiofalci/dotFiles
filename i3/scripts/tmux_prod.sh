@@ -1,2 +1,2 @@
 #!/bin/bash
-alacritty -e ssh archct_tmux &
+alacritty --class Alacritty-prod --title prod -e ssh archct_tmux &

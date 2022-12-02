@@ -11,7 +11,7 @@ export JAVA_BUILD_DOCKERFILE=/home/fabio/p/server-infrastructure/dockerfiles-sec
 export PATH=/home/fabio/.gem/ruby/2.3.0/bin:$PATH
 alias open=xdg-open
 
-export IDEA_SCRATCHES=~/.config/JetBrains/IntelliJIdea2022.1/scratches/
+export IDEA_SCRATCHES=~/.config/JetBrains/IntelliJIdea2022.2/scratches/
 export CALCURSE_DATA=~/.local/share/calcurse
 
 export PATH="$HOME/.jenv/bin:$PATH"

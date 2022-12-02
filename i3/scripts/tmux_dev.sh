@@ -1,2 +1,2 @@
 #!/bin/bash
-alacritty -e tmux new -s dev &
+alacritty --class Alacritty-dev --title dev -e tmux new -s dev &

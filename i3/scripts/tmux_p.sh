@@ -1,2 +1,2 @@
 #!/bin/bash
-alacritty -e tmux new -s projects -c ~/p &
+alacritty --class Alacritty-p --title p -e tmux new -s projects -c ~/p &
