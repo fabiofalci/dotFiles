@@ -13,14 +13,14 @@ export MAVEN_OPTS="-XX:+TieredCompilation -XX:TieredStopAtLevel=1"
 export FAST_MAVEN="--threads 1.5C"
 
 alias docker_rm_all='docker rm `docker ps --no-trunc -aq`'
-alias docker_ip='docker inspect --format "{{ .NetworkSettings.IPAddress }}" $1'
+alias docker_ip='docker inspect --format "{{ .NetworkSettings.IPAddress }}" '
 alias vi='vim'
-alias h='history | grep $1'
+alias h='history | grep '
 alias autossh_='autossh -M 0 -o "ServerAliveInterval 45" -o "ServerAliveCountMax 2"'
-alias p='ps -ef | grep $1'
-alias f='find | grep $1'
-alias server='cat ~/.ssh/config | grep -A1 $1'
-alias k9='kill -9 $1'
+alias p='ps -ef | grep '
+alias f='find | grep '
+alias server='cat ~/.ssh/config | grep -A1 '
+alias k9='kill -9 '
 alias du1='du -h -d 1 | sort -r -h'
 alias prettyjson='python -m json.tool'
 alias copy='xclip -selection clipboard'
@@ -28,6 +28,7 @@ alias pex='pet exec'
 alias lah='ls -lah'
 alias fm='. ranger'
 alias ad='git add .'
+alias now_plus="date +%H:%M -d "
 
 alias k='kubectl'
 alias ks='kubectl --namespace=snapshots'
