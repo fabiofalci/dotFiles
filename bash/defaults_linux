@@ -1,5 +1,6 @@
 #!/bin/sh
 
+export DOT_FILES=~/.config/dotFiles
 export IDEA_JDK=/usr/lib/jvm/jdk-jetbrains
 
 export M2_HOME=/opt/maven
