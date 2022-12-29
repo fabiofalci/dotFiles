@@ -9,7 +9,7 @@ elif [[ "$workspace" == "1" ]]; then
 elif [[ "$workspace" == "2" ]]; then
   /home/fabio/.config/dotFiles/i3/scripts/messaging.sh
 elif [[ "$workspace" == "3" ]]; then
-  intellij-idea-ultimate-edition &
+  idea &
 elif [[ "$workspace" == "4" ]]; then
   /home/fabio/.config/dotFiles/i3/scripts/tmux_p.sh
 fi
