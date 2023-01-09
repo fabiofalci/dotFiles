@@ -252,8 +252,6 @@ bindsym $mod+Shift+d exec --no-startup-id cat $HOME/.config/dotFiles/i3/scripts.
 bindsym $mod+Shift+f exec --no-startup-id cat $HOME/.config/dotFiles/i3/power.conf | dmenu -l 30 | sed 's/.*    \+//' | sh
 bindsym Mod3+Tab exec rofi -show window
 
-exec --no-startup-id libinput-gestures
-exec --no-startup-id xedgewarp
 exec --no-startup-id picom
 
 hide_edge_borders smart
@@ -285,6 +283,8 @@ bindsym $mod+p [class="Alacritty-termdown"] scratchpad show
 #for_window [class="copyq"] floating enable, resize set 70 ppt 90 ppt, move position center;
 for_window [class="copyq"] floating enable
 #for_window [title="CopyQ"] sticky enable
+
+for_window [class="textsnatcher"] floating enable
 
 for_window [title="video3 - mpv"] floating enable
 for_window [title="video3 - mpv"] sticky enable
