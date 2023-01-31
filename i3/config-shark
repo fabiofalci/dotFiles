@@ -31,6 +31,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec alacritty
+bindsym $mod+Control+Return exec alacritty --class Alacritty-float --title float
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -285,6 +286,7 @@ for_window [class="copyq"] floating enable
 #for_window [title="CopyQ"] sticky enable
 
 for_window [class="textsnatcher"] floating enable
+for_window [class="Alacritty-float"] floating enable
 
 for_window [title="video3 - mpv"] floating enable
 for_window [title="video3 - mpv"] sticky enable
