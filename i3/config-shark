@@ -281,6 +281,8 @@ bindsym $mod+p [class="Alacritty-termdown"] scratchpad show
 #bindsym $mod+n [class="Google-chrome"] scratchpad show, resize set 70 ppt 90 ppt, move position center;
 
 
+for_window [class="Pavucontrol"] floating enable
+
 #for_window [class="copyq"] floating enable, resize set 70 ppt 90 ppt, move position center;
 for_window [class="copyq"] floating enable
 #for_window [title="CopyQ"] sticky enable
