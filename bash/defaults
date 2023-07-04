@@ -12,6 +12,8 @@ export PATH=~/bin:$PATH:~/go/bin:~/.config/dotFiles/bin:~/.config/dotFiles/priva
 export MAVEN_OPTS="-XX:+TieredCompilation -XX:TieredStopAtLevel=1"
 export FAST_MAVEN="--threads 1.5C"
 
+export svc=$(tmux display-message -p '#W')
+
 alias docker_rm_all='docker rm `docker ps --no-trunc -aq`'
 alias docker_ip='docker inspect --format "{{ .NetworkSettings.IPAddress }}" '
 alias vi='vim'
