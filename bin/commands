@@ -110,3 +110,8 @@ change_mac() {
   sudo ifconfig $net up
   echo "Your new physical address for interface $net is $mac"
 }
+
+tmux_title() {
+	tmux rename-window $1
+	export svc=$(tmux display-message -p '#W')
+}
