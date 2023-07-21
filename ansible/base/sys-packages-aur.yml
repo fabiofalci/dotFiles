@@ -7,6 +7,5 @@
       - kubectl-bin
       - kubetail
       - jo
-      - pet-bin
       - peco
       - azure-cli

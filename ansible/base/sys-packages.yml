@@ -9,9 +9,11 @@
       - rsync
       - vim
       - go
+      - jdk17-openjdk
       - jdk11-openjdk
       - jdk8-openjdk
       - maven
+      - gradle
       - ack
       - tig
       - jq
@@ -30,7 +32,7 @@
       - yq
       - ntp
       - lazygit
-      - youtube-dl
+      - yt-dlp
       - pacman-contrib
       - helm
       - ncdu
