@@ -24,7 +24,6 @@
       - maven
       - openjdk@11
       - openjdk@17
-      - openjdk@8
       - peco
       - tig
       - tmux
@@ -84,3 +83,5 @@
     #     name: "{{ item }}"
     #     state: present
     #   with_items: '{{ python_modules }}'
+
+    - include: base/user-config.yml

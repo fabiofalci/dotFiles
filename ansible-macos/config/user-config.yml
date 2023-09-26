@@ -1,0 +1,60 @@
+---
+- name: ideavimrc
+  file:
+    src: "{{ dotFilesPath }}/idea/ideavimrc"
+    dest: ~/.ideavimrc
+    state: link
+
+#- name: bashrc
+#  lineinfile:
+#    path: ~/.bashrc
+#    regexp: '^source {{ dotFilesPath }}/bash/bashrc$'
+#    line: source {{ dotFilesPath }}/bash/bashrc
+#
+#- name: bashrc
+#  lineinfile:
+#    path: ~/.bashrc
+#    regexp: '^source {{ dotFilesPath }}/bash/defaults_linux$'
+#    line: source {{ dotFilesPath }}/bash/defaults_linux
+
+- name: ackrc
+  file:
+    src: "{{ dotFilesPath }}/ack/ackrc"
+    dest: ~/.ackrc
+    state: link
+
+- name: gitconfig
+  file:
+    src: "{{ dotFilesPath }}/gitconfig/gitconfig"
+    dest: ~/.gitconfig
+    state: link
+
+- name: gitignore
+  file:
+    src: "{{ dotFilesPath }}/gitconfig/gitignore"
+    dest: ~/.gitignore_global
+    state: link
+
+- name: vimrc
+  file:
+    src: "{{ dotFilesPath }}/vim/vimrc"
+    dest: ~/.vimrc
+    state: link
+
+- name: vim
+  file:
+    src: "{{ dotFilesPath }}/vim/"
+    dest: ~/.vim
+    state: link
+
+#- name: inputrc
+#  file:
+#    src: "{{ dotFilesPath }}/bash/inputrc"
+#    dest: ~/.inputrc
+#    state: link
+
+- name: tmux
+  file:
+    src: "{{ dotFilesPath }}/tmux/tmux.conf"
+    dest: ~/.tmux.conf
+    state: link
