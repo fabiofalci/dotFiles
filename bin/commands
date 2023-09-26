@@ -28,29 +28,6 @@ prev() {
   sh -c "pet new `printf %q "$PREV"`"
 }
 
-if [ "$(uname)" == "Darwin" ]; then
-
-function pet-select() {
-  BUFFER=$(pet search --query "$LBUFFER")
-  CURSOR=$#BUFFER
-  zle redisplay
-}
-zle -N pet-select
-stty -ixon
-bindkey '^s' pet-select
-
-elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-
-pet-select() {
-  BUFFER=$(pet search --query "$READLINE_LINE")
-  READLINE_LINE=$BUFFER
-  READLINE_POINT=${#BUFFER}
-}
-bind -x '"\C-y": pet-select'
-#bind -x '"\C-r": __fzf_history__'
-
-fi
-
 milli_to_date(){
 
 	for var in "$@"

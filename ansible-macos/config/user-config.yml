@@ -8,7 +8,7 @@
 - name: bashrc defaults
   lineinfile:
     path: ~/.zprofile
-    regexp: '^source {{ dotFilesPath }}/bash/defaults'
+    regexp: '^source {{ dotFilesPath }}/bash/defaults$'
     line: source {{ dotFilesPath }}/bash/defaults
 
 - name: bashrc defaults_macos

@@ -30,3 +30,11 @@ eval "$(jenv init -)"
 
 alias g=git
 __git_complete g __git_main
+
+pet-select() {
+  BUFFER=$(pet search --query "$READLINE_LINE")
+  READLINE_LINE=$BUFFER
+  READLINE_POINT=${#BUFFER}
+}
+bind -x '"\C-y": pet-select'
+#bind -x '"\C-r": __fzf_history__'
