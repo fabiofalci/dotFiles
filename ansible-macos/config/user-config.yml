@@ -21,13 +21,13 @@
   lineinfile:
     path: ~/.zprofile
     regexp: '^source {{ dotFilesPath }}/private/commands$'
-    line: source {{ dotFilesPath }}/bash/private/commands
+    line: source {{ dotFilesPath }}/private/commands
 
 - name: bashrc bin commands
   lineinfile:
     path: ~/.zprofile
     regexp: '^source {{ dotFilesPath }}/bin/commands$'
-    line: source {{ dotFilesPath }}/bash/bin/commands
+    line: source {{ dotFilesPath }}/bin/commands
 
 - name: ackrc
   file:
