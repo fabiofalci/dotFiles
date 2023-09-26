@@ -12,3 +12,37 @@
       - wget
     install_homebrew_if_missing: false
     upgrade_homebrew_packages: false
+
+  tasks:
+    - name: Updating Homebrew
+      homebrew:
+        update_homebrew: true
+      when: homebrew_check.stat.exists
+
+    - name: Upgrading Homebrew Packages
+      homebrew:
+        upgrade_all: "{{ upgrade_homebrew_packages }}"
+      register: result
+      until: result is successful
+      when: homebrew_check.stat.exists
+
+    - name: Installing Homebrew Cask Packages
+      homebrew_cask:
+        name: "{{ brew_cask_packages }}"
+        state: present
+      register: result
+      until: result is successful
+      when: homebrew_check.stat.exists
+
+    - name: Installing Homebrew Packages
+      homebrew:
+        name: "{{ brew_packages }}"
+        state: present
+      register: result
+      until: result is successful
+      when: homebrew_check.stat.exists
+    # - name: Installing Python Modules
+    #   pip:
+    #     name: "{{ item }}"
+    #     state: present
+    #   with_items: '{{ python_modules }}'
