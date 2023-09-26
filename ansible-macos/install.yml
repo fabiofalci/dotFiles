@@ -4,10 +4,27 @@
   become: false
   vars:
     brew_cask_packages:
+      - docker
       - firefox
+      - jetbrains-toolbox
+      - microsoft-teams
+      - slack
     brew_packages:
+      - ack
+      - azure-cli
       - git
       - git-lfs
+      - gradle
+      - helm
+      - jenv
+      - jq
+      - kubernetes-cli
+      - lazygit
+      - maven
+      - openjdk@11
+      - openjdk@17
+      - openjdk@8
+      - tig
       - tmux
       - wget
     install_homebrew_if_missing: false
