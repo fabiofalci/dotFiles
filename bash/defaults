@@ -33,11 +33,7 @@ alias ad='git add .'
 alias now_plus="date +%H:%M -d "
 
 alias k='kubectl'
-alias ks='kubectl --namespace=snapshots'
-alias kks='kubectl --namespace=kube-system'
-alias kg='kubectl get'
-alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
-alias helms='helm --namespace snapshots'
+alias g=git
 
 if hash kubectl 2>/dev/null; then
     source <(kubectl completion bash | sed 's/kubectl/k/g')

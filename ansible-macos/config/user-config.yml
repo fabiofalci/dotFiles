@@ -5,17 +5,29 @@
     dest: ~/.ideavimrc
     state: link
 
-#- name: bashrc
-#  lineinfile:
-#    path: ~/.bashrc
-#    regexp: '^source {{ dotFilesPath }}/bash/bashrc$'
-#    line: source {{ dotFilesPath }}/bash/bashrc
-#
-#- name: bashrc
-#  lineinfile:
-#    path: ~/.bashrc
-#    regexp: '^source {{ dotFilesPath }}/bash/defaults_linux$'
-#    line: source {{ dotFilesPath }}/bash/defaults_linux
+- name: bashrc defaults
+  lineinfile:
+    path: ~/.zprofile
+    regexp: '^source {{ dotFilesPath }}/bash/defaults'
+    line: source {{ dotFilesPath }}/bash/defaults
+
+- name: bashrc defaults_macos
+  lineinfile:
+    path: ~/.zprofile
+    regexp: '^source {{ dotFilesPath }}/bash/defaults_macos$'
+    line: source {{ dotFilesPath }}/bash/defaults_macos
+
+- name: bashrc private commands
+  lineinfile:
+    path: ~/.zprofile
+    regexp: '^source {{ dotFilesPath }}/private/commands$'
+    line: source {{ dotFilesPath }}/bash/private/commands
+
+- name: bashrc bin commands
+  lineinfile:
+    path: ~/.zprofile
+    regexp: '^source {{ dotFilesPath }}/bin/commands$'
+    line: source {{ dotFilesPath }}/bash/bin/commands
 
 - name: ackrc
   file:
