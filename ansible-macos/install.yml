@@ -24,6 +24,7 @@
       - kubernetes-cli
       - lazygit
       - maven
+      - node
       - openjdk@11
       - openjdk@17
       - peco
