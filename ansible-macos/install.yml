@@ -84,4 +84,4 @@
     #     state: present
     #   with_items: '{{ python_modules }}'
 
-    - include: base/user-config.yml
+    - include: config/user-config.yml
