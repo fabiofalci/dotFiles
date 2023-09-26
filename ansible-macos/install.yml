@@ -4,6 +4,7 @@
   become: false
   vars:
     brew_cask_packages:
+      - alacritty
       - docker
       - firefox
       - jetbrains-toolbox
@@ -24,6 +25,7 @@
       - openjdk@11
       - openjdk@17
       - openjdk@8
+      - peco
       - tig
       - tmux
       - wget
