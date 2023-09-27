@@ -12,6 +12,7 @@
       - slack
     brew_packages:
       - ack
+      - bat
       - azure-cli
       - fzf
       - git
@@ -24,10 +25,12 @@
       - kubernetes-cli
       - lazygit
       - maven
+      - ncdu
       - node
       - openjdk@11
       - openjdk@17
       - peco
+      - ranger
       - tig
       - tmux
       - wget
