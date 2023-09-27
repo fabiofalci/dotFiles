@@ -92,4 +92,3 @@
     #   with_items: '{{ python_modules }}'
 
     - include: config/user-config.yml
-    - include: config/pet.yml
