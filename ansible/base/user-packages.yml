@@ -42,4 +42,5 @@
       - bluez-utils
       - github-cli
       - wireguard-tools
+      - git-crypt
     state: present

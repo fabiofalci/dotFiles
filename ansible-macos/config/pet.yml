@@ -3,13 +3,13 @@
   file: path=~/.config/pet/ state=directory 
 
 - name: check private exist
-  local_action: stat path={{ dotFilesPath }}/private/pet/config_macos.toml
+  local_action: stat path={{ dotFilesPrivatePath }}/pet/config_macos.toml
   register: file
 
 - name: pet config
   when: file.stat.exists
   copy:
-    src: "{{ dotFilesPath }}/private/pet/config_macos.toml"
+    src: "{{ dotFilesPrivatePath }}/pet/config_macos.toml"
     dest: ~/.config/pet/config.toml
     force: no
 

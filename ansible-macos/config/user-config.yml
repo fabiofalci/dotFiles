@@ -17,12 +17,6 @@
     regexp: '^source {{ dotFilesPath }}/bash/defaults_macos$'
     line: source {{ dotFilesPath }}/bash/defaults_macos
 
-- name: bashrc private commands
-  lineinfile:
-    path: ~/.zprofile
-    regexp: '^source {{ dotFilesPath }}/private/commands$'
-    line: source {{ dotFilesPath }}/private/commands
-
 - name: bashrc bin commands
   lineinfile:
     path: ~/.zprofile
