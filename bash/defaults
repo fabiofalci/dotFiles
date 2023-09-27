@@ -5,6 +5,9 @@ export EDITOR=`which vim`
 
 export sconsify=~/go/src/github.com/fabiofalci/sconsify/
 
+export DOT_FILES=~/.config/dotFiles
+export DOT_FILES_PRIVATE=~/.config/dotFiles-private
+
 export GOPATH=~/go
 export PATH=~/bin:$PATH:~/go/bin:~/.config/dotFiles/bin:~/.config/dotFiles/private/bin
 
