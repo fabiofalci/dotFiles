@@ -53,12 +53,6 @@
     dest: ~/.vim
     state: link
 
-#- name: inputrc
-#  file:
-#    src: "{{ dotFilesPath }}/bash/inputrc"
-#    dest: ~/.inputrc
-#    state: link
-
 - name: tmux
   file:
     src: "{{ dotFilesPath }}/tmux/tmux.conf"
@@ -74,4 +68,10 @@
   file:
     src: "{{ dotFilesPath }}/yabai/skhdrc"
     dest: ~/.config/skhd/skhdrc
+    state: link
+
+- name: alacritty
+  file:
+    src: "{{ dotFilesPath }}/alacritty/alacritty.yml"
+    dest: ~/.config/alacritty/alacritty.yml
     state: link

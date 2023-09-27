@@ -91,5 +91,3 @@
     #     name: "{{ item }}"
     #     state: present
     #   with_items: '{{ python_modules }}'
-
-    - include: config/user-config.yml

@@ -1,0 +1,6 @@
+---
+- name: Install MacOS Packages
+  hosts: localhost
+  become: false
+  tasks:
+    - include: config/user-config.yml

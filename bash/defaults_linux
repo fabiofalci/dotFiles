@@ -37,3 +37,7 @@ pet-select() {
 }
 bind -x '"\C-y": pet-select'
 #bind -x '"\C-r": __fzf_history__'
+
+if hash kubectl 2>/dev/null; then
+    source <(kubectl completion bash | sed 's/kubectl/k/g')
+fi

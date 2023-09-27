@@ -37,7 +37,3 @@ alias now_plus="date +%H:%M -d "
 
 alias k='kubectl'
 alias g=git
-
-if hash kubectl 2>/dev/null; then
-    source <(kubectl completion bash | sed 's/kubectl/k/g')
-fi
