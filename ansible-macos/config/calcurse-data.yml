@@ -1,0 +1,5 @@
+---
+- name: clone calcurse data
+  git:
+    repo: 'git@github.com:fabiofalci/calcurse_data.git'
+    dest: ~/.local/share/calcurse

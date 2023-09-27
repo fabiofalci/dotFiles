@@ -4,3 +4,4 @@
   become: false
   tasks:
     - include: config/pet.yml
+    - include: config/calcurse-data.yml
