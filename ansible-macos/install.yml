@@ -8,6 +8,7 @@
       - docker
       - firefox
       - jetbrains-toolbox
+      - keepassxc
       - microsoft-teams
       - slack
     brew_packages:

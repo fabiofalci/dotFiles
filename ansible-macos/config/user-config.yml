@@ -63,4 +63,15 @@
   file:
     src: "{{ dotFilesPath }}/tmux/tmux.conf"
     dest: ~/.tmux.conf
+
+- name: yabairc
+  file:
+    src: "{{ dotFilesPath }}/yabai/yabairc"
+    dest: ~/.config/yabai/yabairc
+    state: link
+
+- name: skhdrc
+  file:
+    src: "{{ dotFilesPath }}/yabai/skhdrc"
+    dest: ~/.config/skhd/skhdrc
     state: link
