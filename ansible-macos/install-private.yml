@@ -1,3 +1,6 @@
 ---
 - name: Install Private dotFiles
-- include: config/pet.yml
+  hosts: localhost
+  become: false
+  tasks:
+    - include: config/pet.yml
