@@ -58,6 +58,12 @@
     src: "{{ dotFilesPath }}/tmux/tmux.conf"
     dest: ~/.tmux.conf
 
+- name: tmux kube
+  git:
+    repo: 'https://github.com/jonmosco/kube-tmux.git'
+    dest: ~/.tmux/kube-tmux
+    update: no
+
 - name: yabairc
   file:
     src: "{{ dotFilesPath }}/yabai/yabairc"

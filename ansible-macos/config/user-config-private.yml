@@ -1,0 +1,6 @@
+---
+- name: bashrc private defaults
+  lineinfile:
+    path: ~/.zprofile
+    regexp: '^source {{ dotFilesPrivatePath }}/bash/defaults-private$'
+    line: source {{ dotFilesPrivatePath }}/bash/defaults-private

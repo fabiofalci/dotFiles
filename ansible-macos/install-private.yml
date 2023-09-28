@@ -3,5 +3,6 @@
   hosts: localhost
   become: false
   tasks:
+    - include: config/user-config-private.yml
     - include: config/pet.yml
     - include: config/calcurse-data.yml
