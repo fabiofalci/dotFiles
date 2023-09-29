@@ -55,6 +55,8 @@ yabai -m rule --add app='^System Settings$' manage=off
 yabai -m rule --add app='^Calculator$' manage=off
 yabai -m rule --add title='Preferences$' manage=off
 yabai -m rule --add app='^Docker Desktop$' manage=off
+yabai -m rule --add app='^Activity Monitor$' manage=off
+yabai -m rule --add app='^CopyQ$' manage=off
 
 # float settings windows
 yabai -m rule --add title='Settings$' manage=off

@@ -101,3 +101,5 @@ alt - f : yabai -m window --toggle zoom-fullscreen
 # toggle window native fullscreen
 alt + shift - f : yabai -m window --toggle native-fullscreen
 
+f16 : copyq show
+

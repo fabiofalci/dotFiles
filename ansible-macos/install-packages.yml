@@ -5,12 +5,14 @@
   vars:
     brew_cask_packages:
       - alacritty
+      - copyq
       - docker
       - firefox
       - jetbrains-toolbox
       - keepassxc
       - microsoft-teams
       - slack
+      - visual-studio-code
     brew_packages:
       - ack
       - bat
