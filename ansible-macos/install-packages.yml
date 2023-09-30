@@ -18,6 +18,7 @@
       - bat
       - azure-cli
       - calcurse
+      - cmake
       - docker-buildx
       - fzf
       - git
@@ -36,6 +37,7 @@
       - openjdk@11
       - openjdk@17
       - peco
+      - sfml
       - ranger
       - tig
       - tmux

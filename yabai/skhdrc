@@ -24,17 +24,17 @@ alt + shift - l : yabai -m window --swap east || $(yabai -m window --display eas
 #alt + shift - right : yabai -m window --swap east || $(yabai -m window --display east; yabai -m display --focus east)
 
 # set insertion point in focused container
-alt + ctrl - h : yabai -m window --insert west
-alt + ctrl - j : yabai -m window --insert south
-alt + ctrl - k : yabai -m window --insert north
-alt + ctrl - l : yabai -m window --insert east
+#alt + ctrl - h : yabai -m window --insert west
+#alt + ctrl - j : yabai -m window --insert south
+#alt + ctrl - k : yabai -m window --insert north
+#alt + ctrl - l : yabai -m window --insert east
 
 # (alt) set insertion point in focused container using arrows
-alt + ctrl - left  : yabai -m window --insert west
-alt + ctrl - down  : yabai -m window --insert south
-alt + ctrl - up    : yabai -m window --insert north
-alt + ctrl - right : yabai -m window --insert east# go back to previous workspace (kind of like back_and_forth in i3)
-alt - b : yabai -m space --focus recent
+#alt + ctrl - left  : yabai -m window --insert west
+#alt + ctrl - down  : yabai -m window --insert south
+#alt + ctrl - up    : yabai -m window --insert north
+#alt + ctrl - right : yabai -m window --insert east# go back to previous workspace (kind of like back_and_forth in i3)
+#alt - b : yabai -m space --focus recent
 
 # move focused window to previous workspace
 alt + shift - b : yabai -m window --space recent; \
@@ -42,15 +42,15 @@ alt + shift - b : yabai -m window --space recent; \
 
 
 # move focused window to next/prev workspace
-alt + shift - 1 : yabai -m window --space 1
-alt + shift - 2 : yabai -m window --space 2
-alt + shift - 3 : yabai -m window --space 3
-alt + shift - 4 : yabai -m window --space 4
-alt + shift - 5 : yabai -m window --space 5
-alt + shift - 6 : yabai -m window --space 6
-alt + shift - 7 : yabai -m window --space 7
-alt + shift - 8 : yabai -m window --space 8
-alt + shift - 9 : yabai -m window --space 9
+#alt + shift - 1 : yabai -m window --space 1
+#alt + shift - 2 : yabai -m window --space 2
+#alt + shift - 3 : yabai -m window --space 3
+#alt + shift - 4 : yabai -m window --space 4
+#alt + shift - 5 : yabai -m window --space 5
+#alt + shift - 6 : yabai -m window --space 6
+#alt + shift - 7 : yabai -m window --space 7
+#alt + shift - 8 : yabai -m window --space 8
+#alt + shift - 9 : yabai -m window --space 9
 #alt + shift - 0 : yabai -m window --space 10
 
 
