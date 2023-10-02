@@ -21,6 +21,7 @@
       - cmake
       - docker-buildx
       - fzf
+      - go
       - git
       - git-crypt
       - git-lfs
