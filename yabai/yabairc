@@ -56,7 +56,6 @@ yabai -m rule --add app='^Calculator$' manage=off
 yabai -m rule --add title='Preferences$' manage=off
 yabai -m rule --add app='^Docker Desktop$' manage=off
 yabai -m rule --add app='^Activity Monitor$' manage=off
-yabai -m rule --add app='^CopyQ$' manage=off
 
 # float settings windows
 yabai -m rule --add title='Settings$' manage=off
@@ -66,6 +65,11 @@ yabai -m rule --add title='Settings$' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Project Structure' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Preferences' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Edit configuration' manage=off
+yabai -m rule --add app='IntelliJ IDEA' title='Data Sources and Drivers' manage=off
+
+yabai -m rule --add title='^scratch$' manage=off
+yabai -m rule --add app='^CopyQ$' manage=off
+yabai -m rule --add app='^YouTube Music$' manage=off
 
 echo "yabai configuration loaded.."
 

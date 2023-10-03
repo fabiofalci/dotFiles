@@ -13,6 +13,7 @@
     email = fabiofalci@gmail.com
 [core]
     excludesfile = ~/.gitignore_global
+    pager = less -FX
 [push]
     default = simple
 
