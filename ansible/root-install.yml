@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  tasks:
+   - include: base/sys-packages.yml
+     when: run_pacman is defined
+
+   - include: tools/groups.yml
+   - include: base/sys-config.yml
+   - include: tools/basic-services.yml
