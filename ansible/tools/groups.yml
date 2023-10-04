@@ -22,3 +22,9 @@
   group:
     name: gdrive
     state: present
+
+- name: Make sure we have a 'wheel' group
+  become: yes
+  group:
+    name: wheel
+    state: present

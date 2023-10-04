@@ -1,5 +1,13 @@
 ---
 
+- name: Allow 'wheel' group to have passwordless sudo
+  lineinfile:
+    dest: /etc/sudoers
+    state: present
+    regexp: '^%wheel'
+    line: '%wheel ALL=(ALL) NOPASSWD: ALL'
+    validate: 'visudo -cf %s'
+
 - name: Adding user
   become: yes
   user: 
@@ -8,4 +16,3 @@
     shell: /bin/bash
     groups: wheel,input,docker,synct,gdrive,audio
     append: yes
-

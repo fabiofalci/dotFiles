@@ -36,4 +36,5 @@
       - pacman-contrib
       - helm
       - ncdu
+      - sudo
     state: present
