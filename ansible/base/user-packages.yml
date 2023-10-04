@@ -1,5 +1,5 @@
 ---
-- name: Install base packages
+- name: Install user base packages
   become: yes
   pacman:
     name: 
