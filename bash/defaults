@@ -32,7 +32,6 @@ alias pex='pet exec'
 alias lah='ls -lah'
 alias fm='. ranger'
 alias ad='git add .'
-alias now_plus="date +%H:%M -d "
 
 alias k='kubectl'
 alias g=git

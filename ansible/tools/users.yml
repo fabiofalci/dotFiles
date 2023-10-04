@@ -1,6 +1,7 @@
 ---
 
 - name: Allow 'wheel' group to have passwordless sudo
+  become: yes
   lineinfile:
     dest: /etc/sudoers
     state: present

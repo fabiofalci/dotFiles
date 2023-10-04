@@ -13,3 +13,7 @@ stty -ixon
 
 # needs to be copied to the last line of .zshrc
 bindkey '^y' pet-select
+
+function now_plus() {
+  date -v+$1 +%H:%M
+}
