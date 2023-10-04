@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git clone https://github.com/fabiofalci/dotFiles.git ~/.config/dotFiles
+#git clone https://github.com/fabiofalci/dotFiles.git ~/.config/dotFiles
 
 cd ~/.config/dotFiles/ansible
 ansible-playbook --ask-become-pass sys-install.yml --extra-vars "run_pacman=Y run_aur=Y user=fabio dotFilesPath=~/.config/dotFiles"
