@@ -20,12 +20,12 @@
       - thunar
       - mplayer
       - keepass
-      - pulseaudio
+#      - pulseaudio
       - arandr
       - autorandr
       - vlc
-      - alsa-utils
-      - pulseaudio-alsa
+#      - alsa-utils
+#      - pulseaudio-alsa
       - calcurse
       - gnome-keyring
       - xclip
@@ -35,11 +35,11 @@
       - lightdm
       - alacritty
       - picom
-      - portaudio
+#      - portaudio
       - i3lock
-      - docker
-      - bluez
-      - bluez-utils
+#      - docker
+#      - bluez
+#      - bluez-utils
       - github-cli
       - wireguard-tools
       - git-crypt
