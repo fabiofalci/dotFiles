@@ -2,6 +2,9 @@
 
 #git clone https://github.com/fabiofalci/dotFiles.git ~/.config/dotFiles
 
+mkdir -pv ~/.ansible/plugins/modules
+curl -o ~/.ansible/plugins/modules/aur.py https://raw.githubusercontent.com/kewlfft/ansible-aur/master/plugins/modules/aur.py
+
 cd ~/.config/dotFiles/ansible
 ansible-playbook --ask-become-pass sys-install.yml --extra-vars "run_pacman=Y run_aur=Y user=fabio dotFilesPath=~/.config/dotFiles"
 ansible-playbook --ask-become-pass user-install.yml --extra-vars "run_pacman=Y run_aur=Y ui=Y user=fabio dotFilesPath=~/.config/dotFiles"
