@@ -1,7 +1,7 @@
 #!/bin/bash
 
 pacman -Syu --noconfirm
-pacman -S ansible git --noconfirm
+pacman -S --needed ansible git --noconfirm
 
 mkdir -pv ~/.ansible/plugins/modules
 curl -o ~/.ansible/plugins/modules/aur.py https://raw.githubusercontent.com/kewlfft/ansible-aur/master/plugins/modules/aur.py

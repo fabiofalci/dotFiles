@@ -13,7 +13,7 @@
       - jdk11-openjdk
       - jdk8-openjdk
       - maven
-      - gradle
+#      - gradle
       - ack
       - tig
       - jq
