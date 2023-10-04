@@ -29,7 +29,7 @@
       - calcurse
       - gnome-keyring
       - xclip
-      - libsmbios
+#      - libsmbios
       - ffmpeg
       - dunst
       - lightdm
