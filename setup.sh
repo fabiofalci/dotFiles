@@ -7,10 +7,10 @@ sudo pacman -S ansible git --noconfirm
 #git clone https://github.com/kewlfft/ansible-aur.git ~/.ansible/plugins/modules/aur
 
 # this one worked
-mkdir ~/.ansible/plugins/modules
+mkdir -pv ~/.ansible/plugins/modules
 curl -o ~/.ansible/plugins/modules/aur.py https://raw.githubusercontent.com/kewlfft/ansible-aur/master/plugins/modules/aur.py
 
-git clone https://github.com/fabiofalci/dotFiles.git ~/.config/dotFiles
+#git clone https://github.com/fabiofalci/dotFiles.git ~/.config/dotFiles
 
 cd ~/.config/dotFiles/ansible
 ansible-playbook --ask-become-pass sys-install.yml --extra-vars "run_pacman=Y run_aur=N user=fabio ssh=Y dotFilesPath=~/.config/dotFiles"

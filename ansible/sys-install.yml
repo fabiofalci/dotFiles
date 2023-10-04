@@ -4,7 +4,7 @@
    - include: base/sys-packages.yml
      when: run_pacman is defined
    - include: tools/yay.yml
-     when: run_pacman is defined
+     when: run_aur is defined
    - include: base/sys-packages-aur.yml
      when: run_aur is defined
 
