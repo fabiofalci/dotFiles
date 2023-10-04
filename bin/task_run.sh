@@ -18,5 +18,5 @@ EOD
 printf "Added task: '$task'\n"
 printf "Task total: %s\n" $(TZ=UTC date -v-$now +%H:%M:%S)
 
-~/.config/dotFiles/bin/termdown_show.sh
+~/.config/dotFiles/bin/task_show.sh
 

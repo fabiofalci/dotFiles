@@ -10,11 +10,11 @@ sudo pacman -S ansible git --noconfirm
 mkdir ~/.ansible/plugins/modules
 curl -o ~/.ansible/plugins/modules/aur.py https://raw.githubusercontent.com/kewlfft/ansible-aur/master/plugins/modules/aur.py
 
-git clone https://github.com/fabiofalci/env.git ~/env
+git clone https://github.com/fabiofalci/dotFiles.git ~/.config/dotFiles
 
-#cd env/ansible
+cd ~/.config/dotFiles/ansible
+ansible-playbook --ask-become-pass sys-install.yml --extra-vars "run_pacman=Y run_aur=N user=fabio ssh=Y dotFilesPath=~/.config/dotFiles"
 #ansible-playbook --ask-become-pass arch-vm.yml --extra-vars "run_pacman=Y run_aur=Y ssh=Y user=fabio dotFilesPath=~/.config/dotFiles"
-#ansible-playbook --ask-become-pass sys-install.yml --extra-vars "run_pacman=Y run_aur=Y user=fabio dotFilesPath=~/.config/dotFiles"
 #ansible-playbook --ask-become-pass user-install.yml --extra-vars "run_pacman=Y run_aur=Y user=fabio dotFilesPath=~/.config/dotFiles"
 #ansible-playbook --ask-become-pass user-install.yml --extra-vars "user=fabio profile=$HOSTNAME-ff dotFilesPath=~/.config/dotFiles"
 

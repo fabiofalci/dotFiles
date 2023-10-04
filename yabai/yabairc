@@ -66,6 +66,8 @@ yabai -m rule --add app='IntelliJ IDEA' title='Project Structure' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Preferences' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Edit configuration' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Data Sources and Drivers' manage=off
+yabai -m rule --add app='IntelliJ IDEA' title='Keymap' manage=off
+yabai -m rule --add app='IntelliJ IDEA' title='Keyboard Shortcut' manage=off
 
 yabai -m rule --add title='^scratch$' manage=off
 yabai -m rule --add app='^CopyQ$' manage=off

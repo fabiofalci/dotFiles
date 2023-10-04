@@ -13,6 +13,7 @@
       - microsoft-teams
       - slack
       - visual-studio-code
+      - utm
     brew_packages:
       - ack
       - bat

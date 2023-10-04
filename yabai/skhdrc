@@ -104,5 +104,6 @@ alt + shift - f : yabai -m window --toggle native-fullscreen
 f15 : copyq show
 f5 : alacritty --title scratch 
 f6 : ~/Applications/Chrome\ Apps.localized/YouTube\ Music.app/Contents/MacOS/app_mode_loader
+# lalt - p : alacritty --title scratch 
 
 
