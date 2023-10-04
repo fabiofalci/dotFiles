@@ -4,7 +4,7 @@
     name:
       - pet-bin
       - bat
-      - kubectl-bin
+#      - kubectl-bin
       - kubetail
       - jo
       - peco
