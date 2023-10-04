@@ -2,10 +2,10 @@
 - aur:
     state: present
     name:
-      - intellij-idea-ultimate-edition
+#      - intellij-idea-ultimate-edition
       - google-chrome
       - dropbox
-      - skypeforlinux-stable-bin
+#      - skypeforlinux-stable-bin
       - slack-desktop
       - libinput-gestures
       - gotop
@@ -16,8 +16,8 @@
       - ttf-symbola 
       - connman-gtk
       - alacritty-themes
-      - libspotify
-      - jdk-jetbrains
+#      - libspotify
+#      - jdk-jetbrains
       - moka-icon-theme
       - apple-fonts
       - notion-app

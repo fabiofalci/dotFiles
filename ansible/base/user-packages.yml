@@ -13,9 +13,9 @@
       - copyq
       - xdotool 
       - wmctrl
-      - syncthing
+#      - syncthing
       - ttf-dejavu
-      - lxappearance
+#      - lxappearance
       - arc-gtk-theme
       - thunar
       - mplayer
