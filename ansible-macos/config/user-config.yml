@@ -81,3 +81,23 @@
     src: "{{ dotFilesPath }}/alacritty/alacritty.yml"
     dest: ~/.config/alacritty/alacritty.yml
     state: link
+
+#  cp /opt/homebrew/opt/sketchybar/share/sketchybar/examples/sketchybarrc ~/.config/sketchybar/sketchybarrc
+#  mkdir ~/.config/sketchybar/plugins
+#  cp -r /opt/homebrew/opt/sketchybar/share/sketchybar/examples/plugins/ ~/.config/sketchybar/plugins/
+#  chmod +x ~/.config/sketchybar/plugins/*
+
+- name: Ensures sketchybar plugins
+  file: path=~/.config/sketchybar/plugins state=directory
+
+- name: sketchybar
+  file:
+    src: "{{ dotFilesPath }}/yabai/sketchybarrc"
+    dest: ~/.config/sketchybar/sketchybarrc
+    state: link
+
+- name: Copy sketchybar plugins
+  ansible.builtin.copy:
+    src: /opt/homebrew/opt/sketchybar/share/sketchybar/examples/plugins
+    dest: ~/.config/sketchybar
+    mode: '0711'

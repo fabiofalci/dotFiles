@@ -34,7 +34,7 @@ alt - l : yabai -m window --focus east
 #alt + ctrl - down  : yabai -m window --insert south
 #alt + ctrl - up    : yabai -m window --insert north
 #alt + ctrl - right : yabai -m window --insert east# go back to previous workspace (kind of like back_and_forth in i3)
-#alt - b : yabai -m space --focus recent
+alt - b : yabai -m space --focus recent
 
 # move focused window to previous workspace
 #alt + shift - b : yabai -m window --space recent; \
