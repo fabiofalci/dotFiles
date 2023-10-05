@@ -3,14 +3,30 @@
   tasks:
    - include: base/sys-packages.yml
      when: run_pacman is defined
+
    - include: tools/yay.yml
      when: run_aur is defined
+
    - include: base/sys-packages-aur.yml
      when: run_aur is defined
+
    - include: base/user-packages.yml
      when: run_pacman is defined
+
    - include: base/user-packages-aur.yml
      when: run_aur is defined
+
+   - include: tools/groups.yml
+   - include: base/sys-config.yml
+
+   - include: tools/basic-services-ui.yml
+     when: ui is defined
+
+   - include: tools/gdrive.yml
+   - include: tools/syncthing.yml
+
+   - include: tools/syncthing-service.yml
+     when: syncthingservice is defined
 
    - include: base/user-config.yml
    - include: tools/pet.yml

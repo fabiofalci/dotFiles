@@ -71,6 +71,7 @@ yabai -m rule --add app='IntelliJ IDEA' title='Keyboard Shortcut' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Copy' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Rename' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Add File to Git' manage=off
+yabai -m rule --add app='IntelliJ IDEA' title='Delete' manage=off
 
 yabai -m rule --add title='^scratch$' manage=off
 yabai -m rule --add app='^CopyQ$' manage=off

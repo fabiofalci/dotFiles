@@ -1,46 +1,54 @@
 ---
 - name: Install user base packages
+  when: run_pacman is defined
   become: yes
   pacman:
-    name: 
-      - i3-gaps
-      - i3status
-      - dmenu
-      - firefox
-      - pavucontrol
-      - openjdk11-src
-      - keepass
-      - copyq
-      - xdotool 
-      - wmctrl
-#      - syncthing
-      - ttf-dejavu
-#      - lxappearance
-      - arc-gtk-theme
-      - thunar
-      - mplayer
-      - keepass
-#      - pulseaudio
-      - arandr
-      - autorandr
-      - vlc
-#      - alsa-utils
-#      - pulseaudio-alsa
+    name:
+      - bluez
+      - bluez-utils
       - calcurse
-      - gnome-keyring
-      - xclip
-#      - libsmbios
+      - docker
       - ffmpeg
-      - dunst
-      - lightdm
-      - alacritty
-      - picom
-#      - portaudio
-      - i3lock
-#      - docker
-#      - bluez
-#      - bluez-utils
-      - github-cli
-      - wireguard-tools
       - git-crypt
+      - github-cli
+      - gnome-keyring
+      - wireguard-tools
+    state: present
+
+- name: Install user ui packages
+  when: ui is defined
+  become: yes
+  pacman:
+    name:
+      - alacritty
+      - alsa-utils
+      - arandr
+      - arc-gtk-theme
+      - autorandr
+      - copyq
+      - dmenu
+      - dunst
+      - firefox
+      - i3-gaps
+      - i3lock
+      - i3status
+      - keepass
+      - keepass
+      - libsmbios
+      - lightdm
+      - lxappearance
+      - mplayer
+      - openjdk11-src
+      - pavucontrol
+      - picom
+      - portaudio
+      - pulseaudio
+      - pulseaudio-alsa
+      - syncthing
+      - thunar
+      - ttf-dejavu
+      - vlc
+      - wmctrl
+      - xclip
+      - xdotool
     state: present

@@ -1,6 +1,33 @@
 ---
 - aur:
     state: present
+    when: run_aur is defined
+    name:
+      #      - intellij-idea-ultimate-edition
+      - google-chrome
+      - dropbox
+      #      - skypeforlinux-stable-bin
+      - slack-desktop
+      - libinput-gestures
+      - gotop
+      - drive-bin
+      - teams
+      - ttf-font-awesome
+      - ttf-nerd-fonts-symbols
+      - ttf-symbola
+      - connman-gtk
+      - alacritty-themes
+      #      - libspotify
+      #      - jdk-jetbrains
+      - moka-icon-theme
+      - apple-fonts
+      - notion-app
+      - qomui
+      - cyberchef-web
+
+- aur:
+    state: present
+    when: ui is defined
     name:
 #      - intellij-idea-ultimate-edition
       - google-chrome

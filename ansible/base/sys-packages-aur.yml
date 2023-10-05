@@ -2,10 +2,10 @@
 - aur:
     state: present
     name:
-      - pet-bin
-      - bat
-#      - kubectl-bin
-      - kubetail
-      - jo
-      - peco
       - azure-cli
+      - bat
+      - jo
+      - kubectl-bin
+      - kubetail
+      - peco
+      - pet-bin

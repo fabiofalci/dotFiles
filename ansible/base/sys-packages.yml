@@ -2,39 +2,39 @@
 - name: Install sys base packages
   become: yes
   pacman:
-    name: 
-      - base-devel
-      - git
-      - openssh
-      - rsync
-      - vim
-      - go
-      - jdk17-openjdk
-      - jdk11-openjdk
-      - jdk8-openjdk
-      - maven
-#      - gradle
+    name:
       - ack
-      - tig
-      - jq
-      - wget
-      - unrar
-      - unzip
+      - base-devel
       - bash-completion
+      - bc
+      - git
+      - go
+      - gradle
+      - helm
+      - htop
+      - jdk11-openjdk
+      - jdk17-openjdk
+      - jdk8-openjdk
+      - jq
+      - lazygit
       - man-db
       - man-pages
-      - htop
-      - ranger
-      - mlocate
+      - maven
       - mitmproxy
-      - tmux
-      - bc
-      - yq
-      - ntp
-      - lazygit
-      - yt-dlp
-      - pacman-contrib
-      - helm
+      - mlocate
       - ncdu
+      - ntp
+      - openssh
+      - pacman-contrib
+      - ranger
+      - rsync
       - sudo
+      - tig
+      - tmux
+      - unrar
+      - unzip
+      - vim
+      - wget
+      - yq
+      - yt-dlp
     state: present
