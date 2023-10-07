@@ -15,15 +15,15 @@
   aur:
     state: present
     name:
-      - connman-gtk
-      - dropbox
-      - google-chrome
-      - libinput-gestures
-      - moka-icon-theme
-      - notion-app
+#      - connman-gtk
+#      - dropbox
+#      - google-chrome
+#      - libinput-gestures
+#      - moka-icon-theme
+#      - notion-app
       - qomui
-      - slack-desktop
-      - teams
-      - ttf-font-awesome
-      - ttf-nerd-fonts-symbols
-      - ttf-symbola
+#      - slack-desktop
+#      - teams
+#      - ttf-font-awesome
+#      - ttf-nerd-fonts-symbols
+#      - ttf-symbola
