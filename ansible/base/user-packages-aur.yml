@@ -1,7 +1,8 @@
 ---
-- aur:
+- name: Install user packages aur
+  when: run_aur is defined
+  aur:
     state: present
-    when: run_aur is defined
     name:
       - alacritty-themes
       - apple-fonts
@@ -9,9 +10,10 @@
       - drive-bin
       - gotop
 
-- aur:
+- name: Install user packages ui aur
+  when: ui is defined
+  aur:
     state: present
-    when: ui is defined
     name:
       - connman-gtk
       - dropbox

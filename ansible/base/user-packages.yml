@@ -34,7 +34,7 @@
       - i3status
       - keepass
       - keepass
-      - libsmbios
+#      - libsmbios
       - lightdm
       - lxappearance
       - mplayer
@@ -44,7 +44,7 @@
       - portaudio
       - pulseaudio
       - pulseaudio-alsa
-      - syncthing
+#      - syncthing
       - thunar
       - ttf-dejavu
       - vlc

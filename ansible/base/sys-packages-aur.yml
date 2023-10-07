@@ -5,7 +5,7 @@
       - azure-cli
       - bat
 #      - jo
-      - kubectl-bin
+#      - kubectl-bin
       - kubetail
       - peco
       - pet-bin
