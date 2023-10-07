@@ -4,7 +4,7 @@
     name:
       - azure-cli
       - bat
-      - jo
+#      - jo
       - kubectl-bin
       - kubetail
       - peco

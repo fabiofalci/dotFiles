@@ -9,7 +9,7 @@
       - bc
       - git
       - go
-      - gradle
+#      - gradle
       - helm
       - htop
       - jdk11-openjdk
