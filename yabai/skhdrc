@@ -75,6 +75,7 @@ lalt - s : yabai -m space --layout stack
 #alt - n : yabai -m window --focus stack.prev || yabai -m window --focus north
 #alt - p : yabai -m window --focus stack.next || yabai -m window --focus stack.first
 lalt - n : yabai -m window --focus stack.prev || yabai -m window --focus stack.last
+lalt - a : yabai -m window --focus stack.prev || yabai -m window --focus stack.last
 
 # forwards
 #alt - p : yabai -m query --spaces --space \
