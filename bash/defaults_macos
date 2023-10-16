@@ -17,3 +17,6 @@ bindkey '^y' pet-select
 function now_plus() {
   date -v+$1 +%H:%M
 }
+
+
+export IDEA_SCRATCHES=~/Library/Application\ Support/JetBrains/IntelliJIdea2023.2/scratches/

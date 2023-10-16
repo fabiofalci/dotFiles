@@ -7,6 +7,9 @@ env:
 window:
   option_as_alt: OnlyLeft
 
+key_bindings:
+  - { key: Key3, mods: Alt, chars: "#" }
+
 font:
   normal:
     family: JetBrains Mono
