@@ -11,5 +11,5 @@
   copy:
     src: "{{ dotFilesPrivatePath }}/pet/config_macos.toml"
     dest: ~/.config/pet/config.toml
-    force: no
+    force: true
 

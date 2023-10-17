@@ -74,6 +74,7 @@ yabai -m rule --add app='IntelliJ IDEA' title='Rename' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Add File to Git' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Delete' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Implement Members' manage=off
+yabai -m rule --add app='IntelliJ IDEA' title='Create Test' manage=off
 
 yabai -m rule --add title='^scratch$' manage=off
 yabai -m rule --add app='^CopyQ$' manage=off

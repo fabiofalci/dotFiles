@@ -12,20 +12,21 @@
       - keepassxc
       - microsoft-teams
       - slack
-      - visual-studio-code
       - utm
+      - visual-studio-code
     brew_packages:
       - ack
-      - bat
       - azure-cli
+      - bat
       - calcurse
       - cmake
       - docker-buildx
       - fzf
-      - go
+      - gh
       - git
       - git-crypt
       - git-lfs
+      - go
       - gradle
       - helm
       - jenv
@@ -39,8 +40,8 @@
       - openjdk@11
       - openjdk@17
       - peco
-      - sfml
       - ranger
+      - sfml
       - tig
       - tmux
       - wget
