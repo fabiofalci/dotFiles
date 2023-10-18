@@ -1,11 +1,11 @@
 ---
-- name: enable/start lightdm
-  become: yes
-  ansible.builtin.systemd:
-    name: lightdm
-    enabled: yes
-    masked: no
-    state: started
+#- name: enable/start lightdm
+#  become: yes
+#  ansible.builtin.systemd:
+#    name: lightdm
+#    enabled: yes
+#    masked: no
+#    state: started
 
 - name: compose key
   become: true

@@ -34,19 +34,19 @@
   file: path=~/.config/systemd/user/ state=directory
 #  when: ansible_facts['os_family'] == "Arch"
 
-- name: copy fix temp service
+#- name: copy fix temp service
 #  when: ansible_facts['os_family'] == "Arch"
-  template:
-    src: "{{ dotFilesPath }}/i3/i3-temp.service.j2"
-    dest: ~/.config/systemd/user/i3-temp.service
+#  template:
+#    src: "{{ dotFilesPath }}/i3/i3-temp.service.j2"
+#    dest: ~/.config/systemd/user/i3-temp.service
 
-- name: enable fix temp service
+#- name: enable fix temp service
 #  when: ansible_facts['os_family'] == "Arch"
-  systemd:
-    name: i3-temp
-    enabled: yes
-    masked: no
-    scope: user
+#  systemd:
+#    name: i3-temp
+#    enabled: yes
+#    masked: no
+#    scope: user
 
 - name: link libinput gestures
   file:

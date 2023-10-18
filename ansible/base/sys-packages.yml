@@ -27,6 +27,7 @@
       - openssh
       - pacman-contrib
       - ranger
+      - openresolv
       - rsync
       - sudo
       - tig
