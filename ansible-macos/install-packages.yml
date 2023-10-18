@@ -44,6 +44,7 @@
       - sfml
       - tig
       - tmux
+      - watch
       - wget
     install_homebrew_if_missing: false
     upgrade_homebrew_packages: false

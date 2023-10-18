@@ -16,3 +16,4 @@ ansible-playbook install-conf.yml --extra-vars dotFilesPath=~/.config/dotFiles
 git clone git@bitbucket.org:fabiofalci/dotfiles-private.git ~/.config/dotFiles-private
 ansible-playbook install-private.yml --extra-vars "dotFilesPath=~/.config/dotFiles dotFilesPrivatePath=~/.config/dotFiles-private"
 ansible-playbook install-packages.yml --extra-vars dotFilesPath=~/.config/dotFiles
+ansible-playbook install-conf.yml --extra-vars "after_install=Y dotFilesPath=~/.config/dotFiles"

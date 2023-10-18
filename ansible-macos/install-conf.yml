@@ -4,3 +4,5 @@
   become: false
   tasks:
     - include: config/user-config.yml
+    - include: config/user-config-after-install.yml
+      when: after_install is defined

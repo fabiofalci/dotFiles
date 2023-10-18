@@ -1,0 +1,14 @@
+---
+
+# it needs kubectl to be installed
+- name: Ensures oh-my-zsh kubectl autocomplete folder exist
+  file: path=~/.oh-my-zsh/custom/plugins/kubectl-autocomplete/ state=directory
+
+- name: Enable kubectl autocompletion
+  ansible.builtin.shell: kubectl completion zsh > ~/.oh-my-zsh/custom/plugins/kubectl-autocomplete/kubectl-autocomplete.plugin.zsh
+
+#- name: bashrc defaults
+#  lineinfile:
+#    path: ~/.zshrc
+#    regexp: '^plugins=(kubectl-autocomplete)$'
+#    line: plugins=(kubectl-autocomplete)
