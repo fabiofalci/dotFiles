@@ -21,6 +21,7 @@
       - calcurse
       - cmake
       - docker-buildx
+      - ffmpeg
       - fzf
       - gh
       - git
