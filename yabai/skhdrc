@@ -69,6 +69,8 @@ lalt - e : yabai -m space --layout bsp
 lalt - l : yabai -m space --layout float
 lalt - s : yabai -m space --layout stack
 
+lalt - space : yabai -m window --toggle split
+
 
 # cycle through stack windows
 #alt - p : yabai -m window --focus stack.next || yabai -m window --focus south

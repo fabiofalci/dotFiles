@@ -1,4 +1,9 @@
 ---
+
+# manual:
+# brew tap homebrew/cask-versions
+# brew install --cask zulu8
+
 - name: Install MacOS Packages
   hosts: localhost
   become: false
@@ -12,6 +17,7 @@
       - keepassxc
       - microsoft-teams
       - slack
+      - syncthing
       - utm
       - visual-studio-code
     brew_packages:
@@ -29,6 +35,7 @@
       - git-lfs
       - go
       - gradle
+      - groovy
       - helm
       - jenv
       - jq
