@@ -82,6 +82,7 @@ yabai -m rule --add app='^CopyQ$' manage=off
 yabai -m rule --add app='^YouTube Music$' manage=off
 yabai -m rule --add app='Microsoft Teams' title='^Call with' manage=off
 yabai -m rule --add app='^KeePassXC$' manage=off
+yabai -m rule --add app='^Weather$' manage=off
 
 echo "yabai configuration loaded.."
 

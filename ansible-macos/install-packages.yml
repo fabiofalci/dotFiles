@@ -13,6 +13,7 @@
       - copyq
       - docker
       - firefox
+      - google-cloud-sdk
       - jetbrains-toolbox
       - keepassxc
       - microsoft-teams
