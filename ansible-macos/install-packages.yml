@@ -46,6 +46,7 @@
       - maven
       - ncdu
       - node
+      - openjdk
       - openjdk@11
       - openjdk@17
       - peco
