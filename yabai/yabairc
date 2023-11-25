@@ -85,6 +85,7 @@ yabai -m rule --add app='^YouTube Music$' manage=off
 yabai -m rule --add app='Microsoft Teams' title='^Call with' manage=off
 yabai -m rule --add app='^KeePassXC$' manage=off
 yabai -m rule --add app='^Weather$' manage=off
+yabai -m rule --add app='^Disk Utility$' manage=off
 
 echo "yabai configuration loaded.."
 
