@@ -3,7 +3,14 @@
 # For a more advanced configuration example see my dotfiles:
 # https://github.com/FelixKratz/dotfiles
 
+source "$CONFIG_DIR/icons.sh" # Loads all defined icons
+
 PLUGIN_DIR="$CONFIG_DIR/plugins"
+
+#FONT="SF Pro"
+FONT="Hack Nerd Font"
+
+ITEM_DIR="$CONFIG_DIR/items" # Directory where the items are configured
 
 ##### Bar Appearance #####
 # Configuring the general appearance of the bar, these are only some of the
@@ -25,9 +32,9 @@ sketchybar --bar height=32        \
 # For a full list of all available item properties see:
 # https://felixkratz.github.io/SketchyBar/config/items
 
-sketchybar --default icon.font="Hack Nerd Font:Bold:17.0"  \
+sketchybar --default icon.font="$FONT:Bold:17.0"  \
                      icon.color=0xffffffff                 \
-                     label.font="Hack Nerd Font:Bold:14.0" \
+                     label.font="$FONT:Bold:14.0" \
                      label.color=0xffffffff                \
                      padding_left=5                        \
                      padding_right=5                       \
@@ -35,6 +42,8 @@ sketchybar --default icon.font="Hack Nerd Font:Bold:17.0"  \
                      label.padding_right=4                 \
                      icon.padding_left=4                   \
                      icon.padding_right=4
+
+source "$ITEM_DIR/apple.sh"
 
 ##### Adding Mission Control Space Indicators #####
 # Now we add some mission control spaces:
@@ -57,6 +66,7 @@ do
                               script="$PLUGIN_DIR/space.sh"              \
                               click_script="yabai -m space --focus $sid"
 done
+
 
 ##### Adding Left Items #####
 # We add some regular items to the left side of the bar

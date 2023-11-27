@@ -3,6 +3,7 @@
 # manual:
 # brew tap homebrew/cask-versions
 # brew install --cask zulu8
+# brew tap homebrew/cask-fonts
 
 - name: Install MacOS Packages
   hosts: localhost
@@ -12,11 +13,13 @@
       - alacritty
       - copyq
       - docker
+      - font-hack-nerd-font
       - firefox
       - google-cloud-sdk
       - jetbrains-toolbox
       - keepassxc
       - microsoft-teams
+      - sf-symbols
       - slack
       - syncthing
       - utm

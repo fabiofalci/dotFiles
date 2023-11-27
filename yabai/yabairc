@@ -86,6 +86,7 @@ yabai -m rule --add app='Microsoft Teams' title='^Call with' manage=off
 yabai -m rule --add app='^KeePassXC$' manage=off
 yabai -m rule --add app='^Weather$' manage=off
 yabai -m rule --add app='^Disk Utility$' manage=off
+yabai -m rule --add app='^ViewerKt$' manage=off
 
 echo "yabai configuration loaded.."
 
