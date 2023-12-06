@@ -10,7 +10,9 @@
   become: false
   vars:
     brew_cask_packages:
+      - adobe-digital-editions
       - alacritty
+      - calibre
       - copyq
       - docker
       - font-hack-nerd-font
