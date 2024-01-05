@@ -55,7 +55,9 @@
       - openjdk@11
       - openjdk@17
       - peco
+      - gnu-prolog
       - ranger
+      - rust
       - sfml
       - tig
       - tmux
