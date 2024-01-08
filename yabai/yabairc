@@ -88,7 +88,7 @@ yabai -m rule --add app='^Weather$' manage=off
 yabai -m rule --add app='^Disk Utility$' manage=off
 yabai -m rule --add app='^ViewerKt$' manage=off
 
-yabai -m rule --add app='Unity' manage=on
+yabai -m rule --add app='^Unity$' manage=off
 
 echo "yabai configuration loaded.."
 

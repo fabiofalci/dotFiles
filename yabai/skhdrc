@@ -70,6 +70,7 @@ lalt - l : yabai -m space --layout float
 lalt - s : yabai -m space --layout stack
 
 lalt - space : yabai -m window --toggle split
+lalt + shift - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
 
 # cycle through stack windows
