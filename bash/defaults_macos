@@ -19,5 +19,5 @@ function now_plus() {
 }
 
 
-export IDEA_SCRATCHES=~/Library/Application\ Support/JetBrains/IntelliJIdea2023.2/scratches/
+export IDEA_SCRATCHES=~/tmp/idea_scratches
 export GROOVY_HOME=/opt/homebrew/opt/groovy/libexec

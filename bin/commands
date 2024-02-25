@@ -107,3 +107,15 @@ tmux_title() {
 	tmux rename-window $1
 	export svc=$(tmux display-message -p '#W')
 }
+
+# changing directory with cdd
+# if folder contains .git then it sets tmux title to the folder name
+# and it sets 'svc' environment variable to the same
+cdd() {
+    cd "$@" || return
+
+    if [[ -d .git ]]
+    then
+        tmux_title $(basename $PWD)
+    fi
+}
