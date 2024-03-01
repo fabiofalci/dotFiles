@@ -57,6 +57,7 @@
       - openjdk@11
       - openjdk@17
       - peco
+      - python
       - gnu-prolog
       - ranger
       - rust
