@@ -22,6 +22,7 @@ bacs
 bigquery
 bishopsgate
 bitrate
+blobstorage
 bogo
 braintree
 britishisles
@@ -186,6 +187,7 @@ uuids
 vendorexperiment
 wayfinder
 webapp
+webcontent
 webhook
 webspotify
 whitelist
