@@ -22,6 +22,7 @@
       - google-cloud-sdk
       - jetbrains-toolbox
       - keepassxc
+      - maccy
       - microsoft-teams
       - sf-symbols
       - slack
@@ -45,6 +46,7 @@
       - gradle
       - groovy
       - helm
+      - imagemagick
       - jenv
       - jq
       - knqyf263/pet/pet
@@ -52,6 +54,7 @@
       - lazygit
       - maven
       - ncdu
+      - npv
       - nvm
       - openjdk
       - openjdk@11

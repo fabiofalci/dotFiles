@@ -2,6 +2,11 @@
 
 # termdown_run.sh 15:30 "My task"
 
+if [ "$#" -ne 2 ]; then
+    echo "Missing arguments"
+    exit 1
+fi
+
 now=$(date +%s)S
 task=$2
 
