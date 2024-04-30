@@ -128,7 +128,7 @@ lalt - a : yabai -m window --focus stack.prev || yabai -m window --focus stack.l
 #alt + shift - f : yabai -m window --toggle native-fullscreen
 alt + shift - f : yabai -m window --toggle zoom-fullscreen
 
-f15 : copyq show
+f16 : copyq show
 f5 : alacritty --title scratch 
 ctrl - f5 : ~/bin/theme.sh
 f6 : ~/Applications/Chrome\ Apps.localized/YouTube\ Music.app/Contents/MacOS/app_mode_loader

@@ -11,6 +11,7 @@
       - helm
       - jq
       - tmux
+      - kubectl
       - vim
       - wget
     update_cache: true
