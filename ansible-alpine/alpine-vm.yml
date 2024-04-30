@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  tasks:
+   - include_tasks: base/sys-packages.yml
+#   - include: tools/jenv.yml
+#   - include: base/sys-packages-aur.yml
+#   - include: base/sys-config.yml

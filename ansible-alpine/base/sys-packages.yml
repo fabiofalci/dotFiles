@@ -1,0 +1,16 @@
+---
+- name: Install sys base packages
+  become: yes
+  community.general.apk:
+    name:
+      - ack
+      - bc
+      - curl
+      - git
+      - go
+      - helm
+      - jq
+      - tmux
+      - vim
+      - wget
+    update_cache: true
