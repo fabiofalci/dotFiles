@@ -5,3 +5,5 @@
 #   - include_tasks: tools/jenv.yml
 #   - include_tasks: base/sys-packages-aur.yml
    - include_tasks: base/user-config.yml
+   - include_tasks: base/user-config-private.yml
+   - include_tasks: tools/pet.yml

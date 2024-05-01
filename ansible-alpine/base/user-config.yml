@@ -1,15 +1,27 @@
 ---
-- name: bashrc
-  lineinfile:
-    path: ~/.bashrc
-    regexp: '^source {{ dotFilesPath }}/bash/bashrc$'
-    line: source {{ dotFilesPath }}/bash/bashrc
+- name: ensure zprofile exists
+  copy:
+    content: ""
+    dest: ~/.zprofile
+    force: false
 
-- name: bashrc
+- name: bashrc defaults
   lineinfile:
-    path: ~/.bashrc
-    regexp: '^source {{ dotFilesPath }}/bash/defaults_linux$'
-    line: source {{ dotFilesPath }}/bash/defaults_linux
+    path: ~/.zprofile
+    regexp: '^source {{ dotFilesPath }}/bash/defaults$'
+    line: source {{ dotFilesPath }}/bash/defaults
+
+- name: bashrc defaults_macos
+  lineinfile:
+    path: ~/.zprofile
+    regexp: '^source {{ dotFilesPath }}/bash/defaults_macos$'
+    line: source {{ dotFilesPath }}/bash/defaults_macos
+
+- name: bashrc bin commands
+  lineinfile:
+    path: ~/.zprofile
+    regexp: '^source {{ dotFilesPath }}/bin/commands$'
+    line: source {{ dotFilesPath }}/bin/commands
 
 - name: ackrc
   file:
