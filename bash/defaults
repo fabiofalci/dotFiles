@@ -32,7 +32,7 @@ alias pex='pet exec'
 alias lah='ls -lah'
 alias fm='. ranger'
 alias ad='git add .'
-alias toyaml="bat -lyaml"
+alias ty="bat -lyaml"
 
 alias k='kubectl'
 alias g=git
