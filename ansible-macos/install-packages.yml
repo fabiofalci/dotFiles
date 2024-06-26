@@ -52,6 +52,7 @@
       - jq
       - knqyf263/pet/pet
       - kubernetes-cli
+      - lazydocker
       - lazygit
       - maven
       - ncdu

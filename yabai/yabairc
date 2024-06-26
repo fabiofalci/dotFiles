@@ -79,6 +79,8 @@ yabai -m rule --add app='IntelliJ IDEA' title='Run/Debug Configurations' manage=
 yabai -m rule --add app='IntelliJ IDEA' title='Plugins Updates' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Move' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='IDE Internal Errors' manage=off
+yabai -m rule --add app='IntelliJ IDEA' title='Evaluate' manage=off
+yabai -m rule --add app='IntelliJ IDEA' title='Convert Code From Java' manage=off
 
 yabai -m rule --add title='^scratch$' manage=off
 yabai -m rule --add app='^CopyQ$' manage=off

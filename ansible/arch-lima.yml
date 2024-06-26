@@ -1,0 +1,12 @@
+# sudo pacman -Syu
+# sudo pacman -S zsh
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# ansible-playbook --ask-become-pass arch-lima.yml --extra-vars "dotFilesPath=~/.config/dotFiles dotFilesPrivatePath=~/.config/dotFiles-private"
+---
+- hosts: localhost
+  tasks:
+   - include: base/sys-packages.yml
+   - include: tools/yay.yml
+   - include: tools/jenv.yml
+   - include: base/sys-packages-aur.yml
+   - include: base/sys-config.yml
