@@ -175,6 +175,7 @@ stockcounting
 subdir
 submatrix
 synchronizer
+tfstate
 threewks
 thundr
 toclevels
