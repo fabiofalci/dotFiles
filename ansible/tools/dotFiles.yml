@@ -14,6 +14,8 @@
   get_url:
     url: https://raw.githubusercontent.com/kewlfft/ansible-aur/master/plugins/modules/aur.py
     dest: /home/{{ user }}/.ansible/plugins/modules/aur.py
+    owner: "{{ user }}"
+    group: users
     mode: '0700'
 
 - name: Clone dotFiles
