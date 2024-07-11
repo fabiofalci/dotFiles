@@ -1,8 +1,8 @@
 ---
 - hosts: localhost
   tasks:
-   - include: base/sys-packages.yml
-   - include: tools/yay.yml
-   - include: tools/jenv.yml
-   - include: base/sys-packages-aur.yml
-   - include: base/sys-config.yml
+   - include_tasks: base/sys-packages.yml
+   - include_tasks: tools/yay.yml
+   - include_tasks: tools/jenv.yml
+   - include_tasks: base/sys-packages-aur.yml
+   - include_tasks: base/sys-config.yml

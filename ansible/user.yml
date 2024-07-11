@@ -17,7 +17,7 @@
      when: run_aur is defined
 
    - include_tasks: tools/groups.yml
-   - include: base/sys-config.yml
+   - include_tasks: base/sys-config.yml
 
    - include_tasks: tools/basic-services-ui.yml
      when: ui is defined
