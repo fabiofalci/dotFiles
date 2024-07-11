@@ -9,3 +9,4 @@ curl -o ~/.ansible/plugins/modules/aur.py https://raw.githubusercontent.com/kewl
 cd ~/.config/dotFiles/ansible
 ansible-playbook --ask-become-pass root-install.yml --extra-vars "run_pacman=Y"
 ansible-playbook --ask-become-pass install-user.yml --extra-vars "user=fabio ssh=Y dotFilesPath=~/.config/dotFiles"
+ansible-playbook --ask-become-pass install-user.yml --extra-vars "user=fabio ssh=Y dotFilesPath=~/.config/dotFiles dotFilesPrivatePath=~/.config/dotFiles-private"
