@@ -119,7 +119,5 @@ fi
 
 . ~/.config/dotFiles/bash/defaults
 . ~/.config/dotFiles/bash/prompt
-. ~/.config/dotFiles/appengine/commands
-. ~/.config/dotFiles/private/commands
 . ~/.config/dotFiles/bin/commands
 
