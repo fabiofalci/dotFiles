@@ -1,33 +1,33 @@
 ---
 - hosts: localhost
   tasks:
-   - include: base/sys-packages.yml
+   - include_tasks: base/sys-packages.yml
      when: run_pacman is defined
 
-   - include: tools/yay.yml
+   - include_tasks: tools/yay.yml
      when: run_aur is defined
 
-   - include: base/sys-packages-aur.yml
+   - include_tasks: base/sys-packages-aur.yml
      when: run_aur is defined
 
-   - include: base/user-packages.yml
+   - include_tasks: base/user-packages.yml
      when: run_pacman is defined
 
-   - include: base/user-packages-aur.yml
+   - include_tasks: base/user-packages-aur.yml
      when: run_aur is defined
 
-   - include: tools/groups.yml
+   - include_tasks: tools/groups.yml
    - include: base/sys-config.yml
 
-   - include: tools/basic-services-ui.yml
+   - include_tasks: tools/basic-services-ui.yml
      when: ui is defined
 
-   - include: tools/gdrive.yml
-   - include: tools/syncthing.yml
+   - include_tasks: tools/gdrive.yml
+   - include_tasks: tools/syncthing.yml
 
-   - include: tools/syncthing-service.yml
+   - include_tasks: tools/syncthing-service.yml
      when: syncthingservice is defined
 
-   - include: base/user-config.yml
-   - include: tools/pet.yml
-   - include: tools/jenv.yml
+   - include_tasks: base/user-config.yml
+   - include_tasks: tools/pet.yml
+   - include_tasks: tools/jenv.yml
