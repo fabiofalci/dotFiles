@@ -25,6 +25,7 @@
       - arandr
       - arc-gtk-theme
       - autorandr
+      - code
       - copyq
       - dmenu
       - dunst

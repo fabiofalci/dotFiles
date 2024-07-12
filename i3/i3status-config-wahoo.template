@@ -14,14 +14,11 @@ general {
 order += "volume master"
 order += "cpu_usage"
 order += "load"
-order += "cpu_temperature 0"
 order += "cpu_temperature 1"
 order += "cpu_temperature 2"
 order += "cpu_temperature 3"
 order += "cpu_temperature 4"
 order += "cpu_temperature 5"
-order += "cpu_temperature 6"
-order += "cpu_temperature 7"
 order += "wireless _first_"
 order += "ethernet _first_"
 order += "tztime local"
@@ -48,37 +45,27 @@ cpu_usage {
 
 cpu_temperature 1 {
          format = "1: %degrees"
-         path = "/sys/devices/platform/coretemp.0/hwmon/hwmonX/temp1_input"
+         path = "/sys/devices/platform/coretemp.0/hwmon/hwmon*/temp1_input"
 }
 
 cpu_temperature 2 {
          format = "2: %degrees"
-         path = "/sys/devices/platform/coretemp.0/hwmon/hwmonX/temp2_input"
+         path = "/sys/devices/platform/coretemp.0/hwmon/hwmon*/temp2_input"
 }
 
 cpu_temperature 3 {
          format = "3: %degrees"
-         path = "/sys/devices/platform/coretemp.0/hwmon/hwmonX/temp3_input"
+         path = "/sys/devices/platform/coretemp.0/hwmon/hwmon*/temp3_input"
 }
 
 cpu_temperature 4 {
          format = "4: %degrees"
-         path = "/sys/devices/platform/coretemp.0/hwmon/hwmonX/temp4_input"
+         path = "/sys/devices/platform/coretemp.0/hwmon/hwmon*/temp4_input"
 }
 
 cpu_temperature 5 {
          format = "5: %degrees"
-         path = "/sys/devices/platform/coretemp.0/hwmon/hwmonX/temp5_input"
-}
-
-cpu_temperature 6 {
-         format = "6: %degrees"
-         path = "/sys/devices/platform/coretemp.0/hwmon/hwmonX/temp6_input"
-}
-
-cpu_temperature 7 {
-         format = "7: %degrees"
-         path = "/sys/devices/platform/coretemp.0/hwmon/hwmonX/temp7_input"
+         path = "/sys/devices/platform/coretemp.0/hwmon/hwmon*/temp5_input"
 }
 
 tztime local {
