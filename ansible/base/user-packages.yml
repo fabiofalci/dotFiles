@@ -12,6 +12,7 @@
       - git-crypt
       - github-cli
       - gnome-keyring
+      - ttf-jetbrains-mono-nerd
       - wireguard-tools
     state: present
 
