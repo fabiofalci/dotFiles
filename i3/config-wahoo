@@ -249,7 +249,7 @@ bindsym $mod+Shift+d exec --no-startup-id cat $HOME/.config/dotFiles/i3/scripts.
 bindsym $mod+Shift+f exec --no-startup-id cat $HOME/.config/dotFiles/i3/power.conf | dmenu -l 30 | sed 's/.*    \+//' | sh
 bindsym Mod3+Tab exec rofi -show window
 
-exec --no-startup-id picom
+exec --no-startup-id picom --fade-in-step=1 --fade-out-step=1 --fade-delta=0 --backend=glx 
 
 hide_edge_borders smart
 #Hide window title bar
