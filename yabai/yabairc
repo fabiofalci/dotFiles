@@ -82,6 +82,7 @@ yabai -m rule --add app='IntelliJ IDEA' title='IDE Internal Errors' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Evaluate' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Convert Code From Java' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Add Python Interpreter' manage=off
+yabai -m rule --add app='IntelliJ IDEA' title='Plugin Updates' manage=off
 
 yabai -m rule --add title='^scratch$' manage=off
 yabai -m rule --add app='^CopyQ$' manage=off
@@ -89,6 +90,7 @@ yabai -m rule --add app='^YouTube Music$' manage=off
 yabai -m rule --add app='Microsoft Teams' title='^Call with' manage=off
 yabai -m rule --add app='^KeePassXC$' manage=off
 yabai -m rule --add app='^Weather$' manage=off
+yabai -m rule --add app='^Calendar$' manage=off
 yabai -m rule --add app='^Disk Utility$' manage=off
 yabai -m rule --add app='^ViewerKt$' manage=off
 yabai -m rule --add app='mpv$' manage=off
