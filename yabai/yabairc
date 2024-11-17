@@ -83,6 +83,7 @@ yabai -m rule --add app='IntelliJ IDEA' title='Evaluate' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Convert Code From Java' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Add Python Interpreter' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Plugin Updates' manage=off
+yabai -m rule --add app='IntelliJ IDEA' title='Change Signature' manage=off
 
 yabai -m rule --add title='^scratch$' manage=off
 yabai -m rule --add app='^CopyQ$' manage=off
