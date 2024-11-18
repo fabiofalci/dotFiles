@@ -17,14 +17,14 @@
     name:
 #      - connman-gtk
 #      - dropbox
-#      - google-chrome
+      - google-chrome
 #      - libinput-gestures
-#      - moka-icon-theme
+      - moka-icon-theme
 #      - notion-app
       - qomui
       - visual-studio-code-bin
 #      - slack-desktop
 #      - teams
 #      - ttf-font-awesome
-#      - ttf-nerd-fonts-symbols
+      - ttf-nerd-fonts-symbols
 #      - ttf-symbola
