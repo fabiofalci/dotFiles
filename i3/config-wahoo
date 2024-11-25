@@ -219,8 +219,8 @@ bindsym $mod+F12 exec --no-startup-id amixer set Master 2%+
 #bindsym $mod+F11 exec ~/.config/dotFiles/bin/laptop-sound.sh
 #bindsym $mod+F12 exec ~/.config/dotFiles/bin/soundbar.sh
 
-bindsym $mod+Tab workspace next
-bindsym $mod+Shift+Tab workspace prev
+bindsym Ctrl+Right workspace next
+bindsym Ctrl+Left workspace prev
 
 # move focused workspace between monitors
 bindsym $mod+Ctrl+greater move workspace to output right

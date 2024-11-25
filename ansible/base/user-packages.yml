@@ -39,6 +39,7 @@
       - lightdm
       - lxappearance
       - mplayer
+      - neovim
       - openjdk11-src
       - pavucontrol
       - picom
