@@ -84,6 +84,30 @@ yabai -m rule --add app='IntelliJ IDEA' title='Convert Code From Java' manage=of
 yabai -m rule --add app='IntelliJ IDEA' title='Add Python Interpreter' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Plugin Updates' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Change Signature' manage=off
+yabai -m rule --add app='IntelliJ IDEA' title='Run/Debug Configurations' manage=off
+
+yabai -m rule --add app='Android Studio' title='Project Structure' manage=off
+yabai -m rule --add app='Android Studio' title='Preferences' manage=off
+yabai -m rule --add app='Android Studio' title='Edit configuration' manage=off
+yabai -m rule --add app='Android Studio' title='Data Sources and Drivers' manage=off
+yabai -m rule --add app='Android Studio' title='Keymap' manage=off
+yabai -m rule --add app='Android Studio' title='Keyboard Shortcut' manage=off
+yabai -m rule --add app='Android Studio' title='Copy' manage=off
+yabai -m rule --add app='Android Studio' title='Rename' manage=off
+yabai -m rule --add app='Android Studio' title='Add File to Git' manage=off
+yabai -m rule --add app='Android Studio' title='Delete' manage=off
+yabai -m rule --add app='Android Studio' title='Implement Members' manage=off
+yabai -m rule --add app='Android Studio' title='Create Test' manage=off
+yabai -m rule --add app='Android Studio' title='Run/Debug Configurations' manage=off
+yabai -m rule --add app='Android Studio' title='Plugins Updates' manage=off
+yabai -m rule --add app='Android Studio' title='Move' manage=off
+yabai -m rule --add app='Android Studio' title='IDE Internal Errors' manage=off
+yabai -m rule --add app='Android Studio' title='Evaluate' manage=off
+yabai -m rule --add app='Android Studio' title='Convert Code From Java' manage=off
+yabai -m rule --add app='Android Studio' title='Add Python Interpreter' manage=off
+yabai -m rule --add app='Android Studio' title='Plugin Updates' manage=off
+yabai -m rule --add app='Android Studio' title='Change Signature' manage=off
+yabai -m rule --add app='Android Studio' title='Run/Debug Configurations' manage=off
 
 yabai -m rule --add title='^scratch$' manage=off
 yabai -m rule --add app='^CopyQ$' manage=off
