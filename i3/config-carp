@@ -258,7 +258,6 @@ default_border pixel 1
 default_floating_border pixel 1
 for_window [class="^.*"] border pixel 1
 
-
 exec copyq
 client.focused #81a2be #81a2be #343d46 #4f5b66
 client.focused_inactive #65737e #65737e #a7adba #4f5b66
@@ -267,30 +266,9 @@ client.urgent #65737e #cc6666 #ffffff #cc6666
 
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
-#for_window [class="YouTube Music"] move to scratchpad
-for_window [instance="music.youtube.com"] move to scratchpad
-for_window [class="notion-app"] move to scratchpad
-for_window [class="Spotify"] move to scratchpad
-for_window [class="Alacritty-termdown"] move to scratchpad
-#bindsym $mod+m [class="YouTube Music"] scratchpad show
-bindsym $mod+m [instance="music.youtube.com"] scratchpad show
-bindsym $mod+o [class="Spotify"] scratchpad show
-#bindsym $mod+n [class="notion-app"] scratchpad show
 bindsym $mod+p [class="Alacritty-termdown"] scratchpad show
-#bindsym $mod+n [class="Google-chrome"] scratchpad show, resize set 70 ppt 90 ppt, move position center;
 
 
 for_window [class="Pavucontrol"] floating enable
-
-#for_window [class="copyq"] floating enable, resize set 70 ppt 90 ppt, move position center;
 for_window [class="copyq"] floating enable
-#for_window [title="CopyQ"] sticky enable
 
-for_window [class="textsnatcher"] floating enable
-for_window [class="Alacritty-float"] floating enable
-
-for_window [title="video3 - mpv"] floating enable
-for_window [title="video3 - mpv"] sticky enable
-
-for_window [title="video2 - mpv"] floating enable
-for_window [title="video2 - mpv"] sticky enable
