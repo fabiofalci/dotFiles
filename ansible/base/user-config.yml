@@ -120,3 +120,16 @@
     src: "{{ dotFilesPath }}/tmux/tmux.conf"
     dest: ~/.tmux.conf
     state: link
+
+- name: alacritty folder
+  file:
+    path: ~/.config/alacritty
+    state: directory
+    mode: '0755'
+
+- name: alacritty
+  file:
+    src: "{{ dotFilesPath }}/alacritty/alacritty.toml"
+    dest: ~/.config/alacritty/alacritty.toml
+    state: link
+
