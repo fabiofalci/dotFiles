@@ -63,6 +63,7 @@
       - openjdk@11
       - openjdk@17
       - peco
+      - pipx
       - python
       - gnu-prolog
       - ranger
