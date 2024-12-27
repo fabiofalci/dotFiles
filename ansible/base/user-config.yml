@@ -26,9 +26,10 @@
 
 - name: i3status
   when: profile is defined
-  copy:
+  file:
     src: "{{ dotFilesPath }}/i3/i3status-config-{{ profile }}.template"
     dest: ~/.config/i3status/config
+    state: link
 
 - name: Ensures systemd user dir exists
   file: path=~/.config/systemd/user/ state=directory

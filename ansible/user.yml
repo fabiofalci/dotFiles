@@ -1,6 +1,9 @@
 ---
 - hosts: localhost
   tasks:
+   - include_tasks: tools/users.yml
+     when: user is defined
+
    - include_tasks: base/sys-packages.yml
      when: run_pacman is defined
 

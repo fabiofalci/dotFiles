@@ -27,7 +27,7 @@ eval "$(jenv init -)"
 
 [ -f /opt/azure-cli/az.completion ] && source /opt/azure-cli/az.completion
 
-#source /usr/share/nvm/init-nvm.sh
+source /usr/share/nvm/init-nvm.sh
 
 alias g=git
 __git_complete g __git_main

@@ -14,6 +14,12 @@
 - name: Ensure group exists
   become: yes
   group:
+    name: storage
+    state: present
+
+- name: Ensure group exists
+  become: yes
+  group:
     name: synct
     state: present
 
