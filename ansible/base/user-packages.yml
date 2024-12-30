@@ -46,7 +46,7 @@
       - portaudio
       - pulseaudio
       - pulseaudio-alsa
-#      - syncthing
+      - syncthing
       - thunar
       - ttf-dejavu
       - vlc
