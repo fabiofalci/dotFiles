@@ -179,9 +179,11 @@ subdir
 submatrix
 synchronizer
 tfstate
+tfvars
 threewks
 thundr
 toclevels
+tolerations
 transparity
 tuckey
 twilio

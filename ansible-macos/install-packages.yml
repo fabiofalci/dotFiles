@@ -68,6 +68,7 @@
       - gnu-prolog
       - ranger
       - redis
+      - ripgrep
       - rust
       - sfml
       - tig
