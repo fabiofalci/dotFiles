@@ -8,10 +8,10 @@
       - curl
       - git
       - go
-      - helm
+      # - helm
       - jq
       - tmux
-      - kubectl
+      # - kubectl
       - vim
       - wget
     update_cache: true

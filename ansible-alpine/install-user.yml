@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  tasks:
+   - include_tasks: tools/users.yml
+     when: user is defined
+
+   - include_tasks: tools/dotFiles.yml
+     when: dotFiles is defined
+
+   - include_tasks: tools/ssh.yml
+     when: ssh is defined
