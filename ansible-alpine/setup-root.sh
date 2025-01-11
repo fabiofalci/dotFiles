@@ -1,12 +1,8 @@
 #!/bin/bash
 
-pacman -Syu --noconfirm
-pacman -S --needed ansible git base-devel --noconfirm
-
-mkdir -pv ~/.ansible/plugins/modules
-curl -o ~/.ansible/plugins/modules/aur.py https://raw.githubusercontent.com/kewlfft/ansible-aur/master/plugins/modules/aur.py
+apk upgrade
+apk add ansible
 
 cd ~/.config/dotFiles/ansible
-ansible-playbook --ask-become-pass root-install.yml --extra-vars "run_pacman=Y"
 ansible-playbook --ask-become-pass install-user.yml --extra-vars "user=fabio ssh=Y dotFilesPath=~/.config/dotFiles"
-ansible-playbook --ask-become-pass install-user.yml --extra-vars "user=fabio ssh=Y dotFilesPath=~/.config/dotFiles dotFilesPrivatePath=~/.config/dotFiles-private"
+# ansible-playbook --ask-become-pass install-user.yml --extra-vars "user=fabio ssh=Y dotFilesPath=~/.config/dotFiles dotFilesPrivatePath=~/.config/dotFiles-private"
