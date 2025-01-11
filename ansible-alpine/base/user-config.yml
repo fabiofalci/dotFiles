@@ -11,11 +11,11 @@
     regexp: '^source {{ dotFilesPath }}/bash/defaults$'
     line: source {{ dotFilesPath }}/bash/defaults
 
-- name: bashrc defaults_macos
+- name: bashrc defaults_linux
   lineinfile:
     path: ~/.zprofile
-    regexp: '^source {{ dotFilesPath }}/bash/defaults_macos$'
-    line: source {{ dotFilesPath }}/bash/defaults_macos
+    regexp: '^source {{ dotFilesPath }}/bash/defaults_linux$'
+    line: source {{ dotFilesPath }}/bash/defaults_linux
 
 - name: bashrc bin commands
   lineinfile:

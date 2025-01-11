@@ -1,0 +1,31 @@
+---
+
+- name: Create aur modules folder
+  become: true
+  file:
+    path: /home/{{ user }}/.ansible/plugins/modules
+    state: directory
+    owner: "{{ user }}"
+    group: users
+    mode: 0700
+
+- name: Download aur module
+  become: true
+  get_url:
+    url: https://raw.githubusercontent.com/kewlfft/ansible-aur/master/plugins/modules/aur.py
+    dest: /home/{{ user }}/.ansible/plugins/modules/aur.py
+    owner: "{{ user }}"
+    group: users
+    mode: '0700'
+
+- name: Clone dotFiles
+  become: true
+  git:
+    repo: https://github.com/fabiofalci/dotFiles.git
+    dest: /home/{{ user }}/.config/dotFiles/
+    clone: yes
+    update: no
+
+- name: Ensure .config permissions
+  become: true
+  file: dest=/home/{{ user }}/.config owner={{ user }} group=users mode=u=rwX,g=rX,o=rX recurse=yes

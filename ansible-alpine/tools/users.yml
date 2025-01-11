@@ -1,0 +1,11 @@
+---
+
+- name: Adding user
+  become: yes
+  user: 
+    name: "{{ user }}"
+    group: users
+    shell: /bin/bash
+    groups: wheel
+    append: yes
+
