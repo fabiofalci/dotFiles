@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 apk upgrade
 apk add ansible
