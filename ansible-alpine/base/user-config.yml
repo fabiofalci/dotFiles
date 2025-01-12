@@ -41,26 +41,10 @@
     dest: ~/.gitignore_global
     state: link
 
-- name: vimrc
-  file:
-    src: "{{ dotFilesPath }}/vim/vimrc"
-    dest: ~/.vimrc
-    state: link
-
-- name: vim
-  file:
-    src: "{{ dotFilesPath }}/vim/"
-    dest: ~/.vim
-    state: link
-
-#- name: inputrc
-#  file:
-#    src: "{{ dotFilesPath }}/bash/inputrc"
-#    dest: ~/.inputrc
-#    state: link
-
 - name: tmux
-  file:
+  copy:
     src: "{{ dotFilesPath }}/tmux/tmux.conf"
     dest: ~/.tmux.conf
+    force: no
     state: link
+
