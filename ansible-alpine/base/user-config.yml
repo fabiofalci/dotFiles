@@ -46,5 +46,4 @@
     src: "{{ dotFilesPath }}/tmux/tmux.conf"
     dest: ~/.tmux.conf
     force: no
-    state: link
 
