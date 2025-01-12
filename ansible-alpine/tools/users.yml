@@ -9,3 +9,10 @@
     groups: wheel
     append: yes
 
+
+- name: Adding user doas
+  lineinfile:
+    path: /etc/doas.conf
+    regexp: '^permit {{ user }} as root$'
+    line: permit {{ user }} as root
+

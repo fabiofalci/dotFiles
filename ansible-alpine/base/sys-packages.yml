@@ -1,6 +1,7 @@
 ---
 - name: Install sys base packages
   become: yes
+  become_method: doas
   community.general.apk:
     name:
       - ack
