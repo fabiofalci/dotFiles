@@ -1,6 +1,17 @@
 ---
 - name: bashrc private defaults
+  when: dotFilesPrivatePath is defined
   lineinfile:
     path: ~/.zprofile
     regexp: '^source {{ dotFilesPrivatePath }}/bash/defaults-private$'
     line: source {{ dotFilesPrivatePath }}/bash/defaults-private
+
+- name: Copy ssh config
+  when: dotFilesPrivatePath is defined
+  copy:
+    src: "{{ dotFilesPrivatePath }}/ssh/ssh-config"
+    dest: /home/{{ user }}/.ssh/config
+    force: no
+    owner: "{{ user }}"
+    group: users
+    mode: '0644'
