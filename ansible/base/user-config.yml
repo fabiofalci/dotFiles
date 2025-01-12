@@ -117,10 +117,10 @@
     state: link
 
 - name: tmux
-  file:
+  copy:
     src: "{{ dotFilesPath }}/tmux/tmux.conf"
     dest: ~/.tmux.conf
-    state: link
+    force: no
 
 - name: alacritty folder
   file:
