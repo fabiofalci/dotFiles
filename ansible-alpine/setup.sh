@@ -5,4 +5,4 @@
 apk add ansible
 apk add zsh
 ansible-playbook --ask-become-pass alpine-vm.yml --extra-vars "dotFilesPath=~/.config/dotFiles  dotFilesPrivatePath=~/.config/dotFiles-private"
-chsh fabio
+#chsh fabio

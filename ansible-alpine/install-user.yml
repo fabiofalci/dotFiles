@@ -7,5 +7,3 @@
    - include_tasks: tools/dotFiles.yml
      when: dotFiles is defined
 
-   - include_tasks: tools/ssh.yml
-     when: ssh is defined
