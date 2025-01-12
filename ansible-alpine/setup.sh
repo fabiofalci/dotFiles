@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 #git clone https://github.com/fabiofalci/dotFiles.git ~/.config/dotFiles
 
