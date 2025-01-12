@@ -8,6 +8,14 @@
     clone: yes
     update: no
 
+- name: Clone dotFiles private
+  become: true
+  git:
+    repo: http://gitea.home/fabiofalci/dotFiles-private.git
+    dest: /home/{{ user }}/.config/dotFiles-private/
+    clone: yes
+    update: no
+
 - name: Ensure .config permissions
   become: true
   file: dest=/home/{{ user }}/.config owner={{ user }} group=users mode=u=rwX,g=rX,o=rX recurse=yes
