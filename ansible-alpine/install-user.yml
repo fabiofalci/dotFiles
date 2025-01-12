@@ -5,7 +5,7 @@
      when: user is defined
 
    - include_tasks: tools/dotFiles.yml
-     when: dotFilesPath is defined
+     when: dotFiles is defined
 
    # - include_tasks: tools/ssh.yml
    #   when: ssh is defined
