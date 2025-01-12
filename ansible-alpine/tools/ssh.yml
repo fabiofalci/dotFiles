@@ -1,0 +1,41 @@
+---
+
+#- name: Copy ssh key
+#  become: true
+#  copy:
+#    src: ~/.ssh/id_rsa
+#    dest: /home/{{ user }}/.ssh/id_rsa
+#    force: no
+#    owner: "{{ user }}"
+#    group: users
+#    mode: '0600'
+#
+#- name: Copy ssh public keys
+#  become: true
+#  copy:
+#    src: ~/.ssh/id_rsa.pub
+#    dest: /home/{{ user }}/.ssh/id_rsa.pub
+#    force: no
+#    owner: "{{ user }}"
+#    group: users
+#    mode: '0644'
+
+- name: Create .ssh folder
+  become: true
+  file:
+    path: /home/{{ user }}/.ssh
+    state: directory
+    owner: "{{ user }}"
+    group: users
+    mode: 0700
+
+- name: Copy ssh config
+  when: dotFilesPrivatePath is defined
+  become: true
+  copy:
+    src: "{{ dotFilesPrivatePath }}/ssh/ssh-config"
+    dest: /home/{{ user }}/.ssh/config
+    force: no
+    owner: "{{ user }}"
+    group: users
+    mode: '0644'
