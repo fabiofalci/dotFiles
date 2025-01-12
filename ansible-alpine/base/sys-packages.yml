@@ -8,6 +8,7 @@
       - bc
       - curl
       - git
+      - git-crypt
       - go
       # - helm
       - jq
