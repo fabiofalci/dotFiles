@@ -17,6 +17,7 @@ arns
 asciidoc
 asub
 authcode
+azuread
 azurecr
 azurerm
 backoffice
@@ -40,6 +41,7 @@ cloudinary
 codec
 cofactor
 completedevent
+containerreg
 coords
 cordova
 cors

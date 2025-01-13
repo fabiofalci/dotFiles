@@ -8,7 +8,7 @@ export DOT_FILES=~/.config/dotFiles
 export DOT_FILES_PRIVATE=~/.config/dotFiles-private
 
 export GOPATH=~/go
-export PATH=~/bin:$PATH:~/go/bin:~/.config/dotFiles/bin:~/.config/dotFiles/private/bin
+export PATH=~/bin:$PATH:~/go/bin:~/.config/dotFiles/bin:~/.config/dotFiles/private/bin:~/.local/bin
 
 # basic just-in-time compilation of the code only
 export MAVEN_OPTS="-XX:+TieredCompilation -XX:TieredStopAtLevel=1"
