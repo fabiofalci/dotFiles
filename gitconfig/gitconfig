@@ -1,6 +1,7 @@
 [alias]
     ci = commit
     co = checkout
+    sw = switch
     st = status
     br = branch
     pl = pull --ff-only
