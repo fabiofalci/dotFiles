@@ -7,7 +7,7 @@ curl -o ~/.ansible/plugins/modules/aur.py https://raw.githubusercontent.com/kewl
 
 cd ~/.config/dotFiles/ansible
 #ansible-playbook --ask-become-pass user.yml --extra-vars "run_pacman=Y run_aur=Y ui=Y user=fabio profile=shark dotFilesPath=~/.config/dotFiles"
-ansible-playbook --ask-become-pass user.yml --extra-vars "run_pacman=Y run_aur=Y ui=Y user=fabio profile=wahoo ssh=Y dotFilesPath=~/.config/dotFiles dotFilesPrivatePath=~/.config/dotFiles-private"
+ansible-playbook --ask-become-pass user.yml --extra-vars "run_pacman=Y run_aur=Y ui=Y user=fabio profile=trout ssh=Y dotFilesPath=~/.config/dotFiles dotFilesPrivatePath=~/.config/dotFiles-private"
 
 #ansible-playbook --ask-become-pass arch-vm.yml --extra-vars "run_pacman=Y run_aur=Y ssh=Y user=fabio dotFilesPath=~/.config/dotFiles"
 #ansible-playbook --ask-become-pass user-install.yml --extra-vars "user=fabio profile=$HOSTNAME-ff dotFilesPath=~/.config/dotFiles"
