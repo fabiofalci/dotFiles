@@ -183,18 +183,9 @@ bar {
 	}
 }
 
-bindsym Control+Mod1+l exec "sconsify -command pause ; playerctl pause ; i3lock -c 000000"
-bindsym Control+Mod1+k exec "sconsify -command pause ; playerctl pause ; pkill -15 teams; i3lock -c 000000 -n; cat $HOME/.config/dotFiles/i3/after-unlock.conf | dmenu -l 30 | sed 's/.*    \+//' | sh"
-
 bindsym XF86AudioMute exec amixer -q set Master toggle
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 2%- 
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 2%+
-
-#bindsym XF86KbdBrightnessDown exec kbdlight down 10%
-#bindsym XF86KbdBrightnessUp exec kbdlight up 10%
-
-#bindsym XF86MonBrightnessUp exec xbacklight -inc 10
-#bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 
 bindsym XF86MonBrightnessUp exec brightnessctl set 10%+
 bindsym XF86MonBrightnessDown exec brightnessctl set 10%- 
@@ -205,23 +196,15 @@ bindsym $mod+F1 exec google-chrome-stable --profile-directory=Default
 bindsym $mod+F2 exec intellij-idea-ultimate-edition
 bindsym $mod+F3 exec firefox --private-window
 bindsym $mod+F4 exec autorandr -c default
-#bindsym $mod+F4 exec mpv /dev/video2
 bindsym $mod+F5 exec autorandr -c lg_usbc
 
-bindsym XF86AudioPrev exec ~/.config/dotFiles/i3/media_buttons.sh XF86AudioPrev
-bindsym XF86AudioPlay exec ~/.config/dotFiles/i3/media_buttons.sh XF86AudioPlay
-bindsym XF86AudioNext exec ~/.config/dotFiles/i3/media_buttons.sh XF86AudioNext
-
-bindsym $mod+F7 exec sconsify -command replay
-bindsym $mod+F8 exec sconsify -command play_pause
-bindsym $mod+F9 exec sconsify -command next
+bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
 
 bindsym $mod+F10 exec amixer -q set Master toggle
 bindsym $mod+F11 exec --no-startup-id amixer set Master 2%- 
 bindsym $mod+F12 exec --no-startup-id amixer set Master 2%+
-
-#bindsym $mod+F11 exec ~/.config/dotFiles/bin/laptop-sound.sh
-#bindsym $mod+F12 exec ~/.config/dotFiles/bin/soundbar.sh
 
 bindsym Ctrl+Right workspace next
 bindsym Ctrl+Left workspace prev
@@ -245,7 +228,7 @@ mode "$mode_system" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+XF86Launch9 mode "$mode_system"
+bindsym $mod+Shift+F1 mode "$mode_system"
 bindsym XF86Launch7 exec xfce4-screenshooter
 bindsym XF86Launch8 exec alacritty --command=bc
 bindsym XF86Launch9 exec pavucontrol
