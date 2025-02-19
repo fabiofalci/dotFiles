@@ -18,6 +18,8 @@ order += "battery 0"
 order += "cpu_temperature 1"
 order += "cpu_temperature 2"
 order += "cpu_temperature 3"
+order += "cpu_temperature 4"
+order += "cpu_temperature 5"
 order += "wireless _first_"
 order += "ethernet _first_"
 order += "tztime local"
@@ -59,6 +61,16 @@ cpu_temperature 2 {
 cpu_temperature 3 {
          format = "3: %degrees"
          path = "/sys/devices/platform/coretemp.0/hwmon/hwmon*/temp3_input"
+}
+
+cpu_temperature 4 {
+         format = "4: %degrees"
+         path = "/sys/devices/platform/coretemp.0/hwmon/hwmon*/temp4_input"
+}
+
+cpu_temperature 5 {
+         format = "4: %degrees"
+         path = "/sys/devices/platform/coretemp.0/hwmon/hwmon*/temp5_input"
 }
 
 tztime local {
