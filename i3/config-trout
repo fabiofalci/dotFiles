@@ -193,8 +193,11 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 2%+
 #bindsym XF86KbdBrightnessDown exec kbdlight down 10%
 #bindsym XF86KbdBrightnessUp exec kbdlight up 10%
 
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+#bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+#bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+
+bindsym XF86MonBrightnessUp exec brightnessctl set 10%+
+bindsym XF86MonBrightnessDown exec brightnessctl set 10%- 
 
 bindsym $mod+b workspace back_and_forth
 
