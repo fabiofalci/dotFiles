@@ -39,10 +39,6 @@ ethernet _first_ {
         format_down = "E: down"
 }
 
-battery 0 {
-        format = "%status %percentage %remaining"
-}
-
 cpu_usage {
          format = "%usage"
 }
