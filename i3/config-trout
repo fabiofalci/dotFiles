@@ -31,7 +31,7 @@ font pango:San Francisco Display 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec alacritty -e tmux attach
 bindsym $mod+Control+Return exec alacritty --class Alacritty-float --title float
 
 # kill focused window
@@ -113,9 +113,9 @@ bindsym Mod1+8 workspace 8
 bindsym Mod1+9 workspace 9
 bindsym Mod1+0 workspace 10
 #bindsym Mod1+minus workspace 11: ☺
-bindsym Mod1+equal workspace 12: ♪
-bindsym Mod1+bracketleft workspace 13: 🌎
-bindsym Mod1+bracketright workspace 14: 📅
+#bindsym Mod1+equal workspace 12: ♪
+#bindsym Mod1+bracketleft workspace 13: 🌎
+#bindsym Mod1+bracketright workspace 14: 📅
 #bindsym Mod1+p workspace 15: 🥤
 
 # move focused container to workspace
@@ -130,9 +130,9 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 #bindsym $mod+Shift+minus move container to workspace 11: ☺
-bindsym $mod+Shift+equal move container to workspace 12: ♪
-bindsym $mod+Shift+bracketleft move container to workspace 13: 🌎
-bindsym $mod+Shift+bracketright move container to workspace 14: 📅
+#bindsym $mod+Shift+equal move container to workspace 12: ♪
+#bindsym $mod+Shift+bracketleft move container to workspace 13: 🌎
+#bindsym $mod+Shift+bracketright move container to workspace 14: 📅
 #bindsym $mod+Shift+p move container to workspace 15: 🥤
 
 # reload the configuration file
@@ -194,9 +194,9 @@ bindsym $mod+b workspace back_and_forth
 
 bindsym $mod+F1 exec google-chrome-stable --profile-directory=Default
 bindsym $mod+F2 exec intellij-idea-ultimate-edition
-bindsym $mod+F3 exec firefox --private-window
-bindsym $mod+F4 exec autorandr -c default
-bindsym $mod+F5 exec autorandr -c lg_usbc
+bindsym $mod+F4 exec firefox --private-window
+#bindsym $mod+F4 exec autorandr -c default
+#bindsym $mod+F5 exec autorandr -c lg_usbc
 
 bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86AudioPlay exec playerctl play-pause
@@ -239,6 +239,7 @@ bindsym Mod3+Tab exec rofi -show window
 exec --no-startup-id picom --fade-in-step=1 --fade-out-step=1 --fade-delta=0 --backend=glx 
 exec --no-startup-id libinput-gestures
 exec --no-startup-id udiskie
+#exec --no-startup-id lxqt-policykit-agent
 
 hide_edge_borders smart
 #Hide window title bar
@@ -259,4 +260,6 @@ bindsym $mod+p [class="Alacritty-termdown"] scratchpad show
 
 for_window [class="Pavucontrol"] floating enable
 for_window [class="copyq"] floating enable
+
+bindsym Control+Mod1+l exec --no-startup-id i3lock
 
