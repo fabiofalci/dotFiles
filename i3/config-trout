@@ -267,5 +267,5 @@ bindsym $mod+p [class="Alacritty-termdown"] scratchpad show
 for_window [class="Pavucontrol"] floating enable
 for_window [class="copyq"] floating enable
 
-bindsym Control+Mod1+l exec --no-startup-id i3lock
+bindsym Control+Mod1+l exec --no-startup-id i3lock -c 000000 && playerctl pause
 
