@@ -204,9 +204,9 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 
-bindsym Ctrl+F8 exec playerctl previous
-bindsym Ctrl+F9 exec playerctl play-pause
-bindsym Ctrl+F10 exec playerctl next
+#bindsym Ctrl+F8 exec playerctl previous
+#bindsym Ctrl+F9 exec playerctl play-pause
+#bindsym Ctrl+F10 exec playerctl next
 
 bindsym $mod+F10 exec amixer -q set Master toggle
 bindsym $mod+F11 exec --no-startup-id amixer set Master 2%- 
