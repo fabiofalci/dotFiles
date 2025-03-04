@@ -205,7 +205,7 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 
 #bindsym Ctrl+F8 exec playerctl previous
-#bindsym Ctrl+F9 exec playerctl play-pause
+bindsym $mod+F9 exec playerctl play-pause
 #bindsym Ctrl+F10 exec playerctl next
 
 bindsym $mod+F10 exec amixer -q set Master toggle
@@ -245,6 +245,7 @@ bindsym Mod3+Tab exec rofi -show window
 exec --no-startup-id picom --fade-in-step=1 --fade-out-step=1 --fade-delta=0 --backend=glx 
 exec --no-startup-id libinput-gestures
 exec --no-startup-id udiskie
+exec --no-startup-id nm-applet --sm-disable
 #exec --no-startup-id lxqt-policykit-agent
 
 hide_edge_borders smart
