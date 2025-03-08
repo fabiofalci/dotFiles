@@ -28,6 +28,7 @@
       - pacman-contrib
       - ranger
       - openresolv
+      - ripgrep
       - rsync
       - sudo
       - tig

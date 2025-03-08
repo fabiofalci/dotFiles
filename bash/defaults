@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export EDITOR=`which vim`
+export EDITOR=$(which vim)
 
 export sconsify=~/go/src/github.com/fabiofalci/sconsify/
 
@@ -28,6 +28,8 @@ alias k9='kill -9 '
 alias du1='du -h -d 1 | sort -r -h'
 alias prettyjson='python -m json.tool'
 alias copy='xclip -selection clipboard'
+alias setclip="xclip -selection c"
+alias getclip="xclip -selection c -o"
 alias pex='pet exec'
 alias lah='ls -lah'
 alias fm='. ranger'
