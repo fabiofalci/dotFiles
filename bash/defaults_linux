@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export TERM=xterm-256color
+#export TERM=xterm-256color
 #export IDEA_JDK=/usr/lib/jvm/jdk-jetbrains
 
 export M2_HOME=/opt/maven
@@ -19,27 +19,37 @@ alias now_plus="date +%H:%M -d "
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
-[ -f /usr/share/fzf/key-bindings.bash ] && source /usr/share/fzf/key-bindings.bash
-[ -f /usr/share/fzf/completion.bash ] && source /usr/share/fzf/completion.bash
+#[ -f /usr/share/fzf/key-bindings.bash ] && source /usr/share/fzf/key-bindings.bash
+#[ -f /usr/share/fzf/completion.bash ] && source /usr/share/fzf/completion.bash
 
-[ -f /opt/google-cloud-sdk/completion.bash.inc ] && source /opt/google-cloud-sdk/completion.bash.inc
-[ -f /opt/google-cloud-sdk/path.bash.inc ] && source /opt/google-cloud-sdk/path.bash.inc
+#[ -f /opt/google-cloud-sdk/completion.bash.inc ] && source /opt/google-cloud-sdk/completion.bash.inc
+#[ -f /opt/google-cloud-sdk/path.bash.inc ] && source /opt/google-cloud-sdk/path.bash.inc
 
-[ -f /opt/azure-cli/az.completion ] && source /opt/azure-cli/az.completion
+#[ -f /opt/azure-cli/az.completion ] && source /opt/azure-cli/az.completion
 
 source /usr/share/nvm/init-nvm.sh
 
-alias g=git
-__git_complete g __git_main
+#alias g=git
+#__git_complete g __git_main
 
-pet-select() {
-  BUFFER=$(pet search --query "$READLINE_LINE")
-  READLINE_LINE=$BUFFER
-  READLINE_POINT=${#BUFFER}
-}
-bind -x '"\C-y": pet-select'
+#pet-select() {
+#  BUFFER=$(pet search --query "$READLINE_LINE")
+#  READLINE_LINE=$BUFFER
+#  READLINE_POINT=${#BUFFER}
+#}
+#bind -x '"\C-y": pet-select'
 #bind -x '"\C-r": __fzf_history__'
 
-if hash kubectl 2>/dev/null; then
-    source <(kubectl completion bash | sed 's/kubectl/k/g')
-fi
+function pet-select() {
+  BUFFER=$(pet search --query "$LBUFFER")
+  CURSOR=$#BUFFER
+  zle redisplay
+}
+zle -N pet-select
+stty -ixon
+# this bind is on .zshrc, it doesn't work here for some reason
+#bindkey '^Y' pet-select
+
+#if hash kubectl 2>/dev/null; then
+#    source <(kubectl completion bash | sed 's/kubectl/k/g')
+#fi
