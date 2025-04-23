@@ -35,6 +35,7 @@ alias lah='ls -lah'
 alias fm='. ranger'
 alias ad='git add .'
 alias ty="bat -lyaml"
+alias baty='bat -lyaml'
 
 alias k='kubectl'
 alias g=git
