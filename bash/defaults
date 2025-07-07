@@ -36,6 +36,7 @@ alias fm='. ranger'
 alias ad='git add .'
 alias ty="bat -lyaml"
 alias baty='bat -lyaml'
+alias n='nvim .'
 
 alias k='kubectl'
 alias g=git
