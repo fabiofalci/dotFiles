@@ -294,8 +294,7 @@ for_window [class="copyq"] floating enable
 for_window [class="textsnatcher"] floating enable
 for_window [class="Alacritty-float"] floating enable
 
-for_window [title="video3 - mpv"] floating enable
-for_window [title="video3 - mpv"] sticky enable
-
-for_window [title="video2 - mpv"] floating enable
-for_window [title="video2 - mpv"] sticky enable
+for_window [title="Test Window"] floating enable
+for_window [title="Test Window"] resize set 1920 1080
+for_window [title="Test Window"] move absolute position center
+for_window [title="Dragonfly-example"] sticky enable
