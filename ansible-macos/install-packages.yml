@@ -28,7 +28,7 @@
       - sf-symbols
       - slack
       - syncthing
-      - utm
+      #- utm
       - visual-studio-code
     brew_packages:
       - ack
@@ -37,9 +37,10 @@
       - bat
       - calcurse
       - cmake
-      - colima
+      #- colima
       - docker-buildx
       - ffmpeg
+      - fx
       - fzf
       - gh
       - git
@@ -61,8 +62,9 @@
       - ncdu
       - nvm
       - openjdk
-      - openjdk@11
+      #- openjdk@11
       - openjdk@17
+      - openjdk@21
       - peco
       - pipx
       - python
