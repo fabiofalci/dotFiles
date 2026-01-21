@@ -40,3 +40,10 @@ alias n='nvim .'
 
 alias k='kubectl'
 alias g=git
+
+alias kc='kubie ctx'
+alias kn='kubie ns'
+
+alias k9s='TERM=xterm-256color k9s'
+
+alias elev_q='history | grep elevate-contributor | grep '

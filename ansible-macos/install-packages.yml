@@ -15,7 +15,7 @@
       - adobe-digital-editions
       - alacritty
       - calibre
-      - copyq
+      # - copyq
       - docker
       - doll
       - font-hack-nerd-font
