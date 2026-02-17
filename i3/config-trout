@@ -212,8 +212,8 @@ bindsym $mod+F10 exec amixer -q set Master toggle
 bindsym $mod+F11 exec --no-startup-id amixer set Master 2%- 
 bindsym $mod+F12 exec --no-startup-id amixer set Master 2%+
 
-bindsym Ctrl+Right workspace next
-bindsym Ctrl+Left workspace prev
+#bindsym Ctrl+Right workspace next
+#bindsym Ctrl+Left workspace prev
 
 # move focused workspace between monitors
 bindsym $mod+Ctrl+greater move workspace to output right
@@ -267,6 +267,12 @@ bindsym $mod+p [class="Alacritty-termdown"] scratchpad show
 
 for_window [class="Pavucontrol"] floating enable
 for_window [class="copyq"] floating enable
+for_window [class="Test Window"] floating enable
+for_window [class="Dragonfly-example"] floating enable
+for_window [title="YouTube-3DSage"] floating enable
 
 bindsym Control+Mod1+l exec --no-startup-id i3lock -c 000000 && playerctl pause
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
+# Toggle between gb-intl and regular gb layout
+bindsym $mod+i exec --no-startup-id "setxkbmap -query | grep -q 'variant:.*intl' && setxkbmap -layout gb || setxkbmap -layout gb -variant intl"
