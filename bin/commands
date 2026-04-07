@@ -46,12 +46,38 @@ snapshot_image(){
 	printf "0.%s" $(git rev-parse HEAD)
 }
 
-ci(){
-	message=("$*")
-	printf "Enter to confirm message (ctrl-c to cancel): '$message' "
+# Prompts for optional description and runs git commit.
+# Usage: _ci_commit "title" ["#deploytodev"]
+_ci_commit(){
+	local title="$1"
+	local suffix="${2:-}"
+	printf "Enter to confirm (d=inline description, e=editor, ctrl-c to cancel): '$title' "
 	read confirm
 
-	git commit -m "$message"
+	if [[ "$confirm" == "d" ]]; then
+		printf "Description: "
+		read description
+		git commit -m "${title}${suffix:+ $suffix}" -m "$description"
+	elif [[ "$confirm" == "e" ]]; then
+		local tmpfile=$(mktemp /tmp/git_commit_msg.XXXXXX)
+		printf "%s\n\n# Write description below (lines starting with # are ignored)\n" "$title" > "$tmpfile"
+		${EDITOR:-vi} "$tmpfile"
+		local parsed_title=$(sed -n '1p' "$tmpfile")
+		local parsed_body=$(sed '1,2d; /^#/d' "$tmpfile")
+		rm -f "$tmpfile"
+		if [[ -n "$parsed_body" ]]; then
+			git commit -m "${parsed_title}${suffix:+ $suffix}" -m "$parsed_body"
+		else
+			git commit -m "${parsed_title}${suffix:+ $suffix}"
+		fi
+	else
+		git commit -m "${title}${suffix:+ $suffix}"
+	fi
+}
+
+ci(){
+	local message="$*"
+	_ci_commit "$message"
 	if [ $? -eq 0 ];then
 		printf "Done\n"
 	else
@@ -60,11 +86,8 @@ ci(){
 }
 
 ci_and_push(){
-	message=("$*")
-	printf "Enter to confirm message (ctrl-c to cancel): '$message' "
-	read confirm
-
-	git commit -m "$message"
+	local message="$*"
+	_ci_commit "$message"
 	if [ $? -eq 0 ];then
 		git push origin
 	else
@@ -73,12 +96,8 @@ ci_and_push(){
 }
 
 ci_and_push_and_deploy(){
-	message=("$*")
-	printf "Enter to confirm message (ctrl-c to cancel): '$message' "
-	read confirm
-
-	#git commit -m "$message" -m "to #deploytodev"
-	git commit -m "$message #deploytodev"
+	local message="$*"
+	_ci_commit "$message" "#deploytodev"
 	if [ $? -eq 0 ];then
 		git push origin
 	else
