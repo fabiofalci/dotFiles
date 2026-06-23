@@ -16,3 +16,10 @@ target/
 .attach_pid*
 .factorypath
 kls_database.db
+.worktree
+.mise.toml
+
+# Ignore personal/local Claude settings
+.claude/settings.local.json
+
+**/.claude/settings.local.json

@@ -4,6 +4,7 @@
     sw = switch
     st = status
     br = branch
+    wt = worktree
     pl = pull --ff-only
     log1 = log --pretty=oneline -n 10
     logr = log --pretty=oneline -n 5 --reverse
