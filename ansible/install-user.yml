@@ -10,7 +10,8 @@
    - include_tasks: tools/zsh.yml
      when: zsh is defined
 
-   - include_tasks: base/user-config.yml
+   - block:
+       - include_tasks: base/user-config.yml
      when: dotFiles is defined
      become: yes
      become_user: "{{ user }}"
