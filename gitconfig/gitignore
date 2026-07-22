@@ -16,3 +16,6 @@ target/
 .attach_pid*
 .factorypath
 kls_database.db
+.worktree
+
+**/.claude/settings.local.json
