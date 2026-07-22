@@ -51,7 +51,6 @@
       - groovy
       - helm
       - imagemagick
-      - jenv
       - jq
       - knqyf263/pet/pet
       - kubernetes-cli

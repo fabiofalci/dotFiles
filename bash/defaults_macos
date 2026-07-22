@@ -1,8 +1,5 @@
 #!/bin/sh
 
-#export PATH="$HOME/.jenv/bin:$PATH"
-#eval "$(jenv init -)"
-
 if [[ -n $ZSH_VERSION ]]; then
   function pet-select() {
     BUFFER=$(pet search --query "$LBUFFER")
