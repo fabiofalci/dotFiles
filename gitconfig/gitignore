@@ -21,5 +21,4 @@ kls_database.db
 
 # Ignore personal/local Claude settings
 .claude/settings.local.json
-
 **/.claude/settings.local.json
