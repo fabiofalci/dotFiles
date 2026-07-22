@@ -21,3 +21,27 @@
     src: ../templates/zshrc-basic.j2
     dest: ~/.zshrc
     force: no
+
+- name: zshrc sources dotFiles defaults
+  become: yes
+  become_user: "{{ user }}"
+  lineinfile:
+    path: ~/.zshrc
+    regexp: '^source {{ dotFilesPath }}/bash/defaults$'
+    line: source {{ dotFilesPath }}/bash/defaults
+
+- name: zshrc sources dotFiles defaults_linux
+  become: yes
+  become_user: "{{ user }}"
+  lineinfile:
+    path: ~/.zshrc
+    regexp: '^source {{ dotFilesPath }}/bash/defaults_linux$'
+    line: source {{ dotFilesPath }}/bash/defaults_linux
+
+- name: zshrc sources dotFiles bin/commands
+  become: yes
+  become_user: "{{ user }}"
+  lineinfile:
+    path: ~/.zshrc
+    regexp: '^source {{ dotFilesPath }}/bin/commands$'
+    line: source {{ dotFilesPath }}/bin/commands
