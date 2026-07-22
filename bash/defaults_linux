@@ -40,15 +40,15 @@ source /usr/share/nvm/init-nvm.sh
 #bind -x '"\C-y": pet-select'
 #bind -x '"\C-r": __fzf_history__'
 
-function pet-select() {
-  BUFFER=$(pet search --query "$LBUFFER")
-  CURSOR=$#BUFFER
-  zle redisplay
-}
-zle -N pet-select
+if [[ -n $ZSH_VERSION ]]; then
+  function pet-select() {
+    BUFFER=$(pet search --query "$LBUFFER")
+    CURSOR=$#BUFFER
+    zle redisplay
+  }
+  zle -N pet-select
+fi
 stty -ixon
-# this bind is on .zshrc, it doesn't work here for some reason
-#bindkey '^Y' pet-select
 
 #if hash kubectl 2>/dev/null; then
 #    source <(kubectl completion bash | sed 's/kubectl/k/g')

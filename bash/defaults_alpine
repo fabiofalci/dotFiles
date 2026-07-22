@@ -1,11 +1,13 @@
 #!/bin/sh
 
-function pet-select() {
-  BUFFER=$(pet search --query "$LBUFFER")
-  CURSOR=$#BUFFER
-  zle redisplay
-}
-zle -N pet-select
+if [[ -n $ZSH_VERSION ]]; then
+  function pet-select() {
+    BUFFER=$(pet search --query "$LBUFFER")
+    CURSOR=$#BUFFER
+    zle redisplay
+  }
+  zle -N pet-select
+  bindkey '^y' pet-select
+fi
 stty -ixon
-bindkey '^y' pet-select
 

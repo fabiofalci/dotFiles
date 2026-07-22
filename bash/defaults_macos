@@ -3,16 +3,16 @@
 #export PATH="$HOME/.jenv/bin:$PATH"
 #eval "$(jenv init -)"
 
-function pet-select() {
-  BUFFER=$(pet search --query "$LBUFFER")
-  CURSOR=$#BUFFER
-  zle redisplay
-}
-zle -N pet-select
+if [[ -n $ZSH_VERSION ]]; then
+  function pet-select() {
+    BUFFER=$(pet search --query "$LBUFFER")
+    CURSOR=$#BUFFER
+    zle redisplay
+  }
+  zle -N pet-select
+  bindkey '^y' pet-select
+fi
 stty -ixon
-
-# needs to be copied to the last line of .zshrc
-bindkey '^y' pet-select
 
 function now_plus() {
   date -v+$1 +%H:%M

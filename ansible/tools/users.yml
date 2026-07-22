@@ -2,10 +2,10 @@
 
 - name: Adding user
   become: yes
-  user: 
+  user:
     name: "{{ user }}"
     group: users
-    shell: /bin/bash
-    groups: wheel,input,docker,synct,gdrive,audio,storage,video
+    shell: "{{ user_shell | default('/bin/bash') }}"
+    groups: "{{ user_groups | default('wheel,input,docker,synct,gdrive,audio,storage,video') }}"
     append: yes
 
