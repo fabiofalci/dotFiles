@@ -33,6 +33,3 @@
 
    - include_tasks: base/user-config.yml
    - include_tasks: tools/pet.yml
-
-   - include_tasks: tools/ssh.yml
-     when: ssh is defined

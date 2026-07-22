@@ -8,5 +8,5 @@ curl -o ~/.ansible/plugins/modules/aur.py https://raw.githubusercontent.com/kewl
 
 cd ~/.config/dotFiles/ansible
 ansible-playbook root-install.yml --extra-vars "run_pacman=Y"
-ansible-playbook install-user.yml --extra-vars "user=fabio ssh=Y dotFiles=Y dotFilesPath=~/.config/dotFiles"
-ansible-playbook install-user.yml --extra-vars "user=fabio ssh=Y dotFiles=Y dotFilesPath=~/.config/dotFiles dotFilesPrivatePath=~/.config/dotFiles-private"
+ansible-playbook install-user.yml --extra-vars "user=fabio dotFiles=Y dotFilesPath=~/.config/dotFiles"
+ansible-playbook install-user.yml --extra-vars "user=fabio dotFiles=Y dotFilesPath=~/.config/dotFiles dotFilesPrivatePath=~/.config/dotFiles-private"
