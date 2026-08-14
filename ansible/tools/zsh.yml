@@ -45,3 +45,11 @@
     path: ~/.zshrc
     regexp: '^source {{ dotFilesPath }}/bin/commands$'
     line: source {{ dotFilesPath }}/bin/commands
+
+- name: zshrc zoxide init
+  become: yes
+  become_user: "{{ user }}"
+  lineinfile:
+    path: ~/.zshrc
+    regexp: '^eval "\$\(zoxide init zsh\)"$'
+    line: eval "$(zoxide init zsh)"

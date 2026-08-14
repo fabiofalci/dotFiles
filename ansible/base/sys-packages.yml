@@ -39,4 +39,5 @@
       - wget
       - yq
       - yt-dlp
+      - zoxide
     state: present
