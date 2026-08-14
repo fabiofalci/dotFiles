@@ -53,3 +53,29 @@
     path: ~/.zshrc
     regexp: '^eval "\$\(zoxide init zsh\)"$'
     line: eval "$(zoxide init zsh)"
+
+- name: zshrc pet-select bindkey
+  become: yes
+  become_user: "{{ user }}"
+  lineinfile:
+    path: ~/.zshrc
+    regexp: "^bindkey '\\^y' pet-select$"
+    line: bindkey '^y' pet-select
+
+- name: zshenv LANG
+  become: yes
+  become_user: "{{ user }}"
+  lineinfile:
+    path: ~/.zshenv
+    regexp: '^export LANG=en_US\.UTF-8$'
+    line: export LANG=en_US.UTF-8
+    create: yes
+
+- name: zshenv LC_ALL
+  become: yes
+  become_user: "{{ user }}"
+  lineinfile:
+    path: ~/.zshenv
+    regexp: '^export LC_ALL=en_US\.UTF-8$'
+    line: export LC_ALL=en_US.UTF-8
+    create: yes
