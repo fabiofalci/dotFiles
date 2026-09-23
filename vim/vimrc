@@ -1,61 +1,49 @@
 set number
 set relativenumber
 set ignorecase
-set guioptions-=T
+set smartcase
 
 filetype indent plugin on
-
-" next/prev tab
-map <A-}> gt
-map <A-{> gT
-
-" moves screen up/down one line using CTRL + j/k
-map <C-j> <C-e>
-map <C-k> <C-y>
-
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 set autoindent
 set expandtab
 set tabstop=4
 set shiftwidth=4
 
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+" next/prev tab
+map <A-}> gt
+map <A-{> gT
+
+" scroll screen up/down one line without moving the cursor
+map <C-j> <C-e>
+map <C-k> <C-y>
+
 " vim-plug
 call plug#begin('~/.vim/plugged')
 
-" Make sure you use single quotes
- Plug 'junegunn/seoul256.vim'
- Plug 'junegunn/vim-easy-align'
+Plug 'tpope/vim-sensible'      " sane defaults every vimrc should have
+Plug 'tpope/vim-surround'      " cs"' / ds( / ysiw) etc.
+Plug 'tpope/vim-commentary'    " gcc to comment/uncomment
+Plug 'tpope/vim-repeat'        " lets . repeat the plugins above
+Plug 'junegunn/vim-easy-align' " ga to align on =, |, etc.
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'        " :Files :Buffers :Rg on top of fzf
 
-" Group dependencies, vim-snippets depends on ultisnips
- Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-
-" On-demand loading
- Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
- Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
-
-" Using git URL
- Plug 'https://github.com/junegunn/vim-github-dashboard.git'
-
-" Plugin options
- Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
-
-" Plugin outside ~/.vim/plugged with post-update hook
- Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
-
-" Unmanaged plugin (manually installed and updated)
- Plug '~/my-prototype-plugin'
-
-Plug 'fatih/vim-go'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
-if has('gui_running')
-	syntax enable
-	set background=dark
-	colorscheme solarized
-	set guifont=Monospace\ 13
-	" save on focus lost
-	:au FocusLost * silent! wa
-endif
+syntax enable
+set termguicolors
+set background=dark
+colorscheme gruvbox
 
+" easy-align: ga in visual mode, gaip etc. in normal mode
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
+
+" fzf: fuzzy find files/buffers for quick edits
+nnoremap <C-p> :Files<CR>
+nnoremap <C-b> :Buffers<CR>
